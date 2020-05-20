@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "/opt/tools/xilinx/Vivado/2017.4/data/xilinx_vip/include" \
+"../../../../project_1.hw/my_and_gate.sv" \
+"../../../my_and_gate_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
