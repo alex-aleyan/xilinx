@@ -1,0 +1,7 @@
+0.6
+2017.4
+Dec 15 2017
+20:57:24
+/opt/gitrepos/xilinx/zedboard/projects/test/minimal_sv_vhdl_and_gate_example/project_1.hw/my_and_gate.vhd,1589991748,vhdl,,,,my_and_gate,,,,,,,,
+/opt/gitrepos/xilinx/zedboard/projects/test/minimal_sv_vhdl_and_gate_example/project_1.sim/my_and_gate_tb.sv,1589993713,systemVerilog,,,,my_and_gate_tb,,xil_defaultlib,/opt/tools/xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+/opt/gitrepos/xilinx/zedboard/projects/test/minimal_sv_vhdl_and_gate_example/project_1.sim/sim_1/behav/xsim/glbl.v,1589990582,verilog,,,,glbl,,xil_defaultlib,,,,,,

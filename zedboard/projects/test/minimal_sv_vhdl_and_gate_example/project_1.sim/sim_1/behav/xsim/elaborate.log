@@ -1,0 +1,15 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/tools/xilinx/Vivado/2017.4/bin/unwrapped/lnx64.o/xelab -wto f88c399aab0f4a36a49a17c273621074 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot my_and_gate_tb_behav xil_defaultlib.my_and_gate_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port c_out [/opt/gitrepos/xilinx/zedboard/projects/test/minimal_sv_vhdl_and_gate_example/project_1.sim/my_and_gate_tb.sv:27]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/opt/gitrepos/xilinx/zedboard/projects/test/minimal_sv_vhdl_and_gate_example/project_1.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.my_and_gate(INPUT_WIDTH=1)
+Compiling module xil_defaultlib.my_and_gate_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot my_and_gate_tb_behav
