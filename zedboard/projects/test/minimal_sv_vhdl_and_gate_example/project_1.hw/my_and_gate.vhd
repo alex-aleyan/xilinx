@@ -2,11 +2,17 @@ library ieee ;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
+--Declare the package 
+-- https://forums.xilinx.com/t5/Synthesis/How-to-use-generic-packages-as-introduced-in-VHDL-2008/td-p/705147
+--library my_lib;
+use my_package.all;
+
+
 ----------------------------------------------------
 
 entity my_and_gate is
 generic(
-        INPUT_WIDTH: natural :=2
+        INPUT_WIDTH: natural := 1
     ); port (	
         clock_in:   in  std_logic;
 	reset_n_in: in  std_logic;
@@ -20,7 +26,7 @@ end my_and_gate;
 
 architecture behv of my_and_gate is		 	  
 	
-    signal c : std_logic_vector(INPUT_WIDTH downto 0);
+    signal c : std_logic_vector(INPUT_WIDTH-1 downto 0);
 
 begin
 

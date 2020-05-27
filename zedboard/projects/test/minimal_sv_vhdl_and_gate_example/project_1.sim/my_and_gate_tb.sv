@@ -32,8 +32,7 @@ always begin
 end
 
 
-initial
-begin
+initial begin : stimulus
 
     reset_n = 'b1;
     repeat(1) @(posedge clock);
@@ -63,10 +62,6 @@ begin
     //$finish();
 
 end
-
-
-
-
     
 
     
