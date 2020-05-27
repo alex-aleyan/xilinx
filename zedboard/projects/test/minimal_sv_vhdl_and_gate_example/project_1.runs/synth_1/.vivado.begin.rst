@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="root" Host="cobalt-vm.acct04.us.lmco.com" Pid="15740">
-    </Process>
-</ProcessHandle>

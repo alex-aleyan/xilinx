@@ -1,6 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../project_1.hw/my_and_gate.vhd" \
-
-# Do not sort compile order
-nosort

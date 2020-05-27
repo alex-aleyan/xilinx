@@ -1,2 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/opt/gitrepos/xilinx/zedboard/projects/test/minimal_sv_vhdl_and_gate_example/project_1.sim/my_and_gate_tb.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module my_and_gate_tb
