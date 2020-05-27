@@ -1,0 +1,734 @@
+################################################################################
+#                    DO NOT MANUALLY EDIT THIS FILE!                           #
+################################################################################
+# This file contains the automatically generated build configuration (2020/05/07 20:42:16)
+# requested at line 3 in /opt/gitrepos/class01_adv_fpga_design/project/dyno_sysvrl/hw/.dvt/default.build
+
+
+################ Verilog Auto-config Directives ################
++dvt_init
+
++incdir+src
+
+### AUTOCONFIG WARNING: Missing macro definitions
+# The following macros are used but not defined:
+# +define+B
+# +define+Z4ZZ
+# +define+jSG
+# +define+v
+# +define+A
+# +define+kP
+# +define+Y
+# +define+L
+# +define+E
+# +define+u
+# +define+z
+# +define+j
+# +define+I
+# +define+w
+# +define+D
+# +define+Z
+# +define+i
+# +define+m3
+# +define+Ul
+# +define+Gn
+# +define+F
+# +define+zq
+# +define+_
+# +define+C
+# +define+h
+# +define+g
+# +define+R
+# +define+V
+# +define+o
+# +define+H
+# +define+ICh
+# +define+La
+# +define+aO1
+# +define+k
+# +define+b
+# +define+IWn
+# +define+f
+# +define+Xfz
+# +define+T
+# +define+X
+# +define+AIo
+# +define+MGJm
+# +define+Q
+# +define+W
+# +define+zGO
+# +define+Nh
+# +define+G
+# +define+c
+# +define+U
+# +define+N
+# +define+q
+# +define+cZ
+# +define+XOG
+# +define+Jt
+# +define+e
+# +define+a
+# +define+l
+# +define+FA
+# +define+VWA
+# +define+K
+# +define+t
+# +define+x
+# +define+Bj
+# +define+_h
+# +define+J
+# +define+c$
+# +define+p
+# +define+m
+# +define+k5
+# +define+r
+# +define+DV
+# +define+S
+# +define+Ai
+# +define+VD
+# +define+P
+# +define+rI
+# +define+ai6
+# +define+g2
+# +define+T7
+# +define+c5
+# +define+y2
+# +define+n
+# +define+Di
+# +define+y0
+# +define+ebO7y
+# +define+Cr
+# +define+Wr
+# +define+d
+# +define+RS
+# +define+Yc
+# +define+WnM
+# +define+UP
+# +define+Wp
+# +define+M
+# +define+O
+# +define+CW
+# +define+Ef
+# +define+F8
+# +define+Lj
+# +define+AkDp
+# +define+pCH
+# +define+Zc
+# +define+YO
+# +define+hL
+# +define+F3_
+# +define+yTf
+# +define+mgB
+# +define+zQ
+# +define+QC
+# +define+AmR
+# +define+px
+# +define+CF
+# +define+h$
+# +define+nz
+# +define+M0
+# +define+Wo
+# +define+_dn
+# +define+ac
+# +define+MX
+# +define+aE
+# +define+cK
+# +define+fjh
+# +define+f5
+# +define+iN
+# +define+bLjLk
+# +define+s
+# +define+eJ
+# +define+E9
+# +define+F1
+# +define+dS
+# +define+xQ
+# +define+Rb
+# +define+qPf
+# +define+ml
+# +define+Z7
+# +define+wu
+# +define+QJ
+# +define+_COMPILE_TYPE
+
+# Available `ifdef / `ifndef controls:
+# +define+_COMPILE_TYPE
+# +define+_SIMULATION
+# +define+__ALTERA_STD__METASTABLE_SIM
+# +define+__ALTERA_STD__METASTABLE_SIM_VERBOSE
+
+syn/nios_system/synthesis/submodules/altera_tse_register_map_small.v
+syn/nios_system/synthesis/submodules/altera_tse_top_wo_fifo.v
+syn/nios_system/synthesis/submodules/altera_tse_register_map.v
+syn/nios_system/synthesis/submodules/altera_tse_mac_control.v
+syn/nios_system/synthesis/submodules/altera_tse_top_fifoless_1geth.v
+syn/nios_system/synthesis/submodules/altera_tse_tx_ff.v
+syn/nios_system/synthesis/submodules/altera_tse_rx_ff_cntrl_32.v
+syn/nios_system/synthesis/submodules/altera_tse_magic_detection.v
+syn/nios_system/synthesis/submodules/altera_tse_rx_ff.v
+syn/nios_system/synthesis/submodules/altera_tse_shared_mac_control.v
+syn/nios_system/synthesis/submodules/altera_tse_tx_ff_cntrl_32_shift16.v
+syn/nios_system/synthesis/submodules/altera_tse_retransmit_cntl.v
+syn/nios_system/synthesis/submodules/altera_tse_timing_adapter_fifo32.v
+syn/nios_system/synthesis/submodules/altera_tse_top_1geth.v
+syn/nios_system/synthesis/submodules/altera_tse_top_w_fifo_10_100_1000.v
+syn/nios_system/synthesis/submodules/altera_tse_rx_min_ff.v
+syn/nios_system/synthesis/submodules/altera_tse_ecc_enc_x36.v
+syn/nios_system/synthesis/submodules/altera_tse_tx_counter_cntl.v
+syn/nios_system/synthesis/submodules/altera_tse_rx_stat_extract.v
+syn/nios_system/synthesis/submodules/altera_tse_dpram_16x32.v
+syn/nios_system/synthesis/submodules/altera_tse_loopback_ff.v
+syn/nios_system/synthesis/submodules/altera_tse_mdio_cntl.v
+syn/nios_system/synthesis/submodules/altera_tse_tx_ff_cntrl_32.v
+syn/nios_system/synthesis/submodules/altera_tse_a_fifo_opt_1246.v
+syn/nios_system/synthesis/submodules/altera_tse_a_fifo_opt_36_10.v
+syn/nios_system/synthesis/submodules/altera_tse_tx_ff_read_cntl.v
+syn/nios_system/synthesis/submodules/altera_tse_ecc_enc_x40.v
+syn/nios_system/synthesis/submodules/altera_tse_host_control.v
+syn/nios_system/synthesis/submodules/altera_tse_rx_ff_length.v
+syn/nios_system/synthesis/submodules/altera_tse_bin_cnt.v
+syn/nios_system/synthesis/submodules/altera_tse_clk_cntl.v
+syn/nios_system/synthesis/submodules/altera_tse_crc32ctl8.v
+syn/nios_system/synthesis/submodules/altera_tse_ecc_enc_x23.v
+syn/nios_system/synthesis/submodules/altera_tse_mii_tx_if.v
+syn/nios_system/synthesis/submodules/altera_tse_tx_ff_cntrl.v
+syn/nios_system/synthesis/submodules/altera_tse_crc328checker.v
+syn/nios_system/synthesis/submodules/altera_tse_crc32galois8.v
+syn/nios_system/synthesis/submodules/altera_tse_ecc_dec_x2.v
+syn/nios_system/synthesis/submodules/altera_tse_ecc_enc_x14.v
+syn/nios_system/synthesis/submodules/altera_tse_gray_cnt.v
+syn/nios_system/synthesis/submodules/altera_tse_hashing.v
+syn/nios_system/synthesis/submodules/altera_tse_pipeline_base.v
+syn/nios_system/synthesis/submodules/altera_tse_tx_ff_length.v
+src/pkgs/inet_stack_pkg.sv
+src/tse/tse_controller.sv
+sim/tse_controller_tb.sv
+syn/nios_system/simulation/submodules/altera_std_synchronizer_nocut.v
+syn/nios_system/synthesis/submodules/altera_std_synchronizer_nocut.v
+syn/nios_system/simulation/nios_system.v
+syn/nios_system/simulation/submodules/aldec/altera_eth_tse_mac.v
+syn/nios_system/simulation/submodules/aldec/altera_eth_tse_ptp_std_synchronizer.v
+syn/nios_system/simulation/submodules/aldec/altera_eth_tse_std_synchronizer.v
+syn/nios_system/simulation/submodules/aldec/altera_eth_tse_std_synchronizer_bundle.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_a_fifo_13.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_a_fifo_24.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_a_fifo_34.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_a_fifo_opt_1246.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_a_fifo_opt_14_44.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_a_fifo_opt_36_10.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_altshifttaps.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_altsyncram_dpm_fifo.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_bin_cnt.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_clk_cntl.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_clock_crosser.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_crc328checker.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_crc328generator.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_crc32ctl8.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_crc32galois8.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_dpram_16x32.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_dpram_8x32.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_dpram_ecc_16x32.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_ecc_dec_x10.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_ecc_dec_x14.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_ecc_dec_x2.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_ecc_dec_x23.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_ecc_dec_x30.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_ecc_dec_x36.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_ecc_dec_x40.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_ecc_enc_x10.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_ecc_enc_x10_wrapper.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_ecc_enc_x14.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_ecc_enc_x14_wrapper.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_ecc_enc_x2.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_ecc_enc_x23.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_ecc_enc_x23_wrapper.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_ecc_enc_x2_wrapper.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_ecc_enc_x30.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_ecc_enc_x30_wrapper.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_ecc_enc_x36.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_ecc_enc_x36_wrapper.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_ecc_enc_x40.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_ecc_enc_x40_wrapper.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_ecc_status_crosser.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_false_path_marker.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_fifoless_mac_rx.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_fifoless_mac_tx.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_fifoless_retransmit_cntl.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_gmii_io.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_gray_cnt.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_hashing.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_host_control.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_host_control_small.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_lb_read_cntl.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_lb_wrt_cntl.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_lfsr_10.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_loopback_ff.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_mac_control.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_mac_rx.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_mac_tx.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_magic_detection.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_mdio.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_mdio_clk_gen.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_mdio_cntl.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_mii_rx_if.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_mii_tx_if.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_nf_rgmii_module.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_ph_calculator.sv
+syn/nios_system/simulation/submodules/aldec/altera_tse_pipeline_base.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_pipeline_stage.sv
+syn/nios_system/simulation/submodules/aldec/altera_tse_register_map.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_register_map_small.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_reset_synchronizer.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_retransmit_cntl.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_rgmii_in1.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_rgmii_in4.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_rgmii_module.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_rgmii_out1.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_rgmii_out4.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_rx_counter_cntl.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_rx_ff.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_rx_ff_cntrl.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_rx_ff_cntrl_32.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_rx_ff_cntrl_32_shift16.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_rx_ff_length.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_rx_min_ff.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_rx_stat_extract.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_sdpm_altsyncram.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_sdpm_gen.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_shared_mac_control.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_shared_register_map.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_timing_adapter32.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_timing_adapter8.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_timing_adapter_fifo32.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_timing_adapter_fifo8.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_top_1geth.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_top_fifoless_1geth.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_top_gen_host.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_top_mdio.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_top_w_fifo.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_top_w_fifo_10_100_1000.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_top_wo_fifo.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_top_wo_fifo_10_100_1000.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_tx_counter_cntl.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_tx_ff.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_tx_ff_cntrl.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_tx_ff_cntrl_32.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_tx_ff_cntrl_32_shift16.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_tx_ff_length.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_tx_ff_read_cntl.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_tx_min_ff.v
+syn/nios_system/simulation/submodules/aldec/altera_tse_tx_stat_extract.v
+syn/nios_system/simulation/submodules/altera_reset_controller.v
+syn/nios_system/simulation/submodules/altera_reset_synchronizer.v
+syn/nios_system/simulation/submodules/cadence/altera_eth_tse_mac.v
+syn/nios_system/simulation/submodules/cadence/altera_eth_tse_ptp_std_synchronizer.v
+syn/nios_system/simulation/submodules/cadence/altera_eth_tse_std_synchronizer.v
+syn/nios_system/simulation/submodules/cadence/altera_eth_tse_std_synchronizer_bundle.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_a_fifo_13.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_a_fifo_24.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_a_fifo_34.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_a_fifo_opt_1246.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_a_fifo_opt_14_44.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_a_fifo_opt_36_10.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_altshifttaps.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_altsyncram_dpm_fifo.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_bin_cnt.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_clk_cntl.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_clock_crosser.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_crc328checker.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_crc328generator.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_crc32ctl8.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_crc32galois8.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_dpram_16x32.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_dpram_8x32.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_dpram_ecc_16x32.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_ecc_dec_x10.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_ecc_dec_x14.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_ecc_dec_x2.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_ecc_dec_x23.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_ecc_dec_x30.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_ecc_dec_x36.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_ecc_dec_x40.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_ecc_enc_x10.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_ecc_enc_x10_wrapper.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_ecc_enc_x14.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_ecc_enc_x14_wrapper.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_ecc_enc_x2.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_ecc_enc_x23.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_ecc_enc_x23_wrapper.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_ecc_enc_x2_wrapper.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_ecc_enc_x30.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_ecc_enc_x30_wrapper.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_ecc_enc_x36.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_ecc_enc_x36_wrapper.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_ecc_enc_x40.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_ecc_enc_x40_wrapper.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_ecc_status_crosser.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_false_path_marker.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_fifoless_mac_rx.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_fifoless_mac_tx.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_fifoless_retransmit_cntl.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_gmii_io.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_gray_cnt.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_hashing.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_host_control.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_host_control_small.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_lb_read_cntl.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_lb_wrt_cntl.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_lfsr_10.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_loopback_ff.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_mac_control.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_mac_rx.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_mac_tx.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_magic_detection.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_mdio.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_mdio_clk_gen.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_mdio_cntl.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_mii_rx_if.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_mii_tx_if.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_nf_rgmii_module.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_ph_calculator.sv
+syn/nios_system/simulation/submodules/cadence/altera_tse_pipeline_base.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_pipeline_stage.sv
+syn/nios_system/simulation/submodules/cadence/altera_tse_register_map.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_register_map_small.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_reset_synchronizer.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_retransmit_cntl.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_rgmii_in1.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_rgmii_in4.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_rgmii_module.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_rgmii_out1.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_rgmii_out4.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_rx_counter_cntl.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_rx_ff.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_rx_ff_cntrl.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_rx_ff_cntrl_32.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_rx_ff_cntrl_32_shift16.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_rx_ff_length.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_rx_min_ff.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_rx_stat_extract.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_sdpm_altsyncram.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_sdpm_gen.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_shared_mac_control.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_shared_register_map.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_timing_adapter32.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_timing_adapter8.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_timing_adapter_fifo32.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_timing_adapter_fifo8.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_top_1geth.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_top_fifoless_1geth.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_top_gen_host.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_top_mdio.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_top_w_fifo.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_top_w_fifo_10_100_1000.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_top_wo_fifo.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_top_wo_fifo_10_100_1000.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_tx_counter_cntl.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_tx_ff.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_tx_ff_cntrl.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_tx_ff_cntrl_32.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_tx_ff_cntrl_32_shift16.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_tx_ff_length.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_tx_ff_read_cntl.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_tx_min_ff.v
+syn/nios_system/simulation/submodules/cadence/altera_tse_tx_stat_extract.v
+syn/nios_system/simulation/submodules/mentor/altera_eth_tse_mac.v
+syn/nios_system/simulation/submodules/mentor/altera_eth_tse_ptp_std_synchronizer.v
+syn/nios_system/simulation/submodules/mentor/altera_eth_tse_std_synchronizer.v
+syn/nios_system/simulation/submodules/mentor/altera_eth_tse_std_synchronizer_bundle.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_a_fifo_13.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_a_fifo_24.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_a_fifo_34.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_a_fifo_opt_1246.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_a_fifo_opt_14_44.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_a_fifo_opt_36_10.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_altshifttaps.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_altsyncram_dpm_fifo.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_bin_cnt.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_clk_cntl.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_clock_crosser.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_crc328checker.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_crc328generator.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_crc32ctl8.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_crc32galois8.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_dpram_16x32.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_dpram_8x32.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_dpram_ecc_16x32.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_ecc_dec_x10.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_ecc_dec_x14.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_ecc_dec_x2.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_ecc_dec_x23.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_ecc_dec_x30.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_ecc_dec_x36.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_ecc_dec_x40.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_ecc_enc_x10.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_ecc_enc_x10_wrapper.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_ecc_enc_x14.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_ecc_enc_x14_wrapper.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_ecc_enc_x2.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_ecc_enc_x23.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_ecc_enc_x23_wrapper.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_ecc_enc_x2_wrapper.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_ecc_enc_x30.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_ecc_enc_x30_wrapper.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_ecc_enc_x36.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_ecc_enc_x36_wrapper.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_ecc_enc_x40.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_ecc_enc_x40_wrapper.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_ecc_status_crosser.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_false_path_marker.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_fifoless_mac_rx.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_fifoless_mac_tx.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_fifoless_retransmit_cntl.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_gmii_io.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_gray_cnt.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_hashing.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_host_control.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_host_control_small.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_lb_read_cntl.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_lb_wrt_cntl.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_lfsr_10.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_loopback_ff.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_mac_control.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_mac_rx.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_mac_tx.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_magic_detection.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_mdio.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_mdio_clk_gen.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_mdio_cntl.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_mii_rx_if.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_mii_tx_if.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_nf_rgmii_module.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_ph_calculator.sv
+syn/nios_system/simulation/submodules/mentor/altera_tse_pipeline_base.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_pipeline_stage.sv
+syn/nios_system/simulation/submodules/mentor/altera_tse_register_map.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_register_map_small.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_reset_synchronizer.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_retransmit_cntl.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_rgmii_in1.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_rgmii_in4.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_rgmii_module.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_rgmii_out1.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_rgmii_out4.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_rx_counter_cntl.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_rx_ff.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_rx_ff_cntrl.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_rx_ff_cntrl_32.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_rx_ff_cntrl_32_shift16.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_rx_ff_length.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_rx_min_ff.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_rx_stat_extract.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_sdpm_altsyncram.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_sdpm_gen.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_shared_mac_control.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_shared_register_map.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_timing_adapter32.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_timing_adapter8.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_timing_adapter_fifo32.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_timing_adapter_fifo8.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_top_1geth.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_top_fifoless_1geth.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_top_gen_host.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_top_mdio.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_top_w_fifo.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_top_w_fifo_10_100_1000.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_top_wo_fifo.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_top_wo_fifo_10_100_1000.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_tx_counter_cntl.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_tx_ff.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_tx_ff_cntrl.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_tx_ff_cntrl_32.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_tx_ff_cntrl_32_shift16.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_tx_ff_length.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_tx_ff_read_cntl.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_tx_min_ff.v
+syn/nios_system/simulation/submodules/mentor/altera_tse_tx_stat_extract.v
+syn/nios_system/simulation/submodules/nios_system_tse.v
+syn/nios_system/simulation/submodules/synopsys/altera_eth_tse_mac.v
+syn/nios_system/simulation/submodules/synopsys/altera_eth_tse_ptp_std_synchronizer.v
+syn/nios_system/simulation/submodules/synopsys/altera_eth_tse_std_synchronizer.v
+syn/nios_system/simulation/submodules/synopsys/altera_eth_tse_std_synchronizer_bundle.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_a_fifo_13.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_a_fifo_24.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_a_fifo_34.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_a_fifo_opt_1246.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_a_fifo_opt_14_44.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_a_fifo_opt_36_10.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_altshifttaps.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_altsyncram_dpm_fifo.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_bin_cnt.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_clk_cntl.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_clock_crosser.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_crc328checker.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_crc328generator.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_crc32ctl8.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_crc32galois8.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_dpram_16x32.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_dpram_8x32.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_dpram_ecc_16x32.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_ecc_dec_x10.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_ecc_dec_x14.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_ecc_dec_x2.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_ecc_dec_x23.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_ecc_dec_x30.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_ecc_dec_x36.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_ecc_dec_x40.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_ecc_enc_x10.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_ecc_enc_x10_wrapper.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_ecc_enc_x14.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_ecc_enc_x14_wrapper.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_ecc_enc_x2.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_ecc_enc_x23.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_ecc_enc_x23_wrapper.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_ecc_enc_x2_wrapper.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_ecc_enc_x30.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_ecc_enc_x30_wrapper.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_ecc_enc_x36.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_ecc_enc_x36_wrapper.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_ecc_enc_x40.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_ecc_enc_x40_wrapper.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_ecc_status_crosser.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_false_path_marker.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_fifoless_mac_rx.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_fifoless_mac_tx.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_fifoless_retransmit_cntl.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_gmii_io.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_gray_cnt.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_hashing.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_host_control.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_host_control_small.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_lb_read_cntl.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_lb_wrt_cntl.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_lfsr_10.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_loopback_ff.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_mac_control.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_mac_rx.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_mac_tx.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_magic_detection.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_mdio.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_mdio_clk_gen.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_mdio_cntl.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_mii_rx_if.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_mii_tx_if.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_nf_rgmii_module.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_ph_calculator.sv
+syn/nios_system/simulation/submodules/synopsys/altera_tse_pipeline_base.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_pipeline_stage.sv
+syn/nios_system/simulation/submodules/synopsys/altera_tse_register_map.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_register_map_small.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_reset_synchronizer.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_retransmit_cntl.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_rgmii_in1.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_rgmii_in4.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_rgmii_module.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_rgmii_out1.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_rgmii_out4.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_rx_counter_cntl.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_rx_ff.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_rx_ff_cntrl.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_rx_ff_cntrl_32.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_rx_ff_cntrl_32_shift16.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_rx_ff_length.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_rx_min_ff.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_rx_stat_extract.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_sdpm_altsyncram.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_sdpm_gen.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_shared_mac_control.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_shared_register_map.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_timing_adapter32.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_timing_adapter8.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_timing_adapter_fifo32.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_timing_adapter_fifo8.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_top_1geth.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_top_fifoless_1geth.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_top_gen_host.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_top_mdio.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_top_w_fifo.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_top_w_fifo_10_100_1000.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_top_wo_fifo.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_top_wo_fifo_10_100_1000.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_tx_counter_cntl.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_tx_ff.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_tx_ff_cntrl.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_tx_ff_cntrl_32.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_tx_ff_cntrl_32_shift16.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_tx_ff_length.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_tx_ff_read_cntl.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_tx_min_ff.v
+syn/nios_system/simulation/submodules/synopsys/altera_tse_tx_stat_extract.v
+syn/nios_system/synthesis/nios_system.v
+syn/nios_system/synthesis/submodules/altera_eth_tse_mac.v
+syn/nios_system/synthesis/submodules/altera_eth_tse_ptp_std_synchronizer.v
+syn/nios_system/synthesis/submodules/altera_eth_tse_std_synchronizer.v
+syn/nios_system/synthesis/submodules/altera_eth_tse_std_synchronizer_bundle.v
+syn/nios_system/synthesis/submodules/altera_reset_controller.v
+syn/nios_system/synthesis/submodules/altera_reset_synchronizer.v
+syn/nios_system/synthesis/submodules/altera_tse_a_fifo_13.v
+syn/nios_system/synthesis/submodules/altera_tse_a_fifo_24.v
+syn/nios_system/synthesis/submodules/altera_tse_a_fifo_34.v
+syn/nios_system/synthesis/submodules/altera_tse_a_fifo_opt_14_44.v
+syn/nios_system/synthesis/submodules/altera_tse_altshifttaps.v
+syn/nios_system/synthesis/submodules/altera_tse_altsyncram_dpm_fifo.v
+syn/nios_system/synthesis/submodules/altera_tse_clock_crosser.v
+syn/nios_system/synthesis/submodules/altera_tse_crc328generator.v
+syn/nios_system/synthesis/submodules/altera_tse_dpram_8x32.v
+syn/nios_system/synthesis/submodules/altera_tse_dpram_ecc_16x32.v
+syn/nios_system/synthesis/submodules/altera_tse_ecc_dec_x10.v
+syn/nios_system/synthesis/submodules/altera_tse_ecc_dec_x14.v
+syn/nios_system/synthesis/submodules/altera_tse_ecc_dec_x23.v
+syn/nios_system/synthesis/submodules/altera_tse_ecc_dec_x30.v
+syn/nios_system/synthesis/submodules/altera_tse_ecc_dec_x36.v
+syn/nios_system/synthesis/submodules/altera_tse_ecc_dec_x40.v
+syn/nios_system/synthesis/submodules/altera_tse_ecc_enc_x10.v
+syn/nios_system/synthesis/submodules/altera_tse_ecc_enc_x10_wrapper.v
+syn/nios_system/synthesis/submodules/altera_tse_ecc_enc_x14_wrapper.v
+syn/nios_system/synthesis/submodules/altera_tse_ecc_enc_x2.v
+syn/nios_system/synthesis/submodules/altera_tse_ecc_enc_x23_wrapper.v
+syn/nios_system/synthesis/submodules/altera_tse_ecc_enc_x2_wrapper.v
+syn/nios_system/synthesis/submodules/altera_tse_ecc_enc_x30.v
+syn/nios_system/synthesis/submodules/altera_tse_ecc_enc_x30_wrapper.v
+syn/nios_system/synthesis/submodules/altera_tse_ecc_enc_x36_wrapper.v
+syn/nios_system/synthesis/submodules/altera_tse_ecc_enc_x40_wrapper.v
+syn/nios_system/synthesis/submodules/altera_tse_ecc_status_crosser.v
+syn/nios_system/synthesis/submodules/altera_tse_false_path_marker.v
+syn/nios_system/synthesis/submodules/altera_tse_fifoless_mac_rx.v
+syn/nios_system/synthesis/submodules/altera_tse_fifoless_mac_tx.v
+syn/nios_system/synthesis/submodules/altera_tse_fifoless_retransmit_cntl.v
+syn/nios_system/synthesis/submodules/altera_tse_gmii_io.v
+syn/nios_system/synthesis/submodules/altera_tse_host_control_small.v
+syn/nios_system/synthesis/submodules/altera_tse_lb_read_cntl.v
+syn/nios_system/synthesis/submodules/altera_tse_lb_wrt_cntl.v
+syn/nios_system/synthesis/submodules/altera_tse_lfsr_10.v
+syn/nios_system/synthesis/submodules/altera_tse_mac_rx.v
+syn/nios_system/synthesis/submodules/altera_tse_mac_tx.v
+syn/nios_system/synthesis/submodules/altera_tse_mdio.v
+syn/nios_system/synthesis/submodules/altera_tse_mdio_clk_gen.v
+syn/nios_system/synthesis/submodules/altera_tse_mii_rx_if.v
+syn/nios_system/synthesis/submodules/altera_tse_nf_rgmii_module.v
+syn/nios_system/synthesis/submodules/altera_tse_ph_calculator.sv
+syn/nios_system/synthesis/submodules/altera_tse_pipeline_stage.sv
+syn/nios_system/synthesis/submodules/altera_tse_reset_synchronizer.v
+syn/nios_system/synthesis/submodules/altera_tse_rgmii_in1.v
+syn/nios_system/synthesis/submodules/altera_tse_rgmii_in4.v
+syn/nios_system/synthesis/submodules/altera_tse_rgmii_module.v
+syn/nios_system/synthesis/submodules/altera_tse_rgmii_out1.v
+syn/nios_system/synthesis/submodules/altera_tse_rgmii_out4.v
+syn/nios_system/synthesis/submodules/altera_tse_rx_counter_cntl.v
+syn/nios_system/synthesis/submodules/altera_tse_rx_ff_cntrl.v
+syn/nios_system/synthesis/submodules/altera_tse_rx_ff_cntrl_32_shift16.v
+syn/nios_system/synthesis/submodules/altera_tse_sdpm_altsyncram.v
+syn/nios_system/synthesis/submodules/altera_tse_sdpm_gen.v
+syn/nios_system/synthesis/submodules/altera_tse_shared_register_map.v
+syn/nios_system/synthesis/submodules/altera_tse_timing_adapter32.v
+syn/nios_system/synthesis/submodules/altera_tse_timing_adapter8.v
+syn/nios_system/synthesis/submodules/altera_tse_timing_adapter_fifo8.v
+syn/nios_system/synthesis/submodules/altera_tse_top_gen_host.v
+syn/nios_system/synthesis/submodules/altera_tse_top_mdio.v
+syn/nios_system/synthesis/submodules/altera_tse_top_w_fifo.v
+syn/nios_system/synthesis/submodules/altera_tse_top_wo_fifo_10_100_1000.v
+syn/nios_system/synthesis/submodules/altera_tse_tx_min_ff.v
+syn/nios_system/synthesis/submodules/altera_tse_tx_stat_extract.v
+syn/nios_system/synthesis/submodules/nios_system_tse.v
+syn/dynamometer_top.sv
+
