@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="clk_core_synth_1" LaunchDir="C:/training/des_7/labs/clocking/kintex7/verilog/wave_gen.runs/clk_core_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

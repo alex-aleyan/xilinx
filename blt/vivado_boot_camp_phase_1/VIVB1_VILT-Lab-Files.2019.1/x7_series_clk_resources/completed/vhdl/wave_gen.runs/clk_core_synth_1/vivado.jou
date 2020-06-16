@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Oct 28 13:20:28 2019
+# Process ID: 15988
+# Current directory: C:/training/7_series_clk_resources/completed/vhdl/wave_gen.runs/clk_core_synth_1
+# Command line: vivado.exe -log clk_core.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_core.tcl
+# Log file: C:/training/7_series_clk_resources/completed/vhdl/wave_gen.runs/clk_core_synth_1/clk_core.vds
+# Journal file: C:/training/7_series_clk_resources/completed/vhdl/wave_gen.runs/clk_core_synth_1\vivado.jou
+#-----------------------------------------------------------
+source clk_core.tcl -notrace
