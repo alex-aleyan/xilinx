@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/training/des_7/labs/io_architecture/kintex7/verilog/test_ioserdes_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="test_ioserdes" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/test_ioserdes/clk_tx_pin" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_tx_pin</obj_property>
+      <obj_property name="ObjectShortName">clk_tx_pin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_ioserdes/rst_tx_pin" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst_tx_pin</obj_property>
+      <obj_property name="ObjectShortName">rst_tx_pin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_ioserdes/ioserdes_i0/tx_cnt" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_cnt[13:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_cnt[13:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_ioserdes/clk_p_pin" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_p_pin</obj_property>
+      <obj_property name="ObjectShortName">clk_p_pin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_ioserdes/clk_n_pin" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_n_pin</obj_property>
+      <obj_property name="ObjectShortName">clk_n_pin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_ioserdes/data_p_pin" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">data_p_pin</obj_property>
+      <obj_property name="ObjectShortName">data_p_pin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_ioserdes/data_n_pin" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">data_n_pin</obj_property>
+      <obj_property name="ObjectShortName">data_n_pin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_ioserdes/bitslip_en_pin" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bitslip_en_pin</obj_property>
+      <obj_property name="ObjectShortName">bitslip_en_pin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_ioserdes/rst_rx_pin" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst_rx_pin</obj_property>
+      <obj_property name="ObjectShortName">rst_rx_pin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_ioserdes/ioserdes_i0/rx_cnt" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_cnt[13:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_cnt[13:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_ioserdes/match_pin" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">match_pin</obj_property>
+      <obj_property name="ObjectShortName">match_pin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_ioserdes/ioserdes_i0/clk_rx_div" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_rx_div</obj_property>
+      <obj_property name="ObjectShortName">clk_rx_div</obj_property>
+   </wvobject>
+</wave_config>

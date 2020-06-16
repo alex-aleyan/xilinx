@@ -1,0 +1,15 @@
+0.6
+2016.3
+Oct 10 2016
+19:46:48
+C:/training/des_7/labs/io_architecture/kintex7/verilog/ioserdes.sim/sim_1/behav/glbl.v,1476033524,verilog,,,,glbl,,,,,,,,
+C:/training/des_7/labs/io_architecture/kintex7/verilog/ioserdes.srcs/sim_1/imports/verilog/test_ioserdes.v,1346095208,verilog,,,,test_ioserdes,,,../../../ioserdes.srcs/sources_1/ip/tx_pll,,,,,
+C:/training/des_7/labs/io_architecture/kintex7/verilog/ioserdes.srcs/sources_1/imports/verilog/ioserdes.v,1403162982,verilog,,,,ioserdes,,,../../../ioserdes.srcs/sources_1/ip/tx_pll,,,,,
+C:/training/des_7/labs/io_architecture/kintex7/verilog/ioserdes.srcs/sources_1/ip/input_interface/input_interface.v,1481177932,verilog,,,,input_interface,,,../../../ioserdes.srcs/sources_1/ip/tx_pll,,,,,
+C:/training/des_7/labs/io_architecture/kintex7/verilog/ioserdes.srcs/sources_1/ip/input_interface/input_interface_selectio_wiz.v,1481177932,verilog,,,,input_interface_selectio_wiz,,,../../../ioserdes.srcs/sources_1/ip/tx_pll,,,,,
+C:/training/des_7/labs/io_architecture/kintex7/verilog/ioserdes.srcs/sources_1/ip/output_clock/output_clock.v,1481099271,verilog,,,,output_clock,,,../../../ioserdes.srcs/sources_1/ip/tx_pll,,,,,
+C:/training/des_7/labs/io_architecture/kintex7/verilog/ioserdes.srcs/sources_1/ip/output_clock/output_clock_selectio_wiz.v,1481099271,verilog,,,,output_clock_selectio_wiz,,,../../../ioserdes.srcs/sources_1/ip/tx_pll,,,,,
+C:/training/des_7/labs/io_architecture/kintex7/verilog/ioserdes.srcs/sources_1/ip/output_interface/output_interface.v,1481177439,verilog,,,,output_interface,,,../../../ioserdes.srcs/sources_1/ip/tx_pll,,,,,
+C:/training/des_7/labs/io_architecture/kintex7/verilog/ioserdes.srcs/sources_1/ip/output_interface/output_interface_selectio_wiz.v,1481177439,verilog,,,,output_interface_selectio_wiz,,,../../../ioserdes.srcs/sources_1/ip/tx_pll,,,,,
+C:/training/des_7/labs/io_architecture/kintex7/verilog/ioserdes.srcs/sources_1/ip/tx_pll/tx_pll.v,1481099273,verilog,,,,tx_pll,,,../../../ioserdes.srcs/sources_1/ip/tx_pll,,,,,
+C:/training/des_7/labs/io_architecture/kintex7/verilog/ioserdes.srcs/sources_1/ip/tx_pll/tx_pll_clk_wiz.v,1481099273,verilog,,,,tx_pll_clk_wiz,,,../../../ioserdes.srcs/sources_1/ip/tx_pll,,,,,

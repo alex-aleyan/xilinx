@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Oct 28 13:08:31 2019
+# Process ID: 21176
+# Current directory: C:/training/7_series_IO_resources/completed/verilog/ioserdes.runs/impl_1
+# Command line: vivado.exe -log ioserdes.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ioserdes.tcl -notrace
+# Log file: C:/training/7_series_IO_resources/completed/verilog/ioserdes.runs/impl_1/ioserdes.vdi
+# Journal file: C:/training/7_series_IO_resources/completed/verilog/ioserdes.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source ioserdes.tcl -notrace

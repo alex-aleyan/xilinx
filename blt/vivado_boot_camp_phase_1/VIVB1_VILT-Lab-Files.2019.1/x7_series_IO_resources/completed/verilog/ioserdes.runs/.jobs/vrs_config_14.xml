@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="output_interface_synth_1" LaunchDir="C:/training/7_series_IO_resources/completed/verilog/ioserdes.runs/output_interface_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="tx_pll_synth_1" LaunchDir="C:/training/7_series_IO_resources/completed/verilog/ioserdes.runs/tx_pll_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="input_interface_synth_1" LaunchDir="C:/training/7_series_IO_resources/completed/verilog/ioserdes.runs/input_interface_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="output_clock_synth_1" LaunchDir="C:/training/7_series_IO_resources/completed/verilog/ioserdes.runs/output_clock_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/training/7_series_IO_resources/completed/verilog/ioserdes.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="output_interface_synth_1"/>
+		<Parent Id="tx_pll_synth_1"/>
+		<Parent Id="input_interface_synth_1"/>
+		<Parent Id="output_clock_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="C:/training/7_series_IO_resources/completed/verilog/ioserdes.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_1"/>
+		<Parent Id="output_interface_synth_1"/>
+		<Parent Id="tx_pll_synth_1"/>
+		<Parent Id="input_interface_synth_1"/>
+		<Parent Id="output_clock_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

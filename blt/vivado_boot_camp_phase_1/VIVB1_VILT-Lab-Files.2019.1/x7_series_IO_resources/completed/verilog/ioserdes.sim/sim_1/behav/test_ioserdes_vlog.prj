@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../ioserdes.srcs/sources_1/ip/tx_pll/tx_pll_clk_wiz.v" --include "../../../ioserdes.srcs/sources_1/ip/tx_pll"
+verilog xil_defaultlib  "../../../ioserdes.srcs/sources_1/ip/tx_pll/tx_pll.v" --include "../../../ioserdes.srcs/sources_1/ip/tx_pll"
+verilog xil_defaultlib  "../../../ioserdes.srcs/sources_1/ip/output_interface/output_interface_selectio_wiz.v" --include "../../../ioserdes.srcs/sources_1/ip/tx_pll"
+verilog xil_defaultlib  "../../../ioserdes.srcs/sources_1/ip/output_interface/output_interface.v" --include "../../../ioserdes.srcs/sources_1/ip/tx_pll"
+verilog xil_defaultlib  "../../../ioserdes.srcs/sources_1/ip/output_clock/output_clock_selectio_wiz.v" --include "../../../ioserdes.srcs/sources_1/ip/tx_pll"
+verilog xil_defaultlib  "../../../ioserdes.srcs/sources_1/ip/output_clock/output_clock.v" --include "../../../ioserdes.srcs/sources_1/ip/tx_pll"
+verilog xil_defaultlib  "../../../ioserdes.srcs/sources_1/ip/input_interface/input_interface_selectio_wiz.v" --include "../../../ioserdes.srcs/sources_1/ip/tx_pll"
+verilog xil_defaultlib  "../../../ioserdes.srcs/sources_1/ip/input_interface/input_interface.v" --include "../../../ioserdes.srcs/sources_1/ip/tx_pll"
+verilog xil_defaultlib  "../../../ioserdes.srcs/sources_1/imports/verilog/ioserdes.v" --include "../../../ioserdes.srcs/sources_1/ip/tx_pll"
+verilog xil_defaultlib  "../../../ioserdes.srcs/sim_1/imports/verilog/test_ioserdes.v" --include "../../../ioserdes.srcs/sources_1/ip/tx_pll"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
