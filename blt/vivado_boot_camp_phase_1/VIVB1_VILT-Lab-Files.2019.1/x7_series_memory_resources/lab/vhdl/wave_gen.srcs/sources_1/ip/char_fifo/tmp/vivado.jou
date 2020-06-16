@@ -1,0 +1,9 @@
+#-----------------------------------------------------------
+# Vivado v2012.2 (64-bit)
+# Build 193397 by xbuild on Sat Jul 14 10:37:32 MDT 2012
+# Start of session at: Wed Aug 22 18:45:54 2012
+# Process ID: 556
+# Log file: C:/training/des_7/labs/memory_architecture/KC705/vhdl/wave_gen.srcs/sources_1/ip/char_fifo/tmp\vivado.log
+# Journal file: C:/training/des_7/labs/memory_architecture/KC705/vhdl/wave_gen.srcs/sources_1/ip/char_fifo/tmp\vivado.jou
+#-----------------------------------------------------------
+source C:/Xilinx_P28xd.2.0/14.2/ISE_DS/ISE/coregen/tcl/Generation/rt_fpga_synth.tcl -notrace

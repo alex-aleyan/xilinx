@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Oct 28 12:58:10 2019
+# Process ID: 8768
+# Current directory: C:/training/7_series_memory_resources/completed/verilog/wave_gen.runs/char_fifo_synth_1
+# Command line: vivado.exe -log char_fifo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source char_fifo.tcl
+# Log file: C:/training/7_series_memory_resources/completed/verilog/wave_gen.runs/char_fifo_synth_1/char_fifo.vds
+# Journal file: C:/training/7_series_memory_resources/completed/verilog/wave_gen.runs/char_fifo_synth_1\vivado.jou
+#-----------------------------------------------------------
+source char_fifo.tcl -notrace

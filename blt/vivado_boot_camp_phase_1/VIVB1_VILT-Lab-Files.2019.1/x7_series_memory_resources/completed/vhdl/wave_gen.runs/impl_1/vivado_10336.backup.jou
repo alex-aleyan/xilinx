@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.3 (64-bit)
+# SW Build 1034051 on Fri Oct  3 17:14:12 MDT 2014
+# IP Build 1028902 on Fri Sep 26 17:35:13 MDT 2014
+# Start of session at: Fri Nov 14 12:01:18 2014
+# Process ID: 11276
+# Log file: C:/training/des_7/completed_old/memory_architecture/KC705/vhdl/wave_gen.runs/impl_1/wave_gen.vdi
+# Journal file: C:/training/des_7/completed_old/memory_architecture/KC705/vhdl/wave_gen.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source wave_gen.tcl -notrace
