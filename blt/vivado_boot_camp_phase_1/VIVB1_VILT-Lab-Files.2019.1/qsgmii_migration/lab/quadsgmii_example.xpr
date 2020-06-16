@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--Product Version: Vivado v2013.4 (64-bit)-->
+<Project Version="6" Minor="14" Path="c:/training/UltraScale/labs/Design_Migration/KCU105/quadsgmii_example/quadsgmii_example.xpr">
+	<FileSet Dir="sources_1" File="fileset.xml"/>
+	<FileSet Dir="constrs_1" File="fileset.xml"/>
+	<FileSet Dir="sim_1" File="fileset.xml"/>
+	<RunSet Dir="runs" File="runs.xml"/>
+	<DefaultLaunch Dir="$PRUNDIR"/>
+	<Config>
+		<Option Name="Id" Val="81b3f49c1d30409bb78e56d1e7930dcd"/>
+		<Option Name="Part" Val="xc7k325tffg900-2"/>
+		<Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+		<Option Name="Board" Val="xilinx.com:kintex7:kc705:1.1"/>
+		<Option Name="ActiveSimSet" Val="sim_1"/>
+	</Config>
+</Project>
+
