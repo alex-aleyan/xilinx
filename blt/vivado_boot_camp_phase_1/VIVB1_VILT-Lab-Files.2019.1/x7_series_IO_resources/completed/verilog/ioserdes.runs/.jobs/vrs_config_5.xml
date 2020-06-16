@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<Runs Version="1" Minor="0">
-	<Run Id="tx_pll_synth_1" LaunchDir="C:/training/des_7/labs/io_architecture/kintex7/verilog/ioserdes.runs/tx_pll_synth_1" FlowId="Vivado Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-</Runs>
-
