@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Wed Dec 07 09:47:41 2016
+# Process ID: 11016
+# Current directory: C:/training/des_7/completed/clb_architecture/kintex7/verilog/slice_lab.runs/synth_1
+# Command line: vivado.exe -log slice_lab.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source slice_lab.tcl
+# Log file: C:/training/des_7/completed/clb_architecture/kintex7/verilog/slice_lab.runs/synth_1/slice_lab.vds
+# Journal file: C:/training/des_7/completed/clb_architecture/kintex7/verilog/slice_lab.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source slice_lab.tcl -notrace
