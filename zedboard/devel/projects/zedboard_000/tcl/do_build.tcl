@@ -33,13 +33,11 @@ file mkdir $proj_dir
 
 # The remaining TCL scripts live in this directory. Remember
 # the path before we change directories
-#set script_dir [pwd]/support
 set script_dir [pwd]/tcl
-#set src_dir    [pwd]/wave_gen/src
-set src_dir    [pwd]
-#set core_dir   [pwd]/wave_gen/cores
-set core_dir   [pwd]
 set xdc_dir    [pwd]/constraints
+set src_dir    [pwd]
+set core_dir   [pwd]
+
 
 
 # Change directories to the new build directory
