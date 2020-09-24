@@ -8,3 +8,4 @@ set_property steps.synth_design.args.flatten_hierarchy none [get_runs synth_1]
 
 puts "Enable power optimization for impl_1 run"
 set_property steps.power_opt_design.is_enabled true [get_runs impl_1]
+

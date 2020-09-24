@@ -38,13 +38,11 @@ set xdc_dir    [pwd]/constraints
 set src_dir    [pwd]
 set core_dir   [pwd]
 
-
-
 # Change directories to the new build directory
 puts "Changing directory to $proj_dir"
 cd $proj_dir
 
-#start_gui
+start_gui
 
 # Source the script that will create the new project
 source $script_dir/create_proj.tcl
@@ -57,5 +55,5 @@ source $script_dir/set_props.tcl
 
 # Source the script that will regenerate the cores and run the implementation
 # process
-#source $script_dir/implement.tcl
+source $script_dir/implement.tcl
 #exit
