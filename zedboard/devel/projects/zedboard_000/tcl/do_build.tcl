@@ -44,7 +44,7 @@ set core_dir   [pwd]
 puts "Changing directory to $proj_dir"
 cd $proj_dir
 
-start_gui
+#start_gui
 
 # Source the script that will create the new project
 source $script_dir/create_proj.tcl

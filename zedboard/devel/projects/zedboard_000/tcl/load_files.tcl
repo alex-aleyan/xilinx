@@ -3,7 +3,7 @@
 
 puts "Adding RTL files to the project"
 # Insert the command to import the RTL files form $src_dir here 
-###add_files [glob $src_dir/*]
+add_files [glob $src_dir/*]
 
 # For VHDL users only: Insert the command to associate string_utilities_synth_pkg.vhd with utilities_lib
 ###set_property library utilities_lib [get_files string_utilities_synth_pkg.vhd]
