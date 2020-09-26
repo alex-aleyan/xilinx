@@ -55,5 +55,5 @@ source $script_dir/set_props.tcl
 
 # Source the script that will regenerate the cores and run the implementation
 # process
-source $script_dir/implement.tcl
+# source $script_dir/implement.tcl
 exit
