@@ -10,7 +10,7 @@ add_files [glob $src_dir/*]
 
 puts "Importing XDC file to the project"
 # Insert the command to import the XDC file form $xdc_dir here 
-add_files -fileset  [get_filesets constrs_1] $xdc_dir/zedboard_master_XDC_RevC_D_v3.xdc
+add_files -fileset  [get_filesets $constrs_name] $xdc_dir/$xdc_filename
 
 puts "Importing Char_fifo IP to the project"
 # Insert the command to import the char_fifo IP  form $core_dir here 
