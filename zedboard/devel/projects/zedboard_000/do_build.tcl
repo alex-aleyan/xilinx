@@ -61,8 +61,11 @@ source $script_dir/load_files.tcl
 # Source the script that will set all the process properties necessary
 source $script_dir/set_props.tcl
 
+# Build the ZedBoard PS:
+#source $script_dir/create_zedboard_ps.tcl
+
 # Source the script that will regenerate the cores and run the implementation
 # process
+#source $script_dir/implement.tcl
 
-source $script_dir/implement.tcl
 #exit
