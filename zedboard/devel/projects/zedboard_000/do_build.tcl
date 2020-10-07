@@ -33,39 +33,57 @@ file mkdir $proj_dir
 
 # The remaining TCL scripts live in this directory. Remember
 # the path before we change directories
-set script_dir [pwd]/tcl
-set xdc_dir    [pwd]/constraints
-set src_dir    [pwd]
-set core_dir   [pwd]
+set script_dir [file normalize $proj_dir/../tcl]
+set xdc_dir    [file normalize $proj_dir/../constraints]
+set src_dir    [file normalize $proj_dir/..]
+set core_dir   [file normalize $proj_dir/..]
 
-set device xc7z020clg484-1
+puts "$script_dir"
+puts "$xdc_dir"
+puts "$src_dir"
+puts "$core_dir"
+
+#set device xc7z020clg484-1
 set project_name zedboard_base_proj
 
 set constrs_name constrs_1
-set xdc_filename zedboard_master_XDC_RevC_D_v3.xdc
 set synth_name synth_1
 set impl_name impl_1
+set xdc_filename zedboard_master_XDC_RevC_D_v3.xdc
 
 # Change directories to the new build directory
 puts "Changing directory to $proj_dir"
 cd $proj_dir
 
-start_gui
+#start_gui
+
+puts "\n\n\n"
 
 # Source the script that will create the new project
 source $script_dir/create_proj.tcl
 
+puts "\n\n\n"
+
 # Source the script that will imports all the files required for the build
 source $script_dir/load_files.tcl
+
+puts "\n\n\n"
 
 # Source the script that will set all the process properties necessary
 source $script_dir/set_props.tcl
 
+puts "\n\n\n"
+
 # Build the ZedBoard PS:
 #source $script_dir/create_zedboard_ps.tcl
 
+#puts "\n\n\n"
+
+#start_gui
 # Source the script that will regenerate the cores and run the implementation
 # process
-#source $script_dir/implement.tcl
+source $script_dir/implement.tcl
+
+start_gui
 
 #exit
