@@ -24,7 +24,8 @@
 set date_string [clock format [clock seconds] -format "%y%m%d_%H%M%S"]
 
 # Set the directory name to be build_YYMMDD_HHMMSS
-set proj_dir "build_$date_string"
+set proj_dir [file normalize build_$date_string]
+puts "$proj_dir"
 
 # Create the new build directory
 puts "Creating build directory $proj_dir"
@@ -33,10 +34,10 @@ file mkdir $proj_dir
 
 # The remaining TCL scripts live in this directory. Remember
 # the path before we change directories
-set script_dir [file normalize $proj_dir/../tcl]
-set xdc_dir    [file normalize $proj_dir/../constraints]
-set src_dir    [file normalize $proj_dir/..]
-set core_dir   [file normalize $proj_dir/..]
+set script_dir $proj_dir/../tcl
+set xdc_dir    $proj_dir/../constraints
+set src_dir    $proj_dir/zedboard_base_proj.srcs/sources_1/bd/design_1/hdl
+set core_dir   $proj_dir/..
 
 puts "$script_dir"
 puts "$xdc_dir"
@@ -61,27 +62,19 @@ puts "\n\n\n"
 
 # Source the script that will create the new project
 source $script_dir/create_proj.tcl
-
-puts "\n\n\n"
-
-# Source the script that will imports all the files required for the build
-source $script_dir/load_files.tcl
-
 puts "\n\n\n"
 
 # Source the script that will set all the process properties necessary
 source $script_dir/set_props.tcl
-
 puts "\n\n\n"
 
 # Build the ZedBoard PS:
 source $script_dir/create_zedboard_ps.tcl
+puts "\n\n\n"
 
-#puts "\n\n\n"
+source $script_dir/load_files.tcl
+puts "\n\n\n"
 
-#start_gui
-# Source the script that will regenerate the cores and run the implementation
-# process
 source $script_dir/implement.tcl
 
 start_gui
