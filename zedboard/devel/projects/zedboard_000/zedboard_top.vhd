@@ -7,6 +7,8 @@ use IEEE.std_logic_misc.all;
 Library UNISIM;
 use UNISIM.vcomponents.all;
 
+
+
 entity zedboard_top is
     port (
         GCLK : in std_logic;
@@ -25,7 +27,9 @@ signal clk_100mhz : std_logic;
 attribute mark_debug : string;
 attribute mark_debug of SW  : signal is "true";
 
+
 begin
+
 
     BUFG_CLK_100MHZ_I : BUFG
     port map (
