@@ -19,6 +19,8 @@ set block_design_name design_1
 set constrs_name constrs_1
 set xdc_dir    $proj_dir/../constraints
 set xdc_filename zedboard_master_XDC_RevC_D_v3.xdc
+set timing_dir    $proj_dir/../constraints
+set timing_filename timing.tcl
 
 set src_dir    $proj_dir/..
 set core_dir   $proj_dir/..
