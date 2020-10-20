@@ -1,3 +1,8 @@
+# FIXME:
+#     change the code to store multiple directories as a list and not a var
+#     change the code to check whether the list is empty and react to results of the check appropriately
+#
+
 set date_string [clock format [clock seconds] -format "%y%m%d_%H%M%S"]
 set proj_dir [file normalize build_$date_string]
 puts "$proj_dir"
@@ -5,13 +10,12 @@ puts "$proj_dir"
 puts "Creating build directory $proj_dir"
 file mkdir $proj_dir
 
-# The remaining TCL scripts live in this directory. Remember
-# the path before we change directories
-
 set project_name zedboard_000
-set top_file_name zedboard_top.vhd
-set device xc7z020clg484-1
+#set device xc7z020clg484-1
 set boardpart em.avnet.com:zed:part0:1.0
+
+set top_file_dir $proj_dir/..
+set top_file_name zedboard_top.vhd
 
 set script_dir $proj_dir/../tcl
 
@@ -23,17 +27,17 @@ set xdc_filename zedboard_master_XDC_RevC_D_v3.xdc
 set timing_dir    $proj_dir/../constraints
 set timing_filename timing.tcl
 
-set src_dir    $proj_dir/..
-set core_dir   $proj_dir/..
+#set src_dir    $proj_dir/..
+#set core_dir   $proj_dir/..
 
 set synth_name synth_1
 
 set impl_name impl_1
 
 
-# Change directories to the new build directory
 puts "Changing directory to $proj_dir"
 cd $proj_dir
+puts "\n\n\n"
 
 source $script_dir/create_proj.tcl
 puts "\n\n\n"

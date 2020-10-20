@@ -5,7 +5,6 @@
 
 set date_string [clock format [clock seconds] -format "%y%m%d_%H%M%S"]
 set proj_dir [file normalize build_$date_string]
-set top_file_name test
 puts "$proj_dir"
 
 puts "Creating build directory $proj_dir"
@@ -14,6 +13,9 @@ file mkdir $proj_dir
 set project_name zedboard_ex01
 #set device xc7z020clg484-1
 set boardpart em.avnet.com:zed:part0:1.0
+
+#set top_file_dir $proj_dir/..
+#set top_file_name zedboard_top.vhd
 
 set script_dir $proj_dir/../tcl
 
@@ -37,8 +39,6 @@ puts "Changing directory to $proj_dir"
 cd $proj_dir
 puts "\n\n\n"
 
-#start_gui
-
 source $script_dir/create_proj.tcl
 puts "\n\n\n"
 
@@ -48,8 +48,6 @@ puts "\n\n\n"
 source $script_dir/create_zedboard_ps.tcl
 puts "\n\n\n"
 
-#start_gui
-
 source $script_dir/load_files.tcl
 puts "\n\n\n"
 
@@ -57,5 +55,7 @@ source $script_dir/synthesis.tcl
 puts "\n\n\n"
 
 source $script_dir/implement.tcl
+
+start_gui
 
 #exit
