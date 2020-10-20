@@ -5,6 +5,7 @@
 
 set date_string [clock format [clock seconds] -format "%y%m%d_%H%M%S"]
 set proj_dir [file normalize build_$date_string]
+set top_file_name test
 puts "$proj_dir"
 
 puts "Creating build directory $proj_dir"
@@ -21,8 +22,10 @@ set block_design_name design_1
 set constrs_name constrs_1
 set xdc_dir    $proj_dir/../constraints
 set xdc_filename zedboard_master_XDC_RevC_D_v3.xdc
+set timing_dir    $proj_dir/../constraints
+set timing_filename timing.tcl
 
-set src_dir    $proj_dir/zedboard_base_proj.srcs/sources_1/bd/$block_design_name/hdl
+set src_dir    $proj_dir/${project_name}.srcs/sources_1/bd/$block_design_name/hdl
 set core_dir   $proj_dir/..
 
 set synth_name synth_1
@@ -45,6 +48,8 @@ puts "\n\n\n"
 source $script_dir/create_zedboard_ps.tcl
 puts "\n\n\n"
 
+#start_gui
+
 source $script_dir/load_files.tcl
 puts "\n\n\n"
 
@@ -53,5 +58,4 @@ puts "\n\n\n"
 
 source $script_dir/implement.tcl
 
-
-exit
+#exit

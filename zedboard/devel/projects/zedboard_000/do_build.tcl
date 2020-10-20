@@ -9,6 +9,7 @@ file mkdir $proj_dir
 # the path before we change directories
 
 set project_name zedboard_000
+set top_file_name zedboard_top.vhd
 set device xc7z020clg484-1
 set boardpart em.avnet.com:zed:part0:1.0
 
