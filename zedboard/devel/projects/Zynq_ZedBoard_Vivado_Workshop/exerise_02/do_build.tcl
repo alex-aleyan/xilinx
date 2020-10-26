@@ -4,36 +4,35 @@
 #
 
 set date_string [clock format [clock seconds] -format "%y%m%d_%H%M%S"]
-set proj_dir [file normalize build_$date_string]
+set proj_dir    [file normalize build_$date_string]
+
 puts "$proj_dir"
 
 puts "Creating build directory $proj_dir"
 file mkdir $proj_dir
 
-set project_name zedboard_ex01
-#set device xc7z020clg484-1
-set boardpart em.avnet.com:zed:part0:1.0
+set project_name "zedboard_ex02"
+#set device       "xc7z020clg484-1"
+set boardpart    "em.avnet.com:zed:part0:1.0"
 
-#set top_file_dir $proj_dir/..
-#set top_file_name zedboard_top.vhd
+#set top_file_dir  "$proj_dir/.."
+#set top_file_name "zedboard_top.vhd"
 
 set script_dir $proj_dir/../tcl
 
 set block_design_name design_1
 
-set constrs_name constrs_1
-set xdc_dir    $proj_dir/../constraints
-set xdc_filename zedboard_master_XDC_RevC_D_v3.xdc
-set timing_dir    $proj_dir/../constraints
-set timing_filename timing.tcl
+set constrs_name    "constrs_1"
+set xdc_dir         "$proj_dir/../constraints"
+set xdc_filename    "zedboard_master_XDC_RevC_D_v3.xdc"
+set timing_dir      "$proj_dir/../constraints"
+set timing_filename "timing.tcl"
 
-set src_dir    $proj_dir/${project_name}.srcs/sources_1/bd/$block_design_name/hdl
-set core_dir   $proj_dir/..
+set src_dir  "$proj_dir/${project_name}.srcs/sources_1/bd/$block_design_name/hdl"
+set core_dir "$proj_dir/.."
 
-set synth_name synth_1
-
-set impl_name impl_1
-
+set synth_name "synth_1"
+set impl_name  "impl_1"
 
 puts "Changing directory to $proj_dir"
 cd $proj_dir
