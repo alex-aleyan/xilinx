@@ -1,24 +1,23 @@
 # ----------------------------------------------------------------------------
 #     _____
-#    /     \
-#   /____   \____
+#    / #   /____   \____
 #  / \===\   \==/
 # /___\===\___\/  AVNET Design Resource Center
 #      \======/         www.em.avnet.com/drc
-#       \====/    
+#       \====/
 # ----------------------------------------------------------------------------
-# 
-#  Created With Avnet UCF Generator V0.4.0 
-#     Date: Saturday, June 30, 2012 
-#     Time: 12:18:55 AM 
-# 
+#
+#  Created With Avnet UCF Generator V0.4.0
+#     Date: Saturday, June 30, 2012
+#     Time: 12:18:55 AM
+#
 #  This design is the property of Avnet.  Publication of this
 #  design is not authorized without written consent from Avnet.
-#  
+#
 #  Please direct any questions to:
 #     ZedBoard.org Community Forums
 #     http://www.zedboard.org
-# 
+#
 #  Disclaimer:
 #     Avnet, Inc. makes no warranty for the use of this code or design.
 #     This code is provided  "As Is". Avnet, Inc assumes no responsibility for
@@ -27,25 +26,25 @@
 #     disclaims any implied warranties of fitness for a particular purpose.
 #                      Copyright(c) 2012 Avnet, Inc.
 #                              All rights reserved.
-# 
+#
 # ----------------------------------------------------------------------------
-# 
+#
 #  Notes:
-# 
+#
 #  10 August 2012
-#     IO standards based upon Bank 34 and Bank 35 Vcco supply options of 1.8V, 
-#     2.5V, or 3.3V are possible based upon the Vadj jumper (J18) settings.  
-#     By default, Vadj is expected to be set to 1.8V but if a different 
-#     voltage is used for a particular design, then the corresponding IO 
-#     standard within this UCF should also be updated to reflect the actual 
+#     IO standards based upon Bank 34 and Bank 35 Vcco supply options of 1.8V,
+#     2.5V, or 3.3V are possible based upon the Vadj jumper (J18) settings.
+#     By default, Vadj is expected to be set to 1.8V but if a different
+#     voltage is used for a particular design, then the corresponding IO
+#     standard within this UCF should also be updated to reflect the actual
 #     Vadj jumper selection.
-# 
+#
 #  09 September 2012
 #     Net names are not allowed to contain hyphen characters '-' since this
-#     is not a legal VHDL87 or Verilog character within an identifier.  
-#     HDL net names are adjusted to contain no hyphen characters '-' but 
-#     rather use underscore '_' characters.  Comment net name with the hyphen 
-#     characters will remain in place since these are intended to match the 
+#     is not a legal VHDL87 or Verilog character within an identifier.
+#     HDL net names are adjusted to contain no hyphen characters '-' but
+#     rather use underscore '_' characters.  Comment net name with the hyphen
+#     characters will remain in place since these are intended to match the
 #     schematic net names in order to better enable schematic search.
 #
 #  17 April 2014
@@ -54,18 +53,18 @@
 #  16 April 2015
 #     Corrected the way that entire banks are assigned to a particular IO
 #     standard so that it works with more recent versions of Vivado Design
-#     Suite and moved the IO standard constraints to the end of the file 
+#     Suite and moved the IO standard constraints to the end of the file
 #     along with some better organization and notes like we do with our SOMs.
 #
 #   6 June 2016
 #     Corrected error in signal name for package pin N19 (FMC Expansion Connector)
-#	
+#
 #
 # ----------------------------------------------------------------------------
 
 # ----------------------------------------------------------------------------
 # Audio Codec - Bank 13
-# ---------------------------------------------------------------------------- 
+# ----------------------------------------------------------------------------
 set_property PACKAGE_PIN AB1 [get_ports {AC_ADR0}];  # "AC-ADR0"
 set_property PACKAGE_PIN Y5  [get_ports {AC_ADR1}];  # "AC-ADR1"
 set_property PACKAGE_PIN Y8  [get_ports {AC_GPIO0}];  # "AC-GPIO0"
@@ -78,15 +77,14 @@ set_property PACKAGE_PIN AB5 [get_ports {AC_SDA}];  # "AC-SDA"
 
 # ----------------------------------------------------------------------------
 # Clock Source - Bank 13
-# ---------------------------------------------------------------------------- 
-set_property PACKAGE_PIN Y9 [get_ports {GCLK}]; 
-set_property IOSTANDARD LVCMOS33    [get_ports [list GCLK] ]
+# ----------------------------------------------------------------------------
+set_property PACKAGE_PIN Y9 [get_ports GCLK]
 
 # ----------------------------------------------------------------------------
 # JA Pmod - Bank 13
-# ---------------------------------------------------------------------------- 
+# ----------------------------------------------------------------------------
 #set_property PACKAGE_PIN Y11  [get_ports {JA1}];  # "JA1"
-set_property PACKAGE_PIN Y11  [get_ports {spi_rtl_ss_o_0[0]}]; 
+set_property PACKAGE_PIN Y11  [get_ports {spi_rtl_ss_o_0[0]}];
 #set_property PACKAGE_PIN AA11 [get_ports {JA2}];  # "JA2"
 set_property PACKAGE_PIN AA11 [get_ports spi_rtl_io0_o];
 #set_property PACKAGE_PIN Y10  [get_ports {JA3}];  # "JA3"
@@ -100,7 +98,7 @@ set_property PACKAGE_PIN AB9  [get_ports {JA9}];  # "JA9"
 
 # ----------------------------------------------------------------------------
 # JB Pmod - Bank 13
-# ---------------------------------------------------------------------------- 
+# ----------------------------------------------------------------------------
 set_property PACKAGE_PIN W12 [get_ports {JB1}];  # "JB1"
 set_property PACKAGE_PIN V8 [get_ports {JB10}];  # "JB10"
 set_property PACKAGE_PIN W11 [get_ports {JB2}];  # "JB2"
@@ -112,7 +110,7 @@ set_property PACKAGE_PIN V9 [get_ports {JB9}];  # "JB9"
 
 # ----------------------------------------------------------------------------
 # JC Pmod - Bank 13
-# ---------------------------------------------------------------------------- 
+# ----------------------------------------------------------------------------
 set_property PACKAGE_PIN AB6 [get_ports {JC1_N}];  # "JC1_N"
 set_property PACKAGE_PIN AB7 [get_ports {JC1_P}];  # "JC1_P"
 set_property PACKAGE_PIN AA4 [get_ports {JC2_N}];  # "JC2_N"
@@ -124,7 +122,7 @@ set_property PACKAGE_PIN T4  [get_ports {JC4_P}];  # "JC4_P"
 
 # ----------------------------------------------------------------------------
 # JA Pmod - Bank 13
-# ---------------------------------------------------------------------------- 
+# ----------------------------------------------------------------------------
 set_property PACKAGE_PIN W7 [get_ports {JD1_N}];  # "JD1_N"
 set_property PACKAGE_PIN V7 [get_ports {JD1_P}];  # "JD1_P"
 set_property PACKAGE_PIN V4 [get_ports {JD2_N}];  # "JD2_N"
@@ -136,7 +134,7 @@ set_property PACKAGE_PIN U6 [get_ports {JD4_P}];  # "JD4_P"
 
 # ----------------------------------------------------------------------------
 # OLED Display - Bank 13
-# ---------------------------------------------------------------------------- 
+# ----------------------------------------------------------------------------
 set_property PACKAGE_PIN U10  [get_ports {OLED_DC}];  # "OLED-DC"
 set_property PACKAGE_PIN U9   [get_ports {OLED_RES}];  # "OLED-RES"
 set_property PACKAGE_PIN AB12 [get_ports {OLED_SCLK}];  # "OLED-SCLK"
@@ -146,7 +144,7 @@ set_property PACKAGE_PIN U12  [get_ports {OLED_VDD}];  # "OLED-VDD"
 
 # ----------------------------------------------------------------------------
 # HDMI Output - Bank 33
-# ---------------------------------------------------------------------------- 
+# ----------------------------------------------------------------------------
 set_property PACKAGE_PIN W18  [get_ports {HD_CLK}];  # "HD-CLK"
 set_property PACKAGE_PIN Y13  [get_ports {HD_D0}];  # "HD-D0"
 set_property PACKAGE_PIN AA13 [get_ports {HD_D1}];  # "HD-D1"
@@ -175,19 +173,19 @@ set_property PACKAGE_PIN W17  [get_ports {HD_VSYNC}];  # "HD-VSYNC"
 
 # ----------------------------------------------------------------------------
 # User LEDs - Bank 33
-# ---------------------------------------------------------------------------- 
-set_property PACKAGE_PIN T22 [get_ports {LD[0]}];  # "LD0"
-set_property PACKAGE_PIN T21 [get_ports {LD[1]}];  # "LD1"
-set_property PACKAGE_PIN U22 [get_ports {LD[2]}];  # "LD2"
-set_property PACKAGE_PIN U21 [get_ports {LD[3]}];  # "LD3"
-set_property PACKAGE_PIN V22 [get_ports {LD[4]}];  # "LD4"
-set_property PACKAGE_PIN W22 [get_ports {LD[5]}];  # "LD5"
-set_property PACKAGE_PIN U19 [get_ports {LD[6]}];  # "LD6"
-set_property PACKAGE_PIN U14 [get_ports {LD[7]}];  # "LD7"
+# ----------------------------------------------------------------------------
+set_property PACKAGE_PIN T22 [get_ports {LD[0]}]
+set_property PACKAGE_PIN T21 [get_ports {LD[1]}]
+set_property PACKAGE_PIN U22 [get_ports {LD[2]}]
+set_property PACKAGE_PIN U21 [get_ports {LD[3]}]
+set_property PACKAGE_PIN V22 [get_ports {LD[4]}]
+set_property PACKAGE_PIN W22 [get_ports {LD[5]}]
+set_property PACKAGE_PIN U19 [get_ports {LD[6]}]
+set_property PACKAGE_PIN U14 [get_ports {LD[7]}]
 
 # ----------------------------------------------------------------------------
 # VGA Output - Bank 33
-# ---------------------------------------------------------------------------- 
+# ----------------------------------------------------------------------------
 set_property PACKAGE_PIN Y21  [get_ports {VGA_B1}];  # "VGA-B1"
 set_property PACKAGE_PIN Y20  [get_ports {VGA_B2}];  # "VGA-B2"
 set_property PACKAGE_PIN AB20 [get_ports {VGA_B3}];  # "VGA-B3"
@@ -205,7 +203,7 @@ set_property PACKAGE_PIN Y19  [get_ports {VGA_VS}];  # "VGA-VS"
 
 # ----------------------------------------------------------------------------
 # User Push Buttons - Bank 34
-# ---------------------------------------------------------------------------- 
+# ----------------------------------------------------------------------------
 set_property PACKAGE_PIN P16 [get_ports {BTNC}];  # "BTNC"
 set_property PACKAGE_PIN R16 [get_ports {BTND}];  # "BTND"
 set_property PACKAGE_PIN N15 [get_ports {BTNL}];  # "BTNL"
@@ -214,12 +212,12 @@ set_property PACKAGE_PIN T18 [get_ports {BTNU}];  # "BTNU"
 
 # ----------------------------------------------------------------------------
 # USB OTG Reset - Bank 34
-# ---------------------------------------------------------------------------- 
+# ----------------------------------------------------------------------------
 set_property PACKAGE_PIN L16 [get_ports {OTG_VBUSOC}];  # "OTG-VBUSOC"
 
 # ----------------------------------------------------------------------------
 # XADC GIO - Bank 34
-# ---------------------------------------------------------------------------- 
+# ----------------------------------------------------------------------------
 set_property PACKAGE_PIN H15 [get_ports {XADC_GIO0}];  # "XADC-GIO0"
 set_property PACKAGE_PIN R15 [get_ports {XADC_GIO1}];  # "XADC-GIO1"
 set_property PACKAGE_PIN K15 [get_ports {XADC_GIO2}];  # "XADC-GIO2"
@@ -227,29 +225,29 @@ set_property PACKAGE_PIN J15 [get_ports {XADC_GIO3}];  # "XADC-GIO3"
 
 # ----------------------------------------------------------------------------
 # Miscellaneous - Bank 34
-# ---------------------------------------------------------------------------- 
+# ----------------------------------------------------------------------------
 set_property PACKAGE_PIN K16 [get_ports {PUDC_B}];  # "PUDC_B"
 
 # ----------------------------------------------------------------------------
 # USB OTG Reset - Bank 35
-# ---------------------------------------------------------------------------- 
+# ----------------------------------------------------------------------------
 set_property PACKAGE_PIN G17 [get_ports {OTG_RESETN}];  # "OTG-RESETN"
 
 # ----------------------------------------------------------------------------
 # User DIP Switches - Bank 35
-# ---------------------------------------------------------------------------- 
-set_property PACKAGE_PIN F22 [get_ports {SW[0]}];  # "SW0"
-set_property PACKAGE_PIN G22 [get_ports {SW[1]}];  # "SW1"
-set_property PACKAGE_PIN H22 [get_ports {SW[2]}];  # "SW2"
-set_property PACKAGE_PIN F21 [get_ports {SW[3]}];  # "SW3"
-set_property PACKAGE_PIN H19 [get_ports {SW[4]}];  # "SW4"
-set_property PACKAGE_PIN H18 [get_ports {SW[5]}];  # "SW5"
-set_property PACKAGE_PIN H17 [get_ports {SW[6]}];  # "SW6"
-set_property PACKAGE_PIN M15 [get_ports {SW[7]}];  # "SW7"
+# ----------------------------------------------------------------------------
+set_property PACKAGE_PIN F22 [get_ports {SW[0]}]
+set_property PACKAGE_PIN G22 [get_ports {SW[1]}]
+set_property PACKAGE_PIN H22 [get_ports {SW[2]}]
+set_property PACKAGE_PIN F21 [get_ports {SW[3]}]
+set_property PACKAGE_PIN H19 [get_ports {SW[4]}]
+set_property PACKAGE_PIN H18 [get_ports {SW[5]}]
+set_property PACKAGE_PIN H17 [get_ports {SW[6]}]
+set_property PACKAGE_PIN M15 [get_ports {SW[7]}]
 
 # ----------------------------------------------------------------------------
 # XADC AD Channels - Bank 35
-# ---------------------------------------------------------------------------- 
+# ----------------------------------------------------------------------------
 set_property PACKAGE_PIN E16 [get_ports {AD0N_R}];  # "XADC-AD0N-R"
 set_property PACKAGE_PIN F16 [get_ports {AD0P_R}];  # "XADC-AD0P-R"
 set_property PACKAGE_PIN D17 [get_ports {AD8N_N}];  # "XADC-AD8N-R"
@@ -257,18 +255,18 @@ set_property PACKAGE_PIN D16 [get_ports {AD8P_R}];  # "XADC-AD8P-R"
 
 # ----------------------------------------------------------------------------
 # FMC Expansion Connector - Bank 13
-# ---------------------------------------------------------------------------- 
+# ----------------------------------------------------------------------------
 set_property PACKAGE_PIN R7 [get_ports {FMC_SCL}];  # "FMC-SCL"
 set_property PACKAGE_PIN U7 [get_ports {FMC_SDA}];  # "FMC-SDA"
 
 # ----------------------------------------------------------------------------
 # FMC Expansion Connector - Bank 33
-# ---------------------------------------------------------------------------- 
+# ----------------------------------------------------------------------------
 set_property PACKAGE_PIN AB14 [get_ports {FMC_PRSNT}];  # "FMC-PRSNT"
 
 # ----------------------------------------------------------------------------
 # FMC Expansion Connector - Bank 34
-# ---------------------------------------------------------------------------- 
+# ----------------------------------------------------------------------------
 set_property PACKAGE_PIN L19 [get_ports {FMC_CLK0_N}];  # "FMC-CLK0_N"
 set_property PACKAGE_PIN L18 [get_ports {FMC_CLK0_P}];  # "FMC-CLK0_P"
 set_property PACKAGE_PIN M20 [get_ports {FMC_LA00_CC_N}];  # "FMC-LA00_CC_N"
@@ -308,7 +306,7 @@ set_property PACKAGE_PIN J20 [get_ports {FMC_LA16_P}];  # "FMC-LA16_P"
 
 # ----------------------------------------------------------------------------
 # FMC Expansion Connector - Bank 35
-# ---------------------------------------------------------------------------- 
+# ----------------------------------------------------------------------------
 set_property PACKAGE_PIN C19 [get_ports {FMC_CLK1_N}];  # "FMC-CLK1_N"
 set_property PACKAGE_PIN D18 [get_ports {FMC_CLK1_P}];  # "FMC-CLK1_P"
 set_property PACKAGE_PIN B20 [get_ports {FMC_LA17_CC_N}];  # "FMC-LA17_CC_N"
@@ -351,31 +349,32 @@ set_property PACKAGE_PIN B21 [get_ports {FMC_LA33_P}];  # "FMC-LA33_P"
 # IOSTANDARD Constraints
 #
 # Note that these IOSTANDARD constraints are applied to all IOs currently
-# assigned within an I/O bank.  If these IOSTANDARD constraints are 
-# evaluated prior to other PACKAGE_PIN constraints being applied, then 
-# the IOSTANDARD specified will likely not be applied properly to those 
-# pins.  Therefore, bank wide IOSTANDARD constraints should be placed 
-# within the XDC file in a location that is evaluated AFTER all 
+# assigned within an I/O bank.  If these IOSTANDARD constraints are
+# evaluated prior to other PACKAGE_PIN constraints being applied, then
+# the IOSTANDARD specified will likely not be applied properly to those
+# pins.  Therefore, bank wide IOSTANDARD constraints should be placed
+# within the XDC file in a location that is evaluated AFTER all
 # PACKAGE_PIN constraints within the target bank have been evaluated.
 #
 # Un-comment one or more of the following IOSTANDARD constraints according to
 # the bank pin assignments that are required within a design.
-# ---------------------------------------------------------------------------- 
+# ----------------------------------------------------------------------------
 
-# Note that the bank voltage for IO Bank 33 is fixed to 3.3V on ZedBoard. 
-set_property IOSTANDARD LVCMOS33 [get_ports -of_objects [get_iobanks 33]];
+# Note that the bank voltage for IO Bank 33 is fixed to 3.3V on ZedBoard.
+set_property IOSTANDARD LVCMOS33 [get_ports -of_objects [get_iobanks 33]]
 
 # Set the bank voltage for IO Bank 34 to 1.8V by default.
 # set_property IOSTANDARD LVCMOS33 [get_ports -of_objects [get_iobanks 34]];
 # set_property IOSTANDARD LVCMOS25 [get_ports -of_objects [get_iobanks 34]];
-set_property IOSTANDARD LVCMOS25 [get_ports -of_objects [get_iobanks 34]];
+set_property IOSTANDARD LVCMOS25 [get_ports -of_objects [get_iobanks 34]]
 
 # Set the bank voltage for IO Bank 35 to 1.8V by default.
 # set_property IOSTANDARD LVCMOS33 [get_ports -of_objects [get_iobanks 35]];
 # set_property IOSTANDARD LVCMOS25 [get_ports -of_objects [get_iobanks 35]];
-set_property IOSTANDARD LVCMOS25 [get_ports -of_objects [get_iobanks 35]];
+set_property IOSTANDARD LVCMOS25 [get_ports -of_objects [get_iobanks 35]]
 
-# Note that the bank voltage for IO Bank 13 is fixed to 3.3V on ZedBoard. 
-set_property IOSTANDARD LVCMOS33 [get_ports -of_objects [get_iobanks 13]];
+# Note that the bank voltage for IO Bank 13 is fixed to 3.3V on ZedBoard.
+set_property IOSTANDARD LVCMOS33 [get_ports -of_objects [get_iobanks 13]]
+
 
 
