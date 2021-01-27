@@ -1,0 +1,4 @@
+@ECHO OFF
+SLEEP 15
+ping 192.168.1.10
+
