@@ -1,0 +1,27 @@
+folders:
+    VCU128:
+        - board: VCU128
+          revision: 1.0
+          silicon: prod
+          bit config: BIT.yaml
+          sc config: SC.yaml
+          main config: config.yaml
+          information: vcu128.html          
+    VCU128_PROD:
+        - board: VCU128_PROD
+          revision: 1.0
+          silicon: prod
+          bit config: BIT.yaml
+          sc config: SC.yaml
+          main config: config.yaml
+          information: vcu128.html          
+application options:
+    show autodetect button: False
+    show qr button: False
+    show mac: True
+    log level: info 
+    sc window: True
+    bit window: True
+    bottom pane: False
+    right pane: False
+    version: 1.1
