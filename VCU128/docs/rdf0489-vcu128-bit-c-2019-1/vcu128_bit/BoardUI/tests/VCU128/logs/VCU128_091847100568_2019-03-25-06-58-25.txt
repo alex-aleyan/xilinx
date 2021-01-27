@@ -1,7 +1,0 @@
-[TITLE		:	Mon, 25, Mar 2019 06:58:39]	Board: VCU128
-[TITLE		:	Mon, 25, Mar 2019 06:58:39]	Revision: 1.0
-[TITLE		:	Mon, 25, Mar 2019 06:58:39]	Silicon: prod
-[TITLE		:	Mon, 25, Mar 2019 06:58:39]	Serial Number: 091847100568
-[TITLE		:	Mon, 25, Mar 2019 06:58:39]	MAC Address: 01:02:03:04:05:06
-[TITLE		:	Mon, 25, Mar 2019 06:58:39]	Working in directory: VCU128
-[TITLE		:	Mon, 25, Mar 2019 06:58:41]	BOARD PASSED COMPLETELY
