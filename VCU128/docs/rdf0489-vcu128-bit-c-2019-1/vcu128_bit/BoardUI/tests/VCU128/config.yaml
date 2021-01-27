@@ -1,0 +1,14 @@
+system controller port: (?i){ser}D
+vivado path: C:\Xilinx\Vivado\2019.1
+EXE Checksum: 42dd35694633c54971ae28ef2be4635a
+BIT Checksum: fbd63d33943004c3aaf4144eac38921b
+SC Checksum: cac7eb3424ef30406e3229f30a886c3b
+Firmware Checksum: 52b3c2e0027f4ed7f1ee9f1f4db90d14
+Variables:
+  # Reserved Variable names: name, rev, ser, mac, sil, sysc
+  support_early_firmware_1v10: 'False'
+  path to pmbus: <setmux:{main iic port}:74:04>
+  reset mux: <setmux:{main iic port}:74:00>
+  main iic port: '0'
+  fpgaportB: (?i){ser}B
+  fpgaportC: (?i){ser}C

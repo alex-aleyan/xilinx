@@ -1,0 +1,750 @@
+tabs:
+  Default Tests:
+    buttons:
+      Run All:
+        runchecked: true
+      IDCODE/SW/FW Check:
+        steps:
+        - command: idcode\vcu128_idcode_check.tcl
+          pass condition:
+          - ^IDCODE check PASSED
+          - ^Vivado check PASSED
+          - ^SW Build check PASSED
+          fail condition:
+          - ^IDCODE check FAILED
+          - ^Vivado check FAILED
+          - ^SW Build check FAILED
+          log:
+          - item: 'IDCODE STATUS: '
+            expression: ^IDCODE check (.*?)$
+          - item: 'VIVADO VERSION CHECK: '
+            expression: ^Vivado check(.*?)$
+          - item: 'SW BUILD CHECK: '
+            expression: ^SW Build check(.*?)$
+          type: tcl
+        - command: "VRN\r\t"
+          type: sysc
+          pass condition:
+          - .*Zynq v2.30 I2C Bridge v1.60
+          log:
+          - item: 'FIRMWARE VERSION: '
+            expression: VRN\r\:P\r(.*?)\r.*
+        ui:
+          progress: 37.156999826431274
+      EFUSE:
+        steps:
+        - command: efuse\vivado_read_fpga_efuse_status.tcl
+          pass condition:
+          - Property\s+Type\s+Read\-only\s+Value
+          - REGISTER\.EFUSE\.FUSE_DNA\s+string\s+true\s+[0-9a-fA-F]+
+          - INFO:\s+\[Common\s+17\-206\]\s+Exiting\s+[Vv]ivado
+          log:
+          - item: 'EFUSE DNA: '
+            expression: REGISTER\.EFUSE\.FUSE_DNA\s+string\s+true\s+([0-9a-fA-F]+)
+          type: tcl
+        ui:
+          progress: 19.897000074386597
+      Voltages:
+        steps:
+        # VCCINT: i2c addr 65, page 0, ISL68127 <getISL68127voltage>
+        - command: <setmux:0:75:06><getISL68127voltage:0:65:0><setmux:0:75:00><calcISL68127voltage>
+          type: sysc
+          pass condition:
+          - .*VOLTAGE\[(0\.8[2-8]) Volts\]
+        # VCCBRAM: i2c addr 65, page 1, ISL68127
+        - command: <setmux:0:75:06><getISL68127voltage:0:65:1><setmux:0:75:00><calcISL68127voltage>
+          type: sysc
+          pass condition:
+          - .*VOLTAGE\[(0\.8[2-8]) Volts\]
+        # VCC1V8: i2c addr 63, ISL91302B Registers 24, 25
+        - command: "<setmux:0:75:06>IW0\r63\r53C2\r\t<getISL91302voltage:0:63:24:25>IW0\r\
+            63\r5382\r\t<setmux:0:75:00><calcISL91302voltage>"
+          type: sysc
+          pass condition:
+          - .*VOLTAGE\[(1\.(?:(?:8[0-5])|(?:7[5-9]))) Volts\]
+        # VADJ: i2c addr 63, ISL91302B Registers 2e, 2f
+        - command: "<setmux:0:75:06>IW0\r63\r54C2\r\t<getISL91302voltage:0:63:2e:2f>IW0\r\
+            63\r5482\r\t<setmux:0:75:00><calcISL91302voltage>"
+          type: sysc
+          pass condition:
+          - .*VOLTAGE\[(1\.(?:(?:8[0-5])|(?:7[5-9]))) Volts\]
+        # VCCHBM: i2c addr 68, ISL68301. PMBUS compliant.           
+        - command: <setmux:0:75:06><getvoltage:0:68><setmux:0:75:00><calcvoltage>
+          type: sysc
+          pass condition:
+          - .*VOLTAGE\[(1\.(?:(?:1[5-9])|(?:2[0-4]))) Volts\]
+        # MGTAVCC: i2c addr 69, ISL68301. PMBUS compliant.            
+        - command: <setmux:0:75:06><getvoltage:0:69><setmux:0:75:00><calcvoltage>
+          type: sysc
+          pass condition:
+          - .*VOLTAGE\[(1\.(?:(?:1[5-9])|(?:2[0-4]))) Volts\]
+        # QDR_VDDQ: i2c addr 62, ISL91302B, VOut1 (24, 25)
+        - command: "<setmux:0:75:06>IW0\r62\r53C2\r\t<getISL91302voltage:0:62:24:25>IW0\r\
+            62\r5382\r\t<setmux:0:75:00><calcISL91302voltage>"
+          type: sysc
+          pass condition:
+          - .*VOLTAGE\[(1\.(?:(?:1[5-9])|(?:2[0-4]))) Volts\]
+        # UTIL_1V3: i2c addr 62, ISL91302B, VOut2 (2e, 2f) 
+        - command: "<setmux:0:75:06>IW0\r62\r54C2\r\t<getISL91302voltage:0:62:2e:2f>IW0\r\
+            62\r5482\r\t<setmux:0:75:00><calcISL91302voltage>"
+          type: sysc
+          pass condition:
+          - .*VOLTAGE\[(1\.(?:(?:2[6-9])|(?:3[0-4]))) Volts\]
+        # RLD3_VDDQ: i2c addr 64, ISL91302B, VOut1 (24, 25)     
+        - command: "<setmux:0:75:06>IW0\r64\r53C2\r\t<getISL91302voltage:0:64:24:25>IW0\r\
+            64\r5382\r\t<setmux:0:75:00><calcISL91302voltage>"
+          type: sysc
+          pass condition:
+          - .*VOLTAGE\[(1\.(?:(?:1[5-9])|(?:2[0-4]))) Volts\]
+        # DDR4_VDDQ: i2c addr 64, ISL91302B, VOut2 (2E, 2F)          
+        - command: "<setmux:0:75:06>IW0\r64\r54C2\r\t<getISL91302voltage:0:64:2e:2f>IW0\r\
+            64\r5482\r\t<setmux:0:75:00><calcISL91302voltage>"
+          type: sysc
+          pass condition:
+          - .*VOLTAGE\[(1\.(?:(?:1[5-9])|(?:2[0-4]))) Volts\]
+        # UTIL_1V35: i2c addr 61, ISL91302B, VOut1 (24, 25) 
+        - command: "<setmux:0:75:06>IW0\r61\r53C2\r\t<getISL91302voltage:0:61:24:25>IW0\r\
+            61\r5382\r\t<setmux:0:75:00><calcISL91302voltage>"
+          type: sysc
+          pass condition:
+          - .*VOLTAGE\[(1\.3[1-9]) Volts\]
+        # SYS_1V0: i2c addr 61, ISL91302B, VOut2 (2E, 2F) 
+        - command: "<setmux:0:75:06>IW0\r61\r54C2\r\t<getISL91302voltage:0:61:2e:2f>IW0\r\
+            61\r5482\r\t<setmux:0:75:00><calcISL91302voltage>"
+          type: sysc
+          pass condition:
+          - .*VOLTAGE\[((?:0\.9[7-9])|(?:1\.0[0-3])) Volts\]
+        # UTIL_1V35: i2c addr 6A, ISL168301, PMBUS Compiant                
+        - command: <setmux:0:75:06><getvoltage:0:6A><setmux:0:75:00><calcvoltage>
+          type: sysc
+          pass condition:
+          - .*VOLTAGE\[(3\.(?:(?:2[0-9])|(?:3[0-9])|(?:40))) Volts\]
+        # UTIL_5V0: i2c addr 6B, ISL168301, PMBUS Compiant             
+        - command: <setmux:0:75:06><getvoltage:0:6B><setmux:0:75:00><calcvoltage>
+          type: sysc
+          pass condition:
+          - .*VOLTAGE\[((?:(?:4\.(?:(?:8[5-9])|(?:9[0-9])))|(?:5\.(?:(?:0[0-9])|(?:1[0-5])))))
+            Volts\]
+        ui:
+          progress: 5.190000057220459
+      Ping:
+        steps:
+        # PHY Reset
+        - command: "IW0\r20\r061FFF\r\tIW0\r20\r026000\r\t"
+          type: sysc
+        - command: "IW0\r20\r061FFF\r\tIW0\r20\r022000\r\t"
+          type: sysc
+        - command: "IW0\r20\r061FFF\r\tIW0\r20\r026000\r\t"
+          type: sysc
+        - command: ping\\ping_download.tcl
+          pass condition:
+          - '(.*)INFO: \[Labtools 27\-3164\] End of startup status: HIGH'
+          - '(.*)INFO: \[Common 17\-206\]\s+Exiting\s+[Vv]ivado'
+          type: tcl
+        - command: '10'
+          pass condition:
+          - TCP echo server started @ port 7
+          port: (?i){ser}B
+          baud: 115200
+          type: uart
+          timeout: 20
+        - command: ping\\ping.bat
+          timeout: 120
+          type: shell
+          pass condition:
+          - '(.*)Packets: Sent = 4, Received = 4, Lost = 0(.*)'
+        ui:
+          progress: 61.080000162124634
+      EEPROM Program:
+        steps:
+        # EEPROM Format 1.3, just like XBB15xx.
+        # Active heat sink only. 
+        # To Do: Need Format of image programmed in QSPI: Currently 07, which may be correct.
+        - command: <setmux:0:74:01><writeeeprom256:0:54:00:FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF:400>
+            <writeeepromascii256:0:54:00:VCU128>'<writeeeprom256:0:54:11:FFFFFF><writeeepromascii256:0:54:11:{rev}><writeeeprom256:0:54:14:FFFFFFFFFFFFFFFFFFFFFFFF><writeeepromascii256:0:54:14:{ser}><writeeeprom256:0:54:20:FFFFFF><writeeepromascii256:0:54:20:1.3><writeeeprom256:0:54:23:FFFFFFFF><writeeeprom256:0:54:23:{mac}><writeeeprom256:0:54:3B:FF><writeeepromascii:0:54:3B:A><writeeeprom256:0:54:3C:FF><writeeeprom256:0:54:3C:07><setmux:0:74:00>
+          timeout: 15
+          type: sysc
+        - command: <setmux:0:74:01><readeeprom:0:54:00:10><interpeeprom><readeeprom:0:54:11:03><interpeeprom><readeeprom:0:54:14:10><interpeeprom><readeeprom:0:54:23:06><literaleeprom:F><setmux:0:74:00>
+          pass condition:
+          - INTERP\[{name}
+          - INTERP\[{ser}
+          - LITERAL\[{mac}
+          - INTERP\[{rev}
+          log:
+          - item: 'NAME: '
+            expression: INTERP\[({name}).*?\]
+          - item: 'SERIAL: '
+            expression: INTERP\[({ser}).*?\]
+          - item: 'MAC: '
+            expression: INTERP\[({mac}).*?\]
+          - item: 'REVISION: '
+            expression: INTERP\[({rev}).*?\]
+          timeout: 15
+          type: sysc
+        ui:
+          progress: 1.4890000820159912
+      IPI APP Test:
+        steps:
+        # "Basic" test; only onboard clocks are tested. 
+        # PROD test tests all the clocks.
+        - command: <setmux:0:74:02><calcsi5328:0:68:156.25><saveval:04:156.25><setmux:0:74:00>
+          type: sysc
+          timeout: 1
+        - command: ipi_app_basic\\ipi_app_basic_download.tcl
+          pass condition:
+          - '(.*)INFO: \[Labtools 27\-3164\] End of startup status: HIGH'
+          - '(.*)INFO: \[Common 17\-206\]\s+Exiting\s+[Vv]ivado'
+          type: tcl
+          timeout: 11
+        - command: '10'
+          pass condition:
+          - UART 00 Test Passed
+          - Press any key to return to main menu
+          port: (?i){ser}B
+          type: uart
+          timeout: 10
+        - command: '20'
+          pass condition:
+          - Watch the LEDs
+          - Press any key to return to main menu
+          port: (?i){ser}B
+          type: uart
+          timeout: 15
+        - command: '30'
+          pass condition:
+          - 'All Tests Complete: IIC PASSED'
+          - Press any key to return to main menu
+          port: (?i){ser}B
+          type: uart
+          timeout: 10
+        - command: 90
+          pass condition:
+          - UltraScale MIG Memory Test iteration .1 has PASSED!
+          - Total number of errors for all iterations = 0
+          - Press any key to return to main menu
+          port: (?i){ser}B
+          type: uart
+          timeout: 10
+        - command: A0
+          pass condition:
+          - AXI BRAM test iteration .1 has PASSED!
+          - Total number of errors for all iterations = 0
+          - Press any key to return to main menu
+          port: (?i){ser}B
+          type: uart
+          timeout: 10
+        - command: C0
+          pass condition:
+          - Clocking Test Passed
+          - Press any key to return to main menu
+          port: (?i){ser}B
+          type: uart
+          timeout: 10
+        ui:
+          progress: 82.77099990844727
+      FMC LVDS Test:
+        steps:
+        # Bitstream / SW has 5 second delay built in so test can catch the UART output
+        - command: lvds\\fmcp_lvds_download.tcl
+          pass condition:
+          - '(.*)INFO: \[Labtools 27\-3164\] End of startup status: HIGH'
+          - '(.*)INFO: \[Common 17\-206\]\s+Exiting\s+[Vv]ivado'
+          type: tcl
+          timeout: 11
+        - command:
+          pass condition:
+          - Completed FMCP LVDS Loopback Write and Read Tests
+          - FMCP LVDS Test passed
+          port: (?i){ser}B
+          type: uart
+          timeout: 10
+        ui:
+          progress: 52.74799990653992
+      UART1 Test:
+        steps:
+        - command: uart1\\uart1_download.tcl
+          pass condition:
+          - '(.*)INFO: \[Labtools 27\-3164\] End of startup status: HIGH'
+          - '(.*)INFO: \[Common 17\-206\]\s+Exiting\s+[Vv]ivado'
+          type: tcl
+          timeout: 11
+        - command:
+          pass condition:
+          - UART 01 Test Passed
+          port: (?i){ser}C
+          type: uart
+          timeout: 10
+        ui:
+          progress: 47.86699986457825
+      MIG (ddr4):
+        steps:
+        - command: ddr4\all.tcl
+          fail condition:
+          - '^MIG status: CAL FAIL'
+          - '^MicroBlaze status: FAIL'
+          log:
+          - item: 'TEMP: '
+            expression: (The temperature at:.*?celsius)
+          - '(^MIG status: .*?$)'
+          - '(^MicroBlaze status: .*?$)'
+          pass condition:
+          - '(.*)INFO: \[Labtools 27\-3164\] End of startup status: HIGH'
+          - '(.*)INFO: \[Common 17\-206\]\s+Exiting\s+[Vv]ivado'
+          - '^MIG status: CAL PASS'
+          - '^MicroBlaze status: PASS'
+          type: tcl
+        ui:
+          progress: 155.16799998283386
+      MIG (qdr4):
+        steps:
+        - command: qdr4\all.tcl
+          fail condition:
+          - '^MIG status: CAL FAIL'
+          - '^MicroBlaze status: FAIL'
+          log:
+          - item: 'TEMP: '
+            expression: (The temperature at:.*?celsius)
+          - '(^MIG status: .*?$)'
+          - '(^MicroBlaze status: .*?$)'
+          pass condition:
+          - '(.*)INFO: \[Labtools 27\-3164\] End of startup status: HIGH'
+          - '(.*)INFO: \[Common 17\-206\]\s+Exiting\s+[Vv]ivado'
+          - '^MIG status: CAL PASS'
+          - '^MicroBlaze status: PASS'
+          type: tcl
+        ui:
+          progress: 155.07299995422363
+      MIG (rld3):
+        steps:
+        - command: rld3\all.tcl
+          fail condition:
+          - '^MIG status: CAL FAIL'
+          - '^MicroBlaze status: FAIL'
+          log:
+          - item: 'TEMP: '
+            expression: (The temperature at:.*?celsius)
+          - '(^MIG status: .*?$)'
+          - '(^MicroBlaze status: .*?$)'
+          pass condition:
+          - '(.*)INFO: \[Labtools 27\-3164\] End of startup status: HIGH'
+          - '(.*)INFO: \[Common 17\-206\]\s+Exiting\s+[Vv]ivado'
+          - '^MIG status: CAL PASS'
+          - '^MicroBlaze status: PASS'
+          type: tcl
+        ui:
+          progress: 155.0220000743866
+      IBERT FMC:
+        steps:
+        # Could be combined into on FMC/PCIe test
+        - command: ibert\fmc.tcl
+          log:
+          - item: 'TEMP: '
+            expression: (The temperature at:.*?celsius)
+          - (Quad_\d+:MGT_X\d+Y\d+:\s+STATUS=.*?$)
+          - (Quad_\d+:MGT_X\d+Y\d+:\s+QPLL0_STATUS=.*?$)
+          - (Quad_\d+:MGT_X\d+Y\d+:\s+LINE_RATE=.*?$)
+          - (Quad_\d+:MGT_X\d+Y\d+:\s+LOGIC.ERRBIT_COUNT=.*?$)
+          - (Quad_\d+:MGT_X\d+Y\d+:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=.*?$)
+          - (Quad_\d+:MGT_X\d+Y\d+:\s+RX_RECEIVED_BIT_COUNT=.*?$)
+          - (Quad_\d+:MGT_X\d+Y\d+:\s+TX_PATTERN=.*?$)
+          - (Quad_\d+:MGT_X\d+Y\d+:\s+RX_PATTERN=.*?$)
+          - (Quad_\d+:MGT_X\d+Y\d+:\s+LOOPBACK=.*?$)
+          pass condition:
+          - '(.*)INFO: \[Labtools 27\-3164\] End of startup status: HIGH'
+          - '(.*)INFO: \[Common 17\-206\]\s+Exiting\s+[Vv]ivado'
+          - Quad_124:MGT_X0Y0:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_124:MGT_X0Y0:\s+QPLL0_STATUS=LOCKED
+          - Quad_124:MGT_X0Y0:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_124:MGT_X0Y0:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_124:MGT_X0Y0:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_124:MGT_X0Y0:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_124:MGT_X0Y0:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_124:MGT_X0Y0:\s+LOOPBACK=None
+          - Quad_124:MGT_X0Y1:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_124:MGT_X0Y1:\s+QPLL0_STATUS=LOCKED
+          - Quad_124:MGT_X0Y1:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_124:MGT_X0Y1:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_124:MGT_X0Y1:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_124:MGT_X0Y1:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_124:MGT_X0Y1:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_124:MGT_X0Y1:\s+LOOPBACK=None
+          - Quad_124:MGT_X0Y2:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_124:MGT_X0Y2:\s+QPLL0_STATUS=LOCKED
+          - Quad_124:MGT_X0Y2:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_124:MGT_X0Y2:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_124:MGT_X0Y2:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_124:MGT_X0Y2:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_124:MGT_X0Y2:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_124:MGT_X0Y2:\s+LOOPBACK=None
+          - Quad_124:MGT_X0Y3:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_124:MGT_X0Y3:\s+QPLL0_STATUS=LOCKED
+          - Quad_124:MGT_X0Y3:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_124:MGT_X0Y3:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_124:MGT_X0Y3:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_124:MGT_X0Y3:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_124:MGT_X0Y3:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_124:MGT_X0Y3:\s+LOOPBACK=None
+          - Quad_125:MGT_X0Y4:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_125:MGT_X0Y4:\s+QPLL0_STATUS=LOCKED
+          - Quad_125:MGT_X0Y4:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_125:MGT_X0Y4:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_125:MGT_X0Y4:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_125:MGT_X0Y4:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_125:MGT_X0Y4:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_125:MGT_X0Y4:\s+LOOPBACK=None
+          - Quad_125:MGT_X0Y5:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_125:MGT_X0Y5:\s+QPLL0_STATUS=LOCKED
+          - Quad_125:MGT_X0Y5:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_125:MGT_X0Y5:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_125:MGT_X0Y5:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_125:MGT_X0Y5:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_125:MGT_X0Y5:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_125:MGT_X0Y5:\s+LOOPBACK=None
+          - Quad_125:MGT_X0Y6:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_125:MGT_X0Y6:\s+QPLL0_STATUS=LOCKED
+          - Quad_125:MGT_X0Y6:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_125:MGT_X0Y6:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_125:MGT_X0Y6:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_125:MGT_X0Y6:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_125:MGT_X0Y6:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_125:MGT_X0Y6:\s+LOOPBACK=None
+          - Quad_125:MGT_X0Y7:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_125:MGT_X0Y7:\s+QPLL0_STATUS=LOCKED
+          - Quad_125:MGT_X0Y7:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_125:MGT_X0Y7:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_125:MGT_X0Y7:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_125:MGT_X0Y7:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_125:MGT_X0Y7:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_125:MGT_X0Y7:\s+LOOPBACK=None
+          - Quad_126:MGT_X0Y8:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_126:MGT_X0Y8:\s+QPLL0_STATUS=LOCKED
+          - Quad_126:MGT_X0Y8:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_126:MGT_X0Y8:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_126:MGT_X0Y8:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_126:MGT_X0Y8:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_126:MGT_X0Y8:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_126:MGT_X0Y8:\s+LOOPBACK=None
+          - Quad_126:MGT_X0Y9:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_126:MGT_X0Y9:\s+QPLL0_STATUS=LOCKED
+          - Quad_126:MGT_X0Y9:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_126:MGT_X0Y9:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_126:MGT_X0Y9:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_126:MGT_X0Y9:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_126:MGT_X0Y9:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_126:MGT_X0Y9:\s+LOOPBACK=None
+          - Quad_126:MGT_X0Y10:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_126:MGT_X0Y10:\s+QPLL0_STATUS=LOCKED
+          - Quad_126:MGT_X0Y10:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_126:MGT_X0Y10:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_126:MGT_X0Y10:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_126:MGT_X0Y10:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_126:MGT_X0Y10:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_126:MGT_X0Y10:\s+LOOPBACK=None
+          - Quad_126:MGT_X0Y11:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_126:MGT_X0Y11:\s+QPLL0_STATUS=LOCKED
+          - Quad_126:MGT_X0Y11:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_126:MGT_X0Y11:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_126:MGT_X0Y11:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_126:MGT_X0Y11:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_126:MGT_X0Y11:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_126:MGT_X0Y11:\s+LOOPBACK=None
+          - Quad_127:MGT_X0Y12:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_127:MGT_X0Y12:\s+QPLL0_STATUS=LOCKED
+          - Quad_127:MGT_X0Y12:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_127:MGT_X0Y12:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_127:MGT_X0Y12:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_127:MGT_X0Y12:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_127:MGT_X0Y12:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_127:MGT_X0Y12:\s+LOOPBACK=None
+          - Quad_127:MGT_X0Y13:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_127:MGT_X0Y13:\s+QPLL0_STATUS=LOCKED
+          - Quad_127:MGT_X0Y13:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_127:MGT_X0Y13:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_127:MGT_X0Y13:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_127:MGT_X0Y13:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_127:MGT_X0Y13:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_127:MGT_X0Y13:\s+LOOPBACK=None
+          - Quad_127:MGT_X0Y14:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_127:MGT_X0Y14:\s+QPLL0_STATUS=LOCKED
+          - Quad_127:MGT_X0Y14:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_127:MGT_X0Y14:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_127:MGT_X0Y14:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_127:MGT_X0Y14:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_127:MGT_X0Y14:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_127:MGT_X0Y14:\s+LOOPBACK=None
+          - Quad_127:MGT_X0Y15:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_127:MGT_X0Y15:\s+QPLL0_STATUS=LOCKED
+          - Quad_127:MGT_X0Y15:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_127:MGT_X0Y15:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_127:MGT_X0Y15:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_127:MGT_X0Y15:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_127:MGT_X0Y15:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_127:MGT_X0Y15:\s+LOOPBACK=None
+          - Quad_128:MGT_X0Y16:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_128:MGT_X0Y16:\s+QPLL0_STATUS=LOCKED
+          - Quad_128:MGT_X0Y16:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_128:MGT_X0Y16:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_128:MGT_X0Y16:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_128:MGT_X0Y16:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_128:MGT_X0Y16:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_128:MGT_X0Y16:\s+LOOPBACK=None
+          - Quad_128:MGT_X0Y17:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_128:MGT_X0Y17:\s+QPLL0_STATUS=LOCKED
+          - Quad_128:MGT_X0Y17:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_128:MGT_X0Y17:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_128:MGT_X0Y17:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_128:MGT_X0Y17:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_128:MGT_X0Y17:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_128:MGT_X0Y17:\s+LOOPBACK=None
+          - Quad_128:MGT_X0Y18:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_128:MGT_X0Y18:\s+QPLL0_STATUS=LOCKED
+          - Quad_128:MGT_X0Y18:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_128:MGT_X0Y18:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_128:MGT_X0Y18:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_128:MGT_X0Y18:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_128:MGT_X0Y18:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_128:MGT_X0Y18:\s+LOOPBACK=None
+          - Quad_128:MGT_X0Y19:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_128:MGT_X0Y19:\s+QPLL0_STATUS=LOCKED
+          - Quad_128:MGT_X0Y19:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_128:MGT_X0Y19:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_128:MGT_X0Y19:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_128:MGT_X0Y19:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_128:MGT_X0Y19:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_128:MGT_X0Y19:\s+LOOPBACK=None
+          - Quad_129:MGT_X0Y20:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_129:MGT_X0Y20:\s+QPLL0_STATUS=LOCKED
+          - Quad_129:MGT_X0Y20:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_129:MGT_X0Y20:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_129:MGT_X0Y20:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_129:MGT_X0Y20:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_129:MGT_X0Y20:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_129:MGT_X0Y20:\s+LOOPBACK=None
+          - Quad_129:MGT_X0Y21:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_129:MGT_X0Y21:\s+QPLL0_STATUS=LOCKED
+          - Quad_129:MGT_X0Y21:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_129:MGT_X0Y21:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_129:MGT_X0Y21:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_129:MGT_X0Y21:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_129:MGT_X0Y21:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_129:MGT_X0Y21:\s+LOOPBACK=None
+          - Quad_129:MGT_X0Y22:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_129:MGT_X0Y22:\s+QPLL0_STATUS=LOCKED
+          - Quad_129:MGT_X0Y22:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_129:MGT_X0Y22:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_129:MGT_X0Y22:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_129:MGT_X0Y22:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_129:MGT_X0Y22:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_129:MGT_X0Y22:\s+LOOPBACK=None
+          - Quad_129:MGT_X0Y23:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_129:MGT_X0Y23:\s+QPLL0_STATUS=LOCKED
+          - Quad_129:MGT_X0Y23:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_129:MGT_X0Y23:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_129:MGT_X0Y23:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_129:MGT_X0Y23:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_129:MGT_X0Y23:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_129:MGT_X0Y23:\s+LOOPBACK=None
+          type: tcl
+        ui:
+          progress: 225.6190001964569
+      IBERT PCIe:
+        steps:
+        - command: ibert\pcie.tcl
+          log:
+          - item: 'TEMP: '
+            expression: (The temperature at:.*?celsius)
+          - (Quad_\d+:MGT_X\d+Y\d+:\s+STATUS=.*?$)
+          - (Quad_\d+:MGT_X\d+Y\d+:\s+QPLL0_STATUS=.*?$)
+          - (Quad_\d+:MGT_X\d+Y\d+:\s+LINE_RATE=.*?$)
+          - (Quad_\d+:MGT_X\d+Y\d+:\s+LOGIC.ERRBIT_COUNT=.*?$)
+          - (Quad_\d+:MGT_X\d+Y\d+:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=.*?$)
+          - (Quad_\d+:MGT_X\d+Y\d+:\s+RX_RECEIVED_BIT_COUNT=.*?$)
+          - (Quad_\d+:MGT_X\d+Y\d+:\s+TX_PATTERN=.*?$)
+          - (Quad_\d+:MGT_X\d+Y\d+:\s+RX_PATTERN=.*?$)
+          - (Quad_\d+:MGT_X\d+Y\d+:\s+LOOPBACK=.*?$)
+          pass condition:
+          - '(.*)INFO: \[Labtools 27\-3164\] End of startup status: HIGH'
+          - '(.*)INFO: \[Common 17\-206\]\s+Exiting\s+[Vv]ivado'
+          - Quad_224:MGT_X1Y0:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_224:MGT_X1Y0:\s+QPLL0_STATUS=LOCKED
+          - Quad_224:MGT_X1Y0:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_224:MGT_X1Y0:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_224:MGT_X1Y0:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_224:MGT_X1Y0:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_224:MGT_X1Y0:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_224:MGT_X1Y0:\s+LOOPBACK=None
+          - Quad_224:MGT_X1Y1:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_224:MGT_X1Y1:\s+QPLL0_STATUS=LOCKED
+          - Quad_224:MGT_X1Y1:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_224:MGT_X1Y1:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_224:MGT_X1Y1:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_224:MGT_X1Y1:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_224:MGT_X1Y1:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_224:MGT_X1Y1:\s+LOOPBACK=None
+          - Quad_224:MGT_X1Y2:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_224:MGT_X1Y2:\s+QPLL0_STATUS=LOCKED
+          - Quad_224:MGT_X1Y2:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_224:MGT_X1Y2:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_224:MGT_X1Y2:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_224:MGT_X1Y2:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_224:MGT_X1Y2:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_224:MGT_X1Y2:\s+LOOPBACK=None
+          - Quad_224:MGT_X1Y3:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_224:MGT_X1Y3:\s+QPLL0_STATUS=LOCKED
+          - Quad_224:MGT_X1Y3:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_224:MGT_X1Y3:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_224:MGT_X1Y3:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_224:MGT_X1Y3:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_224:MGT_X1Y3:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_224:MGT_X1Y3:\s+LOOPBACK=None
+          - Quad_225:MGT_X1Y4:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_225:MGT_X1Y4:\s+QPLL0_STATUS=LOCKED
+          - Quad_225:MGT_X1Y4:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_225:MGT_X1Y4:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_225:MGT_X1Y4:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_225:MGT_X1Y4:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_225:MGT_X1Y4:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_225:MGT_X1Y4:\s+LOOPBACK=None
+          - Quad_225:MGT_X1Y5:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_225:MGT_X1Y5:\s+QPLL0_STATUS=LOCKED
+          - Quad_225:MGT_X1Y5:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_225:MGT_X1Y5:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_225:MGT_X1Y5:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_225:MGT_X1Y5:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_225:MGT_X1Y5:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_225:MGT_X1Y5:\s+LOOPBACK=None
+          - Quad_225:MGT_X1Y6:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_225:MGT_X1Y6:\s+QPLL0_STATUS=LOCKED
+          - Quad_225:MGT_X1Y6:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_225:MGT_X1Y6:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_225:MGT_X1Y6:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_225:MGT_X1Y6:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_225:MGT_X1Y6:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_225:MGT_X1Y6:\s+LOOPBACK=None
+          - Quad_225:MGT_X1Y7:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_225:MGT_X1Y7:\s+QPLL0_STATUS=LOCKED
+          - Quad_225:MGT_X1Y7:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_225:MGT_X1Y7:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_225:MGT_X1Y7:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_225:MGT_X1Y7:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_225:MGT_X1Y7:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_225:MGT_X1Y7:\s+LOOPBACK=None
+          - Quad_226:MGT_X1Y8:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_226:MGT_X1Y8:\s+QPLL0_STATUS=LOCKED
+          - Quad_226:MGT_X1Y8:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_226:MGT_X1Y8:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_226:MGT_X1Y8:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_226:MGT_X1Y8:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_226:MGT_X1Y8:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_226:MGT_X1Y8:\s+LOOPBACK=None
+          - Quad_226:MGT_X1Y9:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_226:MGT_X1Y9:\s+QPLL0_STATUS=LOCKED
+          - Quad_226:MGT_X1Y9:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_226:MGT_X1Y9:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_226:MGT_X1Y9:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_226:MGT_X1Y9:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_226:MGT_X1Y9:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_226:MGT_X1Y9:\s+LOOPBACK=None
+          - Quad_226:MGT_X1Y10:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_226:MGT_X1Y10:\s+QPLL0_STATUS=LOCKED
+          - Quad_226:MGT_X1Y10:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_226:MGT_X1Y10:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_226:MGT_X1Y10:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_226:MGT_X1Y10:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_226:MGT_X1Y10:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_226:MGT_X1Y10:\s+LOOPBACK=None
+          - Quad_226:MGT_X1Y11:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_226:MGT_X1Y11:\s+QPLL0_STATUS=LOCKED
+          - Quad_226:MGT_X1Y11:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_226:MGT_X1Y11:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_226:MGT_X1Y11:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_226:MGT_X1Y11:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_226:MGT_X1Y11:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_226:MGT_X1Y11:\s+LOOPBACK=None
+          - Quad_227:MGT_X1Y12:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_227:MGT_X1Y12:\s+QPLL0_STATUS=LOCKED
+          - Quad_227:MGT_X1Y12:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_227:MGT_X1Y12:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_227:MGT_X1Y12:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_227:MGT_X1Y12:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_227:MGT_X1Y12:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_227:MGT_X1Y12:\s+LOOPBACK=None
+          - Quad_227:MGT_X1Y13:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_227:MGT_X1Y13:\s+QPLL0_STATUS=LOCKED
+          - Quad_227:MGT_X1Y13:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_227:MGT_X1Y13:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_227:MGT_X1Y13:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_227:MGT_X1Y13:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_227:MGT_X1Y13:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_227:MGT_X1Y13:\s+LOOPBACK=None
+          - Quad_227:MGT_X1Y14:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_227:MGT_X1Y14:\s+QPLL0_STATUS=LOCKED
+          - Quad_227:MGT_X1Y14:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_227:MGT_X1Y14:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_227:MGT_X1Y14:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_227:MGT_X1Y14:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_227:MGT_X1Y14:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_227:MGT_X1Y14:\s+LOOPBACK=None
+          - Quad_227:MGT_X1Y15:\s+STATUS=\d+\.\d\d\d Gbps
+          - Quad_227:MGT_X1Y15:\s+QPLL0_STATUS=LOCKED
+          - Quad_227:MGT_X1Y15:\s+LINE_RATE=\d+\.\d\d\d
+          - Quad_227:MGT_X1Y15:\s+LOGIC.ERRBIT_COUNT_NO_VIVADO_BUG_DECIMAL=0
+          - Quad_227:MGT_X1Y15:\s+RX_RECEIVED_BIT_COUNT=[0]*[1-9]\d*\.?[0]*
+          - Quad_227:MGT_X1Y15:\s+TX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_227:MGT_X1Y15:\s+RX_PATTERN=PRBS\s+\d+\-bit
+          - Quad_227:MGT_X1Y15:\s+LOOPBACK=None
+          type: tcl
+        ui:
+          progress: 225.44299983978271
+      Test IIC Pathways:
+        steps:
+        - command: "<setmux:0:74:08><readsi570:0:5d><setmux:0:74:00><setmux:0:74:10><readsi570:0:5d><setmux:0:74:00><setmux:0:74:20><readsi570:0:5d><setmux:0:74:00><setmux:0:76:10><readQSFPManu:0:50><readQSFPTemp:0:50><readQSFPVolt:0:50><setmux:0:76:10>IS0\r\
+            50\r62\r01\r\t<setmux:0:76:00><setmux:0:76:20><readQSFPManu:0:50><readQSFPTemp:0:50><readQSFPVolt:0:50><setmux:0:76:20>IS0\r\
+            50\r62\r01\r\t<setmux:0:76:00><setmux:0:76:40><readQSFPManu:0:50><readQSFPTemp:0:50><readQSFPVolt:0:50><setmux:0:76:40>IS0\r\
+            50\r62\r01\r\t<setmux:0:76:00><setmux:0:76:80><readQSFPManu:0:50><readQSFPTemp:0:50><readQSFPVolt:0:50><setmux:0:76:80>IS0\r\
+            50\r62\r01\r\t<setmux:0:76:00><setmux:0:75:06><getISL68127voltage:0:65:0><setmux:0:75:06><getISL68127voltage:0:65:1><setmux:0:75:06>IW0\r\
+            63\r53C2\r\t<getISL91302voltage:0:63:24:25>IW0\r63\r5382\r\t<setmux:0:75:06>IW0\r\
+            63\r54C2\r\t<getISL91302voltage:0:63:2e:2f>IW0\r63\r5482\r\t<setmux:0:75:06><getvoltage:0:68><setmux:0:75:06><getvoltage:0:69><setmux:0:75:06>IW0\r\
+            62\r53C2\r\t<getISL91302voltage:0:62:24:25>IW0\r62\r5382\r\t<setmux:0:75:06>IW0\r\
+            62\r54C2\r\t<getISL91302voltage:0:62:2e:2f>IW0\r62\r5482\r\t<setmux:0:75:06>IW0\r\
+            64\r53C2\r\t<getISL91302voltage:0:64:24:25>IW0\r64\r5382\r\t<setmux:0:75:06>IW0\r\
+            64\r54C2\r\t<getISL91302voltage:0:64:2e:2f>IW0\r64\r5482\r\t<setmux:0:75:06>IW0\r\
+            61\r53C2\r\t<getISL91302voltage:0:61:24:25>IW0\r61\r5382\r\t<setmux:0:75:06>IW0\r\
+            61\r54C2\r\t<getISL91302voltage:0:61:2e:2f>IW0\r61\r5482\r\t<setmux:0:75:06><getvoltage:0:6A><setmux:0:75:06><getvoltage:0:6B><setmux:0:75:06>IS0\r\
+            60\r3f\r01\r\t<setmux:0:75:06>IS0\r60\r5c\r01\r\t<setmux:0:75:06>IS0\r\
+            60\r76\r01\r\t<setmux:0:75:06>IW0\r63\r54C2\r\t<getISL91302voltage:0:63:2e:2f><setmux:0:75:00><setmux:0:75:04><getINA226:0:40:10><setmux:0:75:04><getINA226:0:41:11><setmux:0:75:04><getINA226:0:42:12><setmux:0:75:04><getINA226:0:46:13><setmux:0:75:04><getINA226:0:48:14><setmux:0:75:04><getINA226:0:4C:15><setmux:0:75:04><getINA226:0:4D:16><setmux:0:75:04><getINA226:0:47:17><setmux:0:75:00><setmux:0:74:01><readeeprom:0:54:00:10><setmux:0:74:01><readeeprom:0:54:11:03><setmux:0:74:01><readeeprom:0:54:14:10><setmux:0:74:01><readeeprom:0:54:23:06><setmux:0:74:00>VRN\r\
+            \t"
+          type: sysc
+        ui:
+          progress: 7.953000068664551
+      Program QSPI Flash:
+        steps:
+        - command: program_qspi\program_spi.tcl
+          pass condition:
+          - (.*)Performing\s+Erase\s+Operation
+          - (.*)Erase\s+Operation\s+successful
+          - (.*)Performing\s+Program\s+and\s+Verify\s+Operations
+          - (.*)Program/Verify\s+Operation\s+successful
+          - (.*)INFO:\s+\[Labtoolstcl\s+44\-377\]\s+Flash\s+programming\s+completed\s+successfully
+          type: tcl
+          timeout: 11
+        ui:
+          progress: 969.4889998435974
+      QSPI Test:
+        steps:
+        - command: Set SW1 to 0001 (Down, Down, Down, Up) and cycle board power.
+          pass condition:
+          type: manc
+        - command: Do you see all 8 GPIOs LEDs lit?
+          type: manq
+        # Special test to catch when not all the LEDs are lit.
+        # I.e. to prevent cheating on the test. 
+        - command: X0
+          pass condition:
+          - BlinkBIST results . FF
+          port: (?i){ser}B
+          type: uart
+          timeout: 1
+        ui:
+          progress: 0.23999977111816406
+
