@@ -1,0 +1,1658 @@
+[TITLE		:	Mon, 24, Jun 2019 15:31:20]	Board: VCU128
+[TITLE		:	Mon, 24, Jun 2019 15:31:20]	Revision: 1.0
+[TITLE		:	Mon, 24, Jun 2019 15:31:20]	Silicon: prod
+[TITLE		:	Mon, 24, Jun 2019 15:31:20]	Serial Number: 010203040506
+[TITLE		:	Mon, 24, Jun 2019 15:31:20]	MAC Address: 01:02:03:04:05:06
+[TITLE		:	Mon, 24, Jun 2019 15:31:20]	Working in directory: VCU128
+[TITLE		:	Mon, 24, Jun 2019 15:31:27]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:31:27]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	SYSC Full Command: [('<setmux:0:76:10>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	
+											Running sysc func: <setmux:0:76:10>
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	u'IW0\r76\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	u'IS0\r50\r94\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	u'4D6F6C657820496E632E202020202020\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	u'IS0\r50\r16\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	u'01\rIS0\r50\r17\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	u'81\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	u'IS0\r50\r1a\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	u'00\rIS0\r50\r1b\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	u'00\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	
+											Running sysc func: <interpQSFPVolt>
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	SYSC command returned: VOLTAGE[0.0 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	
+											Running sysc func: <interpQSFPTemp>
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	SYSC command returned: TEMP[1.50390625°C]
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	SYSC command returned: INTERP[Molex Inc.      ]
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:28]	
+											SYSC Interpreted Command: [('<setmux:0:76:10>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r10\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r10\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:P\r4D6F6C657820496E632E202020202020\r~~~\r:P\rIS0\r50\r16\r01\r:P\r01\rIS0\r50\r17\r01\r:P\r81\r~~~\r:P\rIS0\r50\r1a\r01\r:P\r00\rIS0\r50\r1b\r01\r:P\r00\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\rVOLTAGE[0.0 Volts]~~~\r:P\rTEMP[1.50390625\xb0C]~~~\r:P\rINTERP[Molex Inc.      ]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:31:28]	PASSED Read at: 2019-06-24 15:31:28.610000
+[TITLE		:	Mon, 24, Jun 2019 15:31:28]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:31:30]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	SYSC Full Command: [('<setmux:0:76:20>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	
+											Running sysc func: <setmux:0:76:20>
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	u'IW0\r76\r20\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	u'IS0\r50\r94\r10\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	u'IS0\r50\r16\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	u'IS0\r50\r17\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	u'IS0\r50\r1a\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	u'IS0\r50\r1b\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	
+											Running sysc func: <interpQSFPVolt>
+[ERROR		:	Mon, 24, Jun 2019 15:31:30]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 682, in interpQSFPVolt
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	
+											Running sysc func: <interpQSFPTemp>
+[ERROR		:	Mon, 24, Jun 2019 15:31:30]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 691, in interpQSFPTemp
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	SYSC command returned: INTERP[]
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:30]	
+											SYSC Interpreted Command: [('<setmux:0:76:20>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r20\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r20\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:N\r~~~\r:P\rIS0\r50\r16\r01\r:N\rIS0\r50\r17\r01\r:N\r~~~\r:P\rIS0\r50\r1a\r01\r:N\rIS0\r50\r1b\r01\r:N\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\r~~~\r:P\r~~~\r:P\rINTERP[]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:31:30]	PASSED Read at: 2019-06-24 15:31:30.996000
+[TITLE		:	Mon, 24, Jun 2019 15:31:30]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:31:33]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	SYSC Full Command: [('<setmux:0:76:40>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	
+											Running sysc func: <setmux:0:76:40>
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	u'IW0\r76\r40\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	u'IS0\r50\r94\r10\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	u'IS0\r50\r16\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	u'IS0\r50\r17\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	u'IS0\r50\r1a\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	u'IS0\r50\r1b\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	
+											Running sysc func: <interpQSFPVolt>
+[ERROR		:	Mon, 24, Jun 2019 15:31:33]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 682, in interpQSFPVolt
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	
+											Running sysc func: <interpQSFPTemp>
+[ERROR		:	Mon, 24, Jun 2019 15:31:33]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 691, in interpQSFPTemp
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	SYSC command returned: INTERP[]
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:33]	
+											SYSC Interpreted Command: [('<setmux:0:76:40>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r40\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r40\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:N\r~~~\r:P\rIS0\r50\r16\r01\r:N\rIS0\r50\r17\r01\r:N\r~~~\r:P\rIS0\r50\r1a\r01\r:N\rIS0\r50\r1b\r01\r:N\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\r~~~\r:P\r~~~\r:P\rINTERP[]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:31:33]	PASSED Read at: 2019-06-24 15:31:33.900000
+[TITLE		:	Mon, 24, Jun 2019 15:31:33]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:31:35]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	SYSC Full Command: [('<setmux:0:76:80>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	
+											Running sysc func: <setmux:0:76:80>
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	u'IW0\r76\r80\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	u'IS0\r50\r94\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	u'4D6F6C657820496E632E202020202020\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	u'IS0\r50\r16\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	u'01\rIS0\r50\r17\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	u'81\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	u'IS0\r50\r1a\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	u'00\rIS0\r50\r1b\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	u'00\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	
+											Running sysc func: <interpQSFPVolt>
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	SYSC command returned: VOLTAGE[0.0 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	
+											Running sysc func: <interpQSFPTemp>
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	SYSC command returned: TEMP[1.50390625°C]
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	SYSC command returned: INTERP[Molex Inc.      ]
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:35]	
+											SYSC Interpreted Command: [('<setmux:0:76:80>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r80\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r80\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:P\r4D6F6C657820496E632E202020202020\r~~~\r:P\rIS0\r50\r16\r01\r:P\r01\rIS0\r50\r17\r01\r:P\r81\r~~~\r:P\rIS0\r50\r1a\r01\r:P\r00\rIS0\r50\r1b\r01\r:P\r00\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\rVOLTAGE[0.0 Volts]~~~\r:P\rTEMP[1.50390625\xb0C]~~~\r:P\rINTERP[Molex Inc.      ]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:31:35]	PASSED Read at: 2019-06-24 15:31:35.584000
+[TITLE		:	Mon, 24, Jun 2019 15:31:35]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:31:40]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:31:40]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:31:40]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:40]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:40]	SYSC Full Command: [('<setmux:0:76:40>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:31:40]	
+											Running sysc func: <setmux:0:76:40>
+[INFO		:	Mon, 24, Jun 2019 15:31:40]	u'IW0\r76\r40\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:40]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:40]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:31:40]	u'IS0\r50\r94\r10\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:40]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:40]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:31:40]	u'IS0\r50\r16\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:40]	u'IS0\r50\r17\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:40]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:40]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:31:41]	u'IS0\r50\r1a\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:41]	u'IS0\r50\r1b\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:41]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:41]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:31:41]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:41]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:41]	
+											Running sysc func: <interpQSFPVolt>
+[ERROR		:	Mon, 24, Jun 2019 15:31:41]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 682, in interpQSFPVolt
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:31:41]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:41]	
+											Running sysc func: <interpQSFPTemp>
+[ERROR		:	Mon, 24, Jun 2019 15:31:41]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 691, in interpQSFPTemp
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:31:41]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:41]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:31:41]	SYSC command returned: INTERP[]
+[INFO		:	Mon, 24, Jun 2019 15:31:41]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:41]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:31:41]	
+											SYSC Interpreted Command: [('<setmux:0:76:40>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r40\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r40\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:N\r~~~\r:P\rIS0\r50\r16\r01\r:N\rIS0\r50\r17\r01\r:N\r~~~\r:P\rIS0\r50\r1a\r01\r:N\rIS0\r50\r1b\r01\r:N\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\r~~~\r:P\r~~~\r:P\rINTERP[]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:31:41]	PASSED Read at: 2019-06-24 15:31:41.284000
+[TITLE		:	Mon, 24, Jun 2019 15:31:41]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:33:07]	PRESSED: Read TCA6416A Reg Set
+[INFO		:	Mon, 24, Jun 2019 15:33:07]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:07]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:07]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:07]	SYSC Full Command: [('', 'IS0\r20\r00\r02', '', ''), ('', 'IS0\r20\r02\r02', '', ''), ('', 'IS0\r20\r06\r02', '', ''), ('<setmux:0:76:0>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:07]	u'IS0\r20\r00\r02\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:07]	u'7781\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:07]	u'IS0\r20\r02\r02\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:07]	u'FFFF\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:07]	u'IS0\r20\r06\r02\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:07]	u'FFFF\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:07]	
+											Running sysc func: <setmux:0:76:0>
+[INFO		:	Mon, 24, Jun 2019 15:33:07]	u'IW0\r76\r0\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:07]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:07]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:07]	
+											SYSC Interpreted Command: [('', 'IS0\r20\r00\r02', '', ''), ('', 'IS0\r20\r02\r02', '', ''), ('', 'IS0\r20\r06\r02', '', ''), ('<setmux:0:76:0>', '', '', '')]
+											SYSC RAW Command: u'IS0\r20\r00\r02\r\tIS0\r20\r02\r02\r\tIS0\r20\r06\r02\r\tIW0\r76\r0\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIS0\r20\r00\r02\r:P\r7781\r~~~\r:P\rIS0\r20\r02\r02\r:P\rFFFF\r~~~\r:P\rIS0\r20\r06\r02\r:P\rFFFF\r~~~\r:P\rIW0\r76\r0\r:P\r~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:07]	PASSED Read TCA6416A Reg Set at: 2019-06-24 15:33:07.811000
+[TITLE		:	Mon, 24, Jun 2019 15:33:07]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:33:13]	PRESSED: Get Output Bits
+[INFO		:	Mon, 24, Jun 2019 15:33:13]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:13]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:13]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:13]	SYSC Full Command: [('<readtca6416:0:20>', '', '', ''), ('<converttobinarytca6416value:0:20:00:E0:00:00>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:13]	
+											Running sysc func: <readtca6416:0:20>
+[INFO		:	Mon, 24, Jun 2019 15:33:13]	u'IS0\r20\r02\r2\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:13]	u'FFFF\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:13]	
+											Running sysc func: <converttobinarytca6416value:0:20:00:E0:00:00>
+[INFO		:	Mon, 24, Jun 2019 15:33:13]	SYSC command returned: [P0P1:1110000000000000]
+[INFO		:	Mon, 24, Jun 2019 15:33:13]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:13]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:13]	
+											SYSC Interpreted Command: [('<readtca6416:0:20>', '', '', ''), ('<converttobinarytca6416value:0:20:00:E0:00:00>', '', '', '')]
+											SYSC RAW Command: u'IS0\r20\r02\r2\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIS0\r20\r02\r2\r:P\rFFFF\r~~~\r:P\r[P0P1:1110000000000000]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:14]	PASSED Get Output Bits at: 2019-06-24 15:33:14.026000
+[TITLE		:	Mon, 24, Jun 2019 15:33:14]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:33:14]	PRESSED: Get Input Bits
+[INFO		:	Mon, 24, Jun 2019 15:33:14]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:14]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:14]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:14]	SYSC Full Command: [('', 'IS0\r20\r00\r2', '', ''), ('<converttobinarytca6416value:0:20:00:1F:00:C1>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:14]	u'IS0\r20\r00\r2\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:14]	u'7781\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:14]	
+											Running sysc func: <converttobinarytca6416value:0:20:00:1F:00:C1>
+[INFO		:	Mon, 24, Jun 2019 15:33:14]	SYSC command returned: [P0P1:0001011110000001]
+[INFO		:	Mon, 24, Jun 2019 15:33:14]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:14]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:14]	
+											SYSC Interpreted Command: [('', 'IS0\r20\r00\r2', '', ''), ('<converttobinarytca6416value:0:20:00:1F:00:C1>', '', '', '')]
+											SYSC RAW Command: u'IS0\r20\r00\r2\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIS0\r20\r00\r2\r:P\r7781\r~~~\r:P\r[P0P1:0001011110000001]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:14]	PASSED Get Input Bits at: 2019-06-24 15:33:14.882000
+[TITLE		:	Mon, 24, Jun 2019 15:33:14]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:33:18]	PRESSED: Run all
+[INFO		:	Mon, 24, Jun 2019 15:33:18]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:18]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:18]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:18]	SYSC Full Command: [('<setmux:0:74:01>', '', '', ''), ('<readeeprom:0:54:00:10>', '', '', ''), ('<interpeeprom>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:18]	
+											Running sysc func: <setmux:0:74:01>
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	u'IW0\r74\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	
+											Running sysc func: <readeeprom:0:54:00:10>
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	u'IW0\r54\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	u'IR0\r54\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	u'5643553132385F50524F44FFFFFFFFFF\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	
+											Running sysc func: <interpeeprom>
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	SYSC command returned: INTERP[VCU128_PROD☐☐☐☐☐]LITERAL[5643553132385F50524F44FFFFFFFFFF]
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	
+											Running sysc func: <setmux:0:74:00>
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	u'IW0\r74\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	
+											SYSC Interpreted Command: [('<setmux:0:74:01>', '', '', ''), ('<readeeprom:0:54:00:10>', '', '', ''), ('<interpeeprom>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+											SYSC RAW Command: u'IW0\r74\r01\r\tIW0\r54\r00\r\tIR0\r54\r10\r\tIW0\r74\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r74\r01\r:P\r~~~\r:P\rIW0\r54\r00\r:P\rIR0\r54\r10\r:P\r5643553132385F50524F44FFFFFFFFFF\r~~~\r:P\rINTERP[VCU128_PROD\u2610\u2610\u2610\u2610\u2610]LITERAL[5643553132385F50524F44FFFFFFFFFF]~~~\r:P\rIW0\r74\r00\r:P\r~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:19]	PASSED Get Board Name at: 2019-06-24 15:33:19.298000
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	SYSC Full Command: [('<setmux:0:74:01>', '', '', ''), ('<readeeprom:0:54:11:03>', '', '', ''), ('<interpeeprom>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	
+											Running sysc func: <setmux:0:74:01>
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	u'IW0\r74\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	
+											Running sysc func: <readeeprom:0:54:11:03>
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	u'IW0\r54\r11\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	u'IR0\r54\r03\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	u'41FFFF\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	
+											Running sysc func: <interpeeprom>
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	SYSC command returned: INTERP[A☐☐]LITERAL[41FFFF]
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	
+											Running sysc func: <setmux:0:74:00>
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	u'IW0\r74\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	
+											SYSC Interpreted Command: [('<setmux:0:74:01>', '', '', ''), ('<readeeprom:0:54:11:03>', '', '', ''), ('<interpeeprom>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+											SYSC RAW Command: u'IW0\r74\r01\r\tIW0\r54\r11\r\tIR0\r54\r03\r\tIW0\r74\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r74\r01\r:P\r~~~\r:P\rIW0\r54\r11\r:P\rIR0\r54\r03\r:P\r41FFFF\r~~~\r:P\rINTERP[A\u2610\u2610]LITERAL[41FFFF]~~~\r:P\rIW0\r74\r00\r:P\r~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:19]	PASSED Get Board Revision at: 2019-06-24 15:33:19.802000
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:19]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	SYSC Full Command: [('<setmux:0:74:01>', '', '', ''), ('<readeeprom:0:54:14:0C>', '', '', ''), ('<interpeeprom>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	
+											Running sysc func: <setmux:0:74:01>
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	u'IW0\r74\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	
+											Running sysc func: <readeeprom:0:54:14:0C>
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	u'IW0\r54\r14\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	u'IR0\r54\r0C\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	u'FFFFFFFFFFFFFFFFFFFFFFFF\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	
+											Running sysc func: <interpeeprom>
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	SYSC command returned: INTERP[☐☐☐☐☐☐☐☐☐☐☐☐]LITERAL[FFFFFFFFFFFFFFFFFFFFFFFF]
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	
+											Running sysc func: <setmux:0:74:00>
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	u'IW0\r74\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	
+											SYSC Interpreted Command: [('<setmux:0:74:01>', '', '', ''), ('<readeeprom:0:54:14:0C>', '', '', ''), ('<interpeeprom>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+											SYSC RAW Command: u'IW0\r74\r01\r\tIW0\r54\r14\r\tIR0\r54\r0C\r\tIW0\r74\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r74\r01\r:P\r~~~\r:P\rIW0\r54\r14\r:P\rIR0\r54\r0C\r:P\rFFFFFFFFFFFFFFFFFFFFFFFF\r~~~\r:P\rINTERP[\u2610\u2610\u2610\u2610\u2610\u2610\u2610\u2610\u2610\u2610\u2610\u2610]LITERAL[FFFFFFFFFFFFFFFFFFFFFFFF]~~~\r:P\rIW0\r74\r00\r:P\r~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:20]	PASSED Get Serial Number at: 2019-06-24 15:33:20.290000
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	SYSC Full Command: [('<setmux:0:74:01>', '', '', ''), ('<readeeprom:0:54:20:3>', '', '', ''), ('<interpeeprom>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	
+											Running sysc func: <setmux:0:74:01>
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	u'IW0\r74\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	
+											Running sysc func: <readeeprom:0:54:20:3>
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	u'IW0\r54\r20\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	u'IR0\r54\r3\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	u'312E33\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	
+											Running sysc func: <interpeeprom>
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	SYSC command returned: INTERP[1.3]LITERAL[312E33]
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	
+											Running sysc func: <setmux:0:74:00>
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	u'IW0\r74\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	
+											SYSC Interpreted Command: [('<setmux:0:74:01>', '', '', ''), ('<readeeprom:0:54:20:3>', '', '', ''), ('<interpeeprom>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+											SYSC RAW Command: u'IW0\r74\r01\r\tIW0\r54\r20\r\tIR0\r54\r3\r\tIW0\r74\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r74\r01\r:P\r~~~\r:P\rIW0\r54\r20\r:P\rIR0\r54\r3\r:P\r312E33\r~~~\r:P\rINTERP[1.3]LITERAL[312E33]~~~\r:P\rIW0\r74\r00\r:P\r~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:20]	PASSED Get EEPROM Format Version at: 2019-06-24 15:33:20.761000
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	SYSC Full Command: [('<setmux:0:74:01>', '', '', ''), ('<readeeprom:0:54:23:06>', '', '', ''), ('<literaleeprom:F>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	
+											Running sysc func: <setmux:0:74:01>
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	u'IW0\r74\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:20]	
+											Running sysc func: <readeeprom:0:54:23:06>
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	u'IW0\r54\r23\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	u'IR0\r54\r06\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	u'010203040506\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	
+											Running sysc func: <literaleeprom:F>
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	SYSC command returned: LITERAL[010203040506]INTERP[☐☐☐☐☐☐]
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	
+											Running sysc func: <setmux:0:74:00>
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	u'IW0\r74\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	
+											SYSC Interpreted Command: [('<setmux:0:74:01>', '', '', ''), ('<readeeprom:0:54:23:06>', '', '', ''), ('<literaleeprom:F>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+											SYSC RAW Command: u'IW0\r74\r01\r\tIW0\r54\r23\r\tIR0\r54\r06\r\tIW0\r74\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r74\r01\r:P\r~~~\r:P\rIW0\r54\r23\r:P\rIR0\r54\r06\r:P\r010203040506\r~~~\r:P\rLITERAL[010203040506]INTERP[\u2610\u2610\u2610\u2610\u2610\u2610]~~~\r:P\rIW0\r74\r00\r:P\r~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:21]	PASSED Get MAC Address 1 at: 2019-06-24 15:33:21.223000
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	SYSC Full Command: [('<setmux:0:74:01>', '', '', ''), ('<readeeprom:0:54:29:06>', '', '', ''), ('<literaleeprom:F>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	
+											Running sysc func: <setmux:0:74:01>
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	u'IW0\r74\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	
+											Running sysc func: <readeeprom:0:54:29:06>
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	u'IW0\r54\r29\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	u'IR0\r54\r06\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	u'FFFFFFFFFFFF\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	
+											Running sysc func: <literaleeprom:F>
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	SYSC command returned: LITERAL[FFFFFFFFFFFF]INTERP[☐☐☐☐☐☐]
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	
+											Running sysc func: <setmux:0:74:00>
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	u'IW0\r74\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	
+											SYSC Interpreted Command: [('<setmux:0:74:01>', '', '', ''), ('<readeeprom:0:54:29:06>', '', '', ''), ('<literaleeprom:F>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+											SYSC RAW Command: u'IW0\r74\r01\r\tIW0\r54\r29\r\tIR0\r54\r06\r\tIW0\r74\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r74\r01\r:P\r~~~\r:P\rIW0\r54\r29\r:P\rIR0\r54\r06\r:P\rFFFFFFFFFFFF\r~~~\r:P\rLITERAL[FFFFFFFFFFFF]INTERP[\u2610\u2610\u2610\u2610\u2610\u2610]~~~\r:P\rIW0\r74\r00\r:P\r~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:21]	PASSED Get MAC Address 2 at: 2019-06-24 15:33:21.694000
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	SYSC Full Command: [('<setmux:0:74:01>', '', '', ''), ('<readeeprom:0:54:2F:06>', '', '', ''), ('<literaleeprom:F>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	
+											Running sysc func: <setmux:0:74:01>
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	u'IW0\r74\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	
+											Running sysc func: <readeeprom:0:54:2F:06>
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	u'IW0\r54\r2f\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	u'IR0\r54\r06\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	u'FFFFFFFFFFFF\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	
+											Running sysc func: <literaleeprom:F>
+[INFO		:	Mon, 24, Jun 2019 15:33:21]	SYSC command returned: LITERAL[FFFFFFFFFFFF]INTERP[☐☐☐☐☐☐]
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	
+											Running sysc func: <setmux:0:74:00>
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	u'IW0\r74\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	
+											SYSC Interpreted Command: [('<setmux:0:74:01>', '', '', ''), ('<readeeprom:0:54:2F:06>', '', '', ''), ('<literaleeprom:F>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+											SYSC RAW Command: u'IW0\r74\r01\r\tIW0\r54\r2f\r\tIR0\r54\r06\r\tIW0\r74\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r74\r01\r:P\r~~~\r:P\rIW0\r54\r2f\r:P\rIR0\r54\r06\r:P\rFFFFFFFFFFFF\r~~~\r:P\rLITERAL[FFFFFFFFFFFF]INTERP[\u2610\u2610\u2610\u2610\u2610\u2610]~~~\r:P\rIW0\r74\r00\r:P\r~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:22]	PASSED Get MAC Address 3 at: 2019-06-24 15:33:22.161000
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	SYSC Full Command: [('<setmux:0:74:01>', '', '', ''), ('<readeeprom:0:54:35:06>', '', '', ''), ('<literaleeprom:F>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	
+											Running sysc func: <setmux:0:74:01>
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	u'IW0\r74\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	
+											Running sysc func: <readeeprom:0:54:35:06>
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	u'IW0\r54\r35\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	u'IR0\r54\r06\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	u'FFFFFFFFFFFF\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	
+											Running sysc func: <literaleeprom:F>
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	SYSC command returned: LITERAL[FFFFFFFFFFFF]INTERP[☐☐☐☐☐☐]
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	
+											Running sysc func: <setmux:0:74:00>
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	u'IW0\r74\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	
+											SYSC Interpreted Command: [('<setmux:0:74:01>', '', '', ''), ('<readeeprom:0:54:35:06>', '', '', ''), ('<literaleeprom:F>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+											SYSC RAW Command: u'IW0\r74\r01\r\tIW0\r54\r35\r\tIR0\r54\r06\r\tIW0\r74\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r74\r01\r:P\r~~~\r:P\rIW0\r54\r35\r:P\rIR0\r54\r06\r:P\rFFFFFFFFFFFF\r~~~\r:P\rLITERAL[FFFFFFFFFFFF]INTERP[\u2610\u2610\u2610\u2610\u2610\u2610]~~~\r:P\rIW0\r74\r00\r:P\r~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:22]	PASSED Get MAC Address 4 at: 2019-06-24 15:33:22.636000
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	SYSC Full Command: [('<setmux:0:74:01>', '', '', ''), ('<readeeprom:0:54:3B:1>', '', '', ''), ('<interpeeprom>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	
+											Running sysc func: <setmux:0:74:01>
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	u'IW0\r74\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	
+											Running sysc func: <readeeprom:0:54:3B:1>
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	u'IW0\r54\r3b\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	u'IR0\r54\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	u'41\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	
+											Running sysc func: <interpeeprom>
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	SYSC command returned: INTERP[A]LITERAL[41]
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	
+											Running sysc func: <setmux:0:74:00>
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	u'IW0\r74\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:22]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:23]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:23]	
+											SYSC Interpreted Command: [('<setmux:0:74:01>', '', '', ''), ('<readeeprom:0:54:3B:1>', '', '', ''), ('<interpeeprom>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+											SYSC RAW Command: u'IW0\r74\r01\r\tIW0\r54\r3b\r\tIR0\r54\r1\r\tIW0\r74\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r74\r01\r:P\r~~~\r:P\rIW0\r54\r3b\r:P\rIR0\r54\r1\r:P\r41\r~~~\r:P\rINTERP[A]LITERAL[41]~~~\r:P\rIW0\r74\r00\r:P\r~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:23]	PASSED Get Active/Passive Indication at: 2019-06-24 15:33:23.127000
+[INFO		:	Mon, 24, Jun 2019 15:33:23]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:23]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:23]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:23]	SYSC Full Command: [('<setmux:0:74:01>', '', '', ''), ('<readeeprom:0:54:3C:1>', '', '', ''), ('<literaleeprom:F>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:23]	
+											Running sysc func: <setmux:0:74:01>
+[INFO		:	Mon, 24, Jun 2019 15:33:23]	u'IW0\r74\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:23]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:23]	
+											Running sysc func: <readeeprom:0:54:3C:1>
+[INFO		:	Mon, 24, Jun 2019 15:33:23]	u'IW0\r54\r3c\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:23]	u'IR0\r54\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:23]	u'07\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:23]	
+											Running sysc func: <literaleeprom:F>
+[INFO		:	Mon, 24, Jun 2019 15:33:23]	SYSC command returned: LITERAL[07]INTERP[☐]
+[INFO		:	Mon, 24, Jun 2019 15:33:23]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:23]	
+											Running sysc func: <setmux:0:74:00>
+[INFO		:	Mon, 24, Jun 2019 15:33:23]	u'IW0\r74\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:23]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:23]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:23]	
+											SYSC Interpreted Command: [('<setmux:0:74:01>', '', '', ''), ('<readeeprom:0:54:3C:1>', '', '', ''), ('<literaleeprom:F>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+											SYSC RAW Command: u'IW0\r74\r01\r\tIW0\r54\r3c\r\tIR0\r54\r1\r\tIW0\r74\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r74\r01\r:P\r~~~\r:P\rIW0\r54\r3c\r:P\rIR0\r54\r1\r:P\r07\r~~~\r:P\rLITERAL[07]INTERP[\u2610]~~~\r:P\rIW0\r74\r00\r:P\r~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:23]	PASSED Get Config Mode at: 2019-06-24 15:33:23.621000
+[TITLE		:	Mon, 24, Jun 2019 15:33:23]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:33:36]	PRESSED: Run all
+[INFO		:	Mon, 24, Jun 2019 15:33:36]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:36]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:36]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:36]	SYSC Full Command: [('<setmux:0:75:06>', '', '', ''), ('<getISL68127voltage:0:65:0>', '', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcISL68127voltage>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:36]	
+											Running sysc func: <setmux:0:75:06>
+[INFO		:	Mon, 24, Jun 2019 15:33:36]	u'IW0\r75\r06\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:36]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:36]	
+											Running sysc func: <getISL68127voltage:0:65:0>
+[INFO		:	Mon, 24, Jun 2019 15:33:36]	u'IW0\r65\r000\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:36]	u'IS0\r65\r8B\r2\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:36]	u'5203\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:36]	
+											Running sysc func: <setmux:0:75:00>
+[INFO		:	Mon, 24, Jun 2019 15:33:36]	u'IW0\r75\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:36]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:36]	
+											Running sysc func: <calcISL68127voltage>
+[INFO		:	Mon, 24, Jun 2019 15:33:36]	SYSC command returned: VOLTAGE[0.85 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:33:36]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:36]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:36]	
+											SYSC Interpreted Command: [('<setmux:0:75:06>', '', '', ''), ('<getISL68127voltage:0:65:0>', '', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcISL68127voltage>', '', '', '')]
+											SYSC RAW Command: u'IW0\r75\r06\r\tIW0\r65\r000\r\tIS0\r65\r8B\r2\r\tIW0\r75\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r75\r06\r:P\r~~~\r:P\rIW0\r65\r000\r:P\rIS0\r65\r8B\r2\r:P\r5203\r~~~\r:P\rIW0\r75\r00\r:P\r~~~\r:P\rVOLTAGE[0.85 Volts]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:36]	PASSED Get VCCINT Voltage at: 2019-06-24 15:33:36.828000
+[INFO		:	Mon, 24, Jun 2019 15:33:36]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	SYSC Full Command: [('<setmux:0:75:06>', '', '', ''), ('<getISL68127voltage:0:65:1>', '', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcISL68127voltage>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	
+											Running sysc func: <setmux:0:75:06>
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	u'IW0\r75\r06\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	
+											Running sysc func: <getISL68127voltage:0:65:1>
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	u'IW0\r65\r001\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	u'IS0\r65\r8B\r2\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	u'5203\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	
+											Running sysc func: <setmux:0:75:00>
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	u'IW0\r75\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	
+											Running sysc func: <calcISL68127voltage>
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	SYSC command returned: VOLTAGE[0.85 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	
+											SYSC Interpreted Command: [('<setmux:0:75:06>', '', '', ''), ('<getISL68127voltage:0:65:1>', '', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcISL68127voltage>', '', '', '')]
+											SYSC RAW Command: u'IW0\r75\r06\r\tIW0\r65\r001\r\tIS0\r65\r8B\r2\r\tIW0\r75\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r75\r06\r:P\r~~~\r:P\rIW0\r65\r001\r:P\rIS0\r65\r8B\r2\r:P\r5203\r~~~\r:P\rIW0\r75\r00\r:P\r~~~\r:P\rVOLTAGE[0.85 Volts]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:37]	PASSED Get VCCHBRAM Voltage at: 2019-06-24 15:33:37.316000
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	SYSC Full Command: [('<setmux:0:75:06>', '', '', ''), ('', 'IW0\r63\r53C2', '', ''), ('<getISL91302voltage:0:63:24:25>', '', '', ''), ('', 'IW0\r63\r5382', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcISL91302voltage>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	
+											Running sysc func: <setmux:0:75:06>
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	u'IW0\r75\r06\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	u'IW0\r63\r53C2\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	
+											Running sysc func: <getISL91302voltage:0:63:24:25>
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	u'IS0\r63\r24\r2\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	u'1C0C\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	u'IW0\r63\r5382\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	
+											Running sysc func: <setmux:0:75:00>
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	u'IW0\r75\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	
+											Running sysc func: <calcISL91302voltage>
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	28
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	12
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	1.795
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	1.795
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	SYSC command returned: VOLTAGE[1.79 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	
+											SYSC Interpreted Command: [('<setmux:0:75:06>', '', '', ''), ('', 'IW0\r63\r53C2', '', ''), ('<getISL91302voltage:0:63:24:25>', '', '', ''), ('', 'IW0\r63\r5382', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcISL91302voltage>', '', '', '')]
+											SYSC RAW Command: u'IW0\r75\r06\r\tIW0\r63\r53C2\r\tIS0\r63\r24\r2\r\tIW0\r63\r5382\r\tIW0\r75\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r75\r06\r:P\r~~~\r:P\rIW0\r63\r53C2\r:P\r~~~\r:P\rIS0\r63\r24\r2\r:P\r1C0C\r~~~\r:P\rIW0\r63\r5382\r:P\r~~~\r:P\rIW0\r75\r00\r:P\r~~~\r:P\rVOLTAGE[1.79 Volts]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:37]	PASSED Get VCC1V8 Voltage at: 2019-06-24 15:33:37.868000
+[INFO		:	Mon, 24, Jun 2019 15:33:37]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	SYSC Full Command: [('<setmux:0:75:06>', '', '', ''), ('', 'IW0\r63\r54C2', '', ''), ('<getISL91302voltage:0:63:2e:2f>', '', '', ''), ('', 'IW0\r63\r5482', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcISL91302voltage>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	
+											Running sysc func: <setmux:0:75:06>
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	u'IW0\r75\r06\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	u'IW0\r63\r54C2\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	
+											Running sysc func: <getISL91302voltage:0:63:2e:2f>
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	u'IS0\r63\r2e\r2\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	u'1C33\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	u'IW0\r63\r5482\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	
+											Running sysc func: <setmux:0:75:00>
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	u'IW0\r75\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	
+											Running sysc func: <calcISL91302voltage>
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	28
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	51
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	1.804
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	1.80475
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	SYSC command returned: VOLTAGE[1.80 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	
+											SYSC Interpreted Command: [('<setmux:0:75:06>', '', '', ''), ('', 'IW0\r63\r54C2', '', ''), ('<getISL91302voltage:0:63:2e:2f>', '', '', ''), ('', 'IW0\r63\r5482', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcISL91302voltage>', '', '', '')]
+											SYSC RAW Command: u'IW0\r75\r06\r\tIW0\r63\r54C2\r\tIS0\r63\r2e\r2\r\tIW0\r63\r5482\r\tIW0\r75\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r75\r06\r:P\r~~~\r:P\rIW0\r63\r54C2\r:P\r~~~\r:P\rIS0\r63\r2e\r2\r:P\r1C33\r~~~\r:P\rIW0\r63\r5482\r:P\r~~~\r:P\rIW0\r75\r00\r:P\r~~~\r:P\rVOLTAGE[1.80 Volts]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:38]	PASSED Get VADJ Voltage at: 2019-06-24 15:33:38.398000
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	SYSC Full Command: [('<setmux:0:75:06>', '', '', ''), ('<getvoltage:0:68>', '', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcvoltage>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	
+											Running sysc func: <setmux:0:75:06>
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	u'IW0\r75\r06\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	
+											Running sysc func: <getvoltage:0:68>
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	u'IS0\r68\r20\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	u'13\rIS0\r68\r8B\r2\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	u'5F26\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	
+											Running sysc func: <setmux:0:75:00>
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	u'IW0\r75\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	
+											Running sysc func: <calcvoltage>
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	SYSC command returned: VOLTAGE[1.20 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	
+											SYSC Interpreted Command: [('<setmux:0:75:06>', '', '', ''), ('<getvoltage:0:68>', '', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcvoltage>', '', '', '')]
+											SYSC RAW Command: u'IW0\r75\r06\r\tIS0\r68\r20\r1\r\tIS0\r68\r8B\r2\r\tIW0\r75\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r75\r06\r:P\r~~~\r:P\rIS0\r68\r20\r1\r:P\r13\rIS0\r68\r8B\r2\r:P\r5F26\r~~~\r:P\rIW0\r75\r00\r:P\r~~~\r:P\rVOLTAGE[1.20 Volts]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:38]	PASSED Get VCCHBM Voltage at: 2019-06-24 15:33:38.901000
+[INFO		:	Mon, 24, Jun 2019 15:33:38]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	SYSC Full Command: [('<setmux:0:75:06>', '', '', ''), ('<getvoltage:0:69>', '', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcvoltage>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	
+											Running sysc func: <setmux:0:75:06>
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	u'IW0\r75\r06\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	
+											Running sysc func: <getvoltage:0:69>
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	u'IS0\r69\r20\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	u'13\rIS0\r69\r8B\r2\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	u'6826\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	
+											Running sysc func: <setmux:0:75:00>
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	u'IW0\r75\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	
+											Running sysc func: <calcvoltage>
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	SYSC command returned: VOLTAGE[1.20 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	
+											SYSC Interpreted Command: [('<setmux:0:75:06>', '', '', ''), ('<getvoltage:0:69>', '', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcvoltage>', '', '', '')]
+											SYSC RAW Command: u'IW0\r75\r06\r\tIS0\r69\r20\r1\r\tIS0\r69\r8B\r2\r\tIW0\r75\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r75\r06\r:P\r~~~\r:P\rIS0\r69\r20\r1\r:P\r13\rIS0\r69\r8B\r2\r:P\r6826\r~~~\r:P\rIW0\r75\r00\r:P\r~~~\r:P\rVOLTAGE[1.20 Volts]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:39]	PASSED Get MGTAVTT Voltage at: 2019-06-24 15:33:39.397000
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	SYSC Full Command: [('<setmux:0:75:06>', '', '', ''), ('', 'IW0\r62\r53C2', '', ''), ('<getISL91302voltage:0:62:24:25>', '', '', ''), ('', 'IW0\r62\r5382', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcISL91302voltage>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	
+											Running sysc func: <setmux:0:75:06>
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	u'IW0\r75\r06\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	u'IW0\r62\r53C2\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	
+											Running sysc func: <getISL91302voltage:0:62:24:25>
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	u'IS0\r62\r24\r2\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	u'12B5\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	u'IW0\r62\r5382\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	
+											Running sysc func: <setmux:0:75:00>
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	u'IW0\r75\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	
+											Running sysc func: <calcISL91302voltage>
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	18
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	181
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	1.197
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	1.19725
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	SYSC command returned: VOLTAGE[1.20 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	
+											SYSC Interpreted Command: [('<setmux:0:75:06>', '', '', ''), ('', 'IW0\r62\r53C2', '', ''), ('<getISL91302voltage:0:62:24:25>', '', '', ''), ('', 'IW0\r62\r5382', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcISL91302voltage>', '', '', '')]
+											SYSC RAW Command: u'IW0\r75\r06\r\tIW0\r62\r53C2\r\tIS0\r62\r24\r2\r\tIW0\r62\r5382\r\tIW0\r75\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r75\r06\r:P\r~~~\r:P\rIW0\r62\r53C2\r:P\r~~~\r:P\rIS0\r62\r24\r2\r:P\r12B5\r~~~\r:P\rIW0\r62\r5382\r:P\r~~~\r:P\rIW0\r75\r00\r:P\r~~~\r:P\rVOLTAGE[1.20 Volts]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:39]	PASSED Get QDR_VDDQ Voltage at: 2019-06-24 15:33:39.936000
+[INFO		:	Mon, 24, Jun 2019 15:33:39]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	SYSC Full Command: [('<setmux:0:75:06>', '', '', ''), ('', 'IW0\r62\r54C2', '', ''), ('<getISL91302voltage:0:62:2e:2f>', '', '', ''), ('', 'IW0\r62\r5482', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcISL91302voltage>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	
+											Running sysc func: <setmux:0:75:06>
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	u'IW0\r75\r06\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	u'IW0\r62\r54C2\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	
+											Running sysc func: <getISL91302voltage:0:62:2e:2f>
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	u'IS0\r62\r2e\r2\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	u'1454\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	u'IW0\r62\r5482\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	
+											Running sysc func: <setmux:0:75:00>
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	u'IW0\r75\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	
+											Running sysc func: <calcISL91302voltage>
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	20
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	84
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	1.301
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	1.301
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	SYSC command returned: VOLTAGE[1.30 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	
+											SYSC Interpreted Command: [('<setmux:0:75:06>', '', '', ''), ('', 'IW0\r62\r54C2', '', ''), ('<getISL91302voltage:0:62:2e:2f>', '', '', ''), ('', 'IW0\r62\r5482', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcISL91302voltage>', '', '', '')]
+											SYSC RAW Command: u'IW0\r75\r06\r\tIW0\r62\r54C2\r\tIS0\r62\r2e\r2\r\tIW0\r62\r5482\r\tIW0\r75\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r75\r06\r:P\r~~~\r:P\rIW0\r62\r54C2\r:P\r~~~\r:P\rIS0\r62\r2e\r2\r:P\r1454\r~~~\r:P\rIW0\r62\r5482\r:P\r~~~\r:P\rIW0\r75\r00\r:P\r~~~\r:P\rVOLTAGE[1.30 Volts]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:40]	PASSED Get UTIL_1V3 Voltage at: 2019-06-24 15:33:40.469000
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	SYSC Full Command: [('<setmux:0:75:06>', '', '', ''), ('', 'IW0\r64\r53C2', '', ''), ('<getISL91302voltage:0:64:24:25>', '', '', ''), ('', 'IW0\r64\r5382', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcISL91302voltage>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	
+											Running sysc func: <setmux:0:75:06>
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	u'IW0\r75\r06\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	u'IW0\r64\r53C2\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	
+											Running sysc func: <getISL91302voltage:0:64:24:25>
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	u'IS0\r64\r24\r2\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	u'12C0\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	u'IW0\r64\r5382\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	
+											Running sysc func: <setmux:0:75:00>
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	u'IW0\r75\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	
+											Running sysc func: <calcISL91302voltage>
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	18
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	192
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	1.2
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	1.2
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	SYSC command returned: VOLTAGE[1.20 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:40]	
+											SYSC Interpreted Command: [('<setmux:0:75:06>', '', '', ''), ('', 'IW0\r64\r53C2', '', ''), ('<getISL91302voltage:0:64:24:25>', '', '', ''), ('', 'IW0\r64\r5382', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcISL91302voltage>', '', '', '')]
+											SYSC RAW Command: u'IW0\r75\r06\r\tIW0\r64\r53C2\r\tIS0\r64\r24\r2\r\tIW0\r64\r5382\r\tIW0\r75\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r75\r06\r:P\r~~~\r:P\rIW0\r64\r53C2\r:P\r~~~\r:P\rIS0\r64\r24\r2\r:P\r12C0\r~~~\r:P\rIW0\r64\r5382\r:P\r~~~\r:P\rIW0\r75\r00\r:P\r~~~\r:P\rVOLTAGE[1.20 Volts]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:41]	PASSED Get RLD3_VDDQ Voltage at: 2019-06-24 15:33:41.014000
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	SYSC Full Command: [('<setmux:0:75:06>', '', '', ''), ('', 'IW0\r64\r54C2', '', ''), ('<getISL91302voltage:0:64:2e:2f>', '', '', ''), ('', 'IW0\r64\r5482', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcISL91302voltage>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	
+											Running sysc func: <setmux:0:75:06>
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	u'IW0\r75\r06\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	u'IW0\r64\r54C2\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	
+											Running sysc func: <getISL91302voltage:0:64:2e:2f>
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	u'IS0\r64\r2e\r2\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	u'12C2\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	u'IW0\r64\r5482\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	
+											Running sysc func: <setmux:0:75:00>
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	u'IW0\r75\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	
+											Running sysc func: <calcISL91302voltage>
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	18
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	194
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	1.2
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	1.2005
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	SYSC command returned: VOLTAGE[1.20 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	
+											SYSC Interpreted Command: [('<setmux:0:75:06>', '', '', ''), ('', 'IW0\r64\r54C2', '', ''), ('<getISL91302voltage:0:64:2e:2f>', '', '', ''), ('', 'IW0\r64\r5482', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcISL91302voltage>', '', '', '')]
+											SYSC RAW Command: u'IW0\r75\r06\r\tIW0\r64\r54C2\r\tIS0\r64\r2e\r2\r\tIW0\r64\r5482\r\tIW0\r75\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r75\r06\r:P\r~~~\r:P\rIW0\r64\r54C2\r:P\r~~~\r:P\rIS0\r64\r2e\r2\r:P\r12C2\r~~~\r:P\rIW0\r64\r5482\r:P\r~~~\r:P\rIW0\r75\r00\r:P\r~~~\r:P\rVOLTAGE[1.20 Volts]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:41]	PASSED Get DDR4_VDDQ Voltage at: 2019-06-24 15:33:41.561000
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	SYSC Full Command: [('<setmux:0:75:06>', '', '', ''), ('', 'IW0\r61\r53C2', '', ''), ('<getISL91302voltage:0:61:24:25>', '', '', ''), ('', 'IW0\r61\r5382', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcISL91302voltage>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	
+											Running sysc func: <setmux:0:75:06>
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	u'IW0\r75\r06\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	u'IW0\r61\r53C2\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	
+											Running sysc func: <getISL91302voltage:0:61:24:25>
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	u'IS0\r61\r24\r2\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	u'1518\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	u'IW0\r61\r5382\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	
+											Running sysc func: <setmux:0:75:00>
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	u'IW0\r75\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	
+											Running sysc func: <calcISL91302voltage>
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	21
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	24
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	1.35
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	1.35
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	SYSC command returned: VOLTAGE[1.35 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:41]	
+											SYSC Interpreted Command: [('<setmux:0:75:06>', '', '', ''), ('', 'IW0\r61\r53C2', '', ''), ('<getISL91302voltage:0:61:24:25>', '', '', ''), ('', 'IW0\r61\r5382', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcISL91302voltage>', '', '', '')]
+											SYSC RAW Command: u'IW0\r75\r06\r\tIW0\r61\r53C2\r\tIS0\r61\r24\r2\r\tIW0\r61\r5382\r\tIW0\r75\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r75\r06\r:P\r~~~\r:P\rIW0\r61\r53C2\r:P\r~~~\r:P\rIS0\r61\r24\r2\r:P\r1518\r~~~\r:P\rIW0\r61\r5382\r:P\r~~~\r:P\rIW0\r75\r00\r:P\r~~~\r:P\rVOLTAGE[1.35 Volts]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:42]	PASSED Get UTIL_1V35 Voltage at: 2019-06-24 15:33:42.089000
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	SYSC Full Command: [('<setmux:0:75:06>', '', '', ''), ('', 'IW0\r61\r54C2', '', ''), ('<getISL91302voltage:0:61:2e:2f>', '', '', ''), ('', 'IW0\r61\r5482', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcISL91302voltage>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	
+											Running sysc func: <setmux:0:75:06>
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	u'IW0\r75\r06\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	u'IW0\r61\r54C2\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	
+											Running sysc func: <getISL91302voltage:0:61:2e:2f>
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	u'IS0\r61\r2e\r2\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	u'0F91\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	u'IW0\r61\r5482\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	
+											Running sysc func: <setmux:0:75:00>
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	u'IW0\r75\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	
+											Running sysc func: <calcISL91302voltage>
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	15
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	145
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	0.996
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	0.99625
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	SYSC command returned: VOLTAGE[1.00 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	
+											SYSC Interpreted Command: [('<setmux:0:75:06>', '', '', ''), ('', 'IW0\r61\r54C2', '', ''), ('<getISL91302voltage:0:61:2e:2f>', '', '', ''), ('', 'IW0\r61\r5482', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcISL91302voltage>', '', '', '')]
+											SYSC RAW Command: u'IW0\r75\r06\r\tIW0\r61\r54C2\r\tIS0\r61\r2e\r2\r\tIW0\r61\r5482\r\tIW0\r75\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r75\r06\r:P\r~~~\r:P\rIW0\r61\r54C2\r:P\r~~~\r:P\rIS0\r61\r2e\r2\r:P\r0F91\r~~~\r:P\rIW0\r61\r5482\r:P\r~~~\r:P\rIW0\r75\r00\r:P\r~~~\r:P\rVOLTAGE[1.00 Volts]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:42]	PASSED Get SYS_1V0 Voltage at: 2019-06-24 15:33:42.624000
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	SYSC Full Command: [('<setmux:0:75:06>', '', '', ''), ('<getvoltage:0:6A>', '', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcvoltage>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	
+											Running sysc func: <setmux:0:75:06>
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	u'IW0\r75\r06\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	
+											Running sysc func: <getvoltage:0:6A>
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	u'IS0\r6A\r20\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	u'13\rIS0\r6A\r8B\r2\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	u'7869\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	
+											Running sysc func: <setmux:0:75:00>
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	u'IW0\r75\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	
+											Running sysc func: <calcvoltage>
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	SYSC command returned: VOLTAGE[3.30 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:42]	
+											SYSC Interpreted Command: [('<setmux:0:75:06>', '', '', ''), ('<getvoltage:0:6A>', '', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcvoltage>', '', '', '')]
+											SYSC RAW Command: u'IW0\r75\r06\r\tIS0\r6A\r20\r1\r\tIS0\r6A\r8B\r2\r\tIW0\r75\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r75\r06\r:P\r~~~\r:P\rIS0\r6A\r20\r1\r:P\r13\rIS0\r6A\r8B\r2\r:P\r7869\r~~~\r:P\rIW0\r75\r00\r:P\r~~~\r:P\rVOLTAGE[3.30 Volts]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:43]	PASSED Get UTIL_3V3 Voltage at: 2019-06-24 15:33:43.101000
+[INFO		:	Mon, 24, Jun 2019 15:33:43]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:43]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:43]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:43]	SYSC Full Command: [('<setmux:0:75:06>', '', '', ''), ('<getvoltage:0:6B>', '', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcvoltage>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:43]	
+											Running sysc func: <setmux:0:75:06>
+[INFO		:	Mon, 24, Jun 2019 15:33:43]	u'IW0\r75\r06\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:43]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:43]	
+											Running sysc func: <getvoltage:0:6B>
+[INFO		:	Mon, 24, Jun 2019 15:33:43]	u'IS0\r6B\r20\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:43]	u'13\rIS0\r6B\r8B\r2\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:43]	u'16A0\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:43]	
+											Running sysc func: <setmux:0:75:00>
+[INFO		:	Mon, 24, Jun 2019 15:33:43]	u'IW0\r75\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:43]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:43]	
+											Running sysc func: <calcvoltage>
+[INFO		:	Mon, 24, Jun 2019 15:33:43]	SYSC command returned: VOLTAGE[5.00 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:33:43]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:43]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:43]	
+											SYSC Interpreted Command: [('<setmux:0:75:06>', '', '', ''), ('<getvoltage:0:6B>', '', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcvoltage>', '', '', '')]
+											SYSC RAW Command: u'IW0\r75\r06\r\tIS0\r6B\r20\r1\r\tIS0\r6B\r8B\r2\r\tIW0\r75\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r75\r06\r:P\r~~~\r:P\rIS0\r6B\r20\r1\r:P\r13\rIS0\r6B\r8B\r2\r:P\r16A0\r~~~\r:P\rIW0\r75\r00\r:P\r~~~\r:P\rVOLTAGE[5.00 Volts]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:43]	PASSED Get UTIL_5V0 Voltage at: 2019-06-24 15:33:43.584000
+[TITLE		:	Mon, 24, Jun 2019 15:33:43]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:33:49]	PRESSED: Get Power Mode
+[INFO		:	Mon, 24, Jun 2019 15:33:49]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:49]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:49]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:49]	SYSC Full Command: [('<setmux:0:76:40>', '', '', ''), ('', 'IS0\r50\r62\r01', '', ''), ('<setmux:0:76:00>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:49]	
+											Running sysc func: <setmux:0:76:40>
+[INFO		:	Mon, 24, Jun 2019 15:33:49]	u'IW0\r76\r40\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:49]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:49]	u'IS0\r50\r62\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:49]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:49]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:33:49]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:49]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:49]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:49]	
+											SYSC Interpreted Command: [('<setmux:0:76:40>', '', '', ''), ('', 'IS0\r50\r62\r01', '', ''), ('<setmux:0:76:00>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r40\r\tIS0\r50\r62\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r40\r:P\r~~~\r:P\rIS0\r50\r62\r01\r:N\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:49]	PASSED Get Power Mode at: 2019-06-24 15:33:49.876000
+[TITLE		:	Mon, 24, Jun 2019 15:33:49]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:33:56]	PRESSED: Get Power Mode Override
+[INFO		:	Mon, 24, Jun 2019 15:33:56]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:57]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:57]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:57]	SYSC Full Command: [('<setmux:0:76:40>', '', '', ''), ('', 'IS0\r50\r5d\r01', '', ''), ('<setmux:0:76:00>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:57]	
+											Running sysc func: <setmux:0:76:40>
+[INFO		:	Mon, 24, Jun 2019 15:33:57]	u'IW0\r76\r40\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:57]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:57]	u'IS0\r50\r5d\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:57]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:57]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:33:57]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:57]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:57]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:57]	
+											SYSC Interpreted Command: [('<setmux:0:76:40>', '', '', ''), ('', 'IS0\r50\r5d\r01', '', ''), ('<setmux:0:76:00>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r40\r\tIS0\r50\r5d\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r40\r:P\r~~~\r:P\rIS0\r50\r5d\r01\r:N\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:57]	PASSED Get Power Mode Override at: 2019-06-24 15:33:57.380000
+[TITLE		:	Mon, 24, Jun 2019 15:33:57]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:33:58]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:33:58]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:33:58]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:58]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:58]	SYSC Full Command: [('<setmux:0:76:40>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:33:58]	
+											Running sysc func: <setmux:0:76:40>
+[INFO		:	Mon, 24, Jun 2019 15:33:59]	u'IW0\r76\r40\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:59]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:59]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:33:59]	u'IS0\r50\r94\r10\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:59]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:59]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:33:59]	u'IS0\r50\r16\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:59]	u'IS0\r50\r17\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:59]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:59]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:33:59]	u'IS0\r50\r1a\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:59]	u'IS0\r50\r1b\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:59]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:59]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:33:59]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:59]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:59]	
+											Running sysc func: <interpQSFPVolt>
+[ERROR		:	Mon, 24, Jun 2019 15:33:59]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 682, in interpQSFPVolt
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:33:59]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:59]	
+											Running sysc func: <interpQSFPTemp>
+[ERROR		:	Mon, 24, Jun 2019 15:33:59]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 691, in interpQSFPTemp
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:33:59]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:59]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:33:59]	SYSC command returned: INTERP[]
+[INFO		:	Mon, 24, Jun 2019 15:33:59]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:59]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:33:59]	
+											SYSC Interpreted Command: [('<setmux:0:76:40>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r40\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r40\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:N\r~~~\r:P\rIS0\r50\r16\r01\r:N\rIS0\r50\r17\r01\r:N\r~~~\r:P\rIS0\r50\r1a\r01\r:N\rIS0\r50\r1b\r01\r:N\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\r~~~\r:P\r~~~\r:P\rINTERP[]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:33:59]	PASSED Read at: 2019-06-24 15:33:59.436000
+[TITLE		:	Mon, 24, Jun 2019 15:33:59]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:34:05]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:34:05]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	SYSC Full Command: [('<setmux:0:76:10>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	
+											Running sysc func: <setmux:0:76:10>
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	u'IW0\r76\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	u'IS0\r50\r94\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	u'4D6F6C657820496E632E202020202020\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	u'IS0\r50\r16\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	u'01\rIS0\r50\r17\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	u'81\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	u'IS0\r50\r1a\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	u'00\rIS0\r50\r1b\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	u'00\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	
+											Running sysc func: <interpQSFPVolt>
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	SYSC command returned: VOLTAGE[0.0 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	
+											Running sysc func: <interpQSFPTemp>
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	SYSC command returned: TEMP[1.50390625°C]
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	SYSC command returned: INTERP[Molex Inc.      ]
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:06]	
+											SYSC Interpreted Command: [('<setmux:0:76:10>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r10\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r10\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:P\r4D6F6C657820496E632E202020202020\r~~~\r:P\rIS0\r50\r16\r01\r:P\r01\rIS0\r50\r17\r01\r:P\r81\r~~~\r:P\rIS0\r50\r1a\r01\r:P\r00\rIS0\r50\r1b\r01\r:P\r00\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\rVOLTAGE[0.0 Volts]~~~\r:P\rTEMP[1.50390625\xb0C]~~~\r:P\rINTERP[Molex Inc.      ]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:34:06]	PASSED Read at: 2019-06-24 15:34:06.611000
+[TITLE		:	Mon, 24, Jun 2019 15:34:06]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:34:10]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:34:10]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:34:10]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:10]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:10]	SYSC Full Command: [('<setmux:0:76:80>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:34:10]	
+											Running sysc func: <setmux:0:76:80>
+[INFO		:	Mon, 24, Jun 2019 15:34:10]	u'IW0\r76\r80\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:10]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:10]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:34:10]	u'IS0\r50\r94\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:10]	u'4D6F6C657820496E632E202020202020\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:10]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:34:10]	u'IS0\r50\r16\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:10]	u'01\rIS0\r50\r17\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:11]	u'81\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:11]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:34:11]	u'IS0\r50\r1a\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:11]	u'00\rIS0\r50\r1b\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:11]	u'00\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:11]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:34:11]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:11]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:11]	
+											Running sysc func: <interpQSFPVolt>
+[INFO		:	Mon, 24, Jun 2019 15:34:11]	SYSC command returned: VOLTAGE[0.0 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:34:11]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:11]	
+											Running sysc func: <interpQSFPTemp>
+[INFO		:	Mon, 24, Jun 2019 15:34:11]	SYSC command returned: TEMP[1.50390625°C]
+[INFO		:	Mon, 24, Jun 2019 15:34:11]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:11]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:34:11]	SYSC command returned: INTERP[Molex Inc.      ]
+[INFO		:	Mon, 24, Jun 2019 15:34:11]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:11]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:34:11]	
+											SYSC Interpreted Command: [('<setmux:0:76:80>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r80\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r80\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:P\r4D6F6C657820496E632E202020202020\r~~~\r:P\rIS0\r50\r16\r01\r:P\r01\rIS0\r50\r17\r01\r:P\r81\r~~~\r:P\rIS0\r50\r1a\r01\r:P\r00\rIS0\r50\r1b\r01\r:P\r00\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\rVOLTAGE[0.0 Volts]~~~\r:P\rTEMP[1.50390625\xb0C]~~~\r:P\rINTERP[Molex Inc.      ]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:34:11]	PASSED Read at: 2019-06-24 15:34:11.284000
+[TITLE		:	Mon, 24, Jun 2019 15:34:11]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:40:46]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:40:46]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:40:46]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:46]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:46]	SYSC Full Command: [('<setmux:0:76:80>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:40:46]	
+											Running sysc func: <setmux:0:76:80>
+[INFO		:	Mon, 24, Jun 2019 15:40:46]	u'IW0\r76\r80\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:46]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:46]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:40:46]	u'IS0\r50\r94\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:47]	u'4D6F6C657820496E632E202020202020\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:47]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:40:47]	u'IS0\r50\r16\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:47]	u'01\rIS0\r50\r17\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:47]	u'81\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:47]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:40:47]	u'IS0\r50\r1a\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:47]	u'00\rIS0\r50\r1b\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:47]	u'00\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:47]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:40:47]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:47]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:47]	
+											Running sysc func: <interpQSFPVolt>
+[INFO		:	Mon, 24, Jun 2019 15:40:47]	SYSC command returned: VOLTAGE[0.0 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:40:47]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:47]	
+											Running sysc func: <interpQSFPTemp>
+[INFO		:	Mon, 24, Jun 2019 15:40:47]	SYSC command returned: TEMP[1.50390625°C]
+[INFO		:	Mon, 24, Jun 2019 15:40:47]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:47]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:40:47]	SYSC command returned: INTERP[Molex Inc.      ]
+[INFO		:	Mon, 24, Jun 2019 15:40:47]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:47]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:47]	
+											SYSC Interpreted Command: [('<setmux:0:76:80>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r80\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r80\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:P\r4D6F6C657820496E632E202020202020\r~~~\r:P\rIS0\r50\r16\r01\r:P\r01\rIS0\r50\r17\r01\r:P\r81\r~~~\r:P\rIS0\r50\r1a\r01\r:P\r00\rIS0\r50\r1b\r01\r:P\r00\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\rVOLTAGE[0.0 Volts]~~~\r:P\rTEMP[1.50390625\xb0C]~~~\r:P\rINTERP[Molex Inc.      ]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:40:47]	PASSED Read at: 2019-06-24 15:40:47.385000
+[TITLE		:	Mon, 24, Jun 2019 15:40:47]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:40:51]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	SYSC Full Command: [('<setmux:0:76:10>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	
+											Running sysc func: <setmux:0:76:10>
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	u'IW0\r76\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	u'IS0\r50\r94\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	u'4D6F6C657820496E632E202020202020\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	u'IS0\r50\r16\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	u'01\rIS0\r50\r17\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	u'81\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	u'IS0\r50\r1a\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	u'00\rIS0\r50\r1b\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	u'00\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	
+											Running sysc func: <interpQSFPVolt>
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	SYSC command returned: VOLTAGE[0.0 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	
+											Running sysc func: <interpQSFPTemp>
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	SYSC command returned: TEMP[1.50390625°C]
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	SYSC command returned: INTERP[Molex Inc.      ]
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:51]	
+											SYSC Interpreted Command: [('<setmux:0:76:10>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r10\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r10\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:P\r4D6F6C657820496E632E202020202020\r~~~\r:P\rIS0\r50\r16\r01\r:P\r01\rIS0\r50\r17\r01\r:P\r81\r~~~\r:P\rIS0\r50\r1a\r01\r:P\r00\rIS0\r50\r1b\r01\r:P\r00\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\rVOLTAGE[0.0 Volts]~~~\r:P\rTEMP[1.50390625\xb0C]~~~\r:P\rINTERP[Molex Inc.      ]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:40:52]	PASSED Read at: 2019-06-24 15:40:52.110000
+[TITLE		:	Mon, 24, Jun 2019 15:40:52]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:40:53]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:40:53]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:40:54]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:54]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:54]	SYSC Full Command: [('<setmux:0:76:20>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:40:54]	
+											Running sysc func: <setmux:0:76:20>
+[INFO		:	Mon, 24, Jun 2019 15:40:54]	u'IW0\r76\r20\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:54]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:54]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:40:54]	u'IS0\r50\r94\r10\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:54]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:54]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:40:54]	u'IS0\r50\r16\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:54]	u'IS0\r50\r17\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:54]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:54]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:40:54]	u'IS0\r50\r1a\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:54]	u'IS0\r50\r1b\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:54]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:54]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:40:54]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:54]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:54]	
+											Running sysc func: <interpQSFPVolt>
+[ERROR		:	Mon, 24, Jun 2019 15:40:54]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 682, in interpQSFPVolt
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:40:54]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:54]	
+											Running sysc func: <interpQSFPTemp>
+[ERROR		:	Mon, 24, Jun 2019 15:40:54]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 691, in interpQSFPTemp
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:40:54]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:54]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:40:54]	SYSC command returned: INTERP[]
+[INFO		:	Mon, 24, Jun 2019 15:40:54]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:54]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:54]	
+											SYSC Interpreted Command: [('<setmux:0:76:20>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r20\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r20\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:N\r~~~\r:P\rIS0\r50\r16\r01\r:N\rIS0\r50\r17\r01\r:N\r~~~\r:P\rIS0\r50\r1a\r01\r:N\rIS0\r50\r1b\r01\r:N\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\r~~~\r:P\r~~~\r:P\rINTERP[]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:40:54]	PASSED Read at: 2019-06-24 15:40:54.607000
+[TITLE		:	Mon, 24, Jun 2019 15:40:54]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:40:56]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	SYSC Full Command: [('<setmux:0:76:40>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	
+											Running sysc func: <setmux:0:76:40>
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	u'IW0\r76\r40\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	u'IS0\r50\r94\r10\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	u'IS0\r50\r16\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	u'IS0\r50\r17\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	u'IS0\r50\r1a\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	u'IS0\r50\r1b\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	
+											Running sysc func: <interpQSFPVolt>
+[ERROR		:	Mon, 24, Jun 2019 15:40:56]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 682, in interpQSFPVolt
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	
+											Running sysc func: <interpQSFPTemp>
+[ERROR		:	Mon, 24, Jun 2019 15:40:56]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 691, in interpQSFPTemp
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	SYSC command returned: INTERP[]
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:40:56]	
+											SYSC Interpreted Command: [('<setmux:0:76:40>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r40\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r40\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:N\r~~~\r:P\rIS0\r50\r16\r01\r:N\rIS0\r50\r17\r01\r:N\r~~~\r:P\rIS0\r50\r1a\r01\r:N\rIS0\r50\r1b\r01\r:N\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\r~~~\r:P\r~~~\r:P\rINTERP[]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:40:56]	PASSED Read at: 2019-06-24 15:40:56.858000
+[TITLE		:	Mon, 24, Jun 2019 15:40:56]	Finished
+[TITLE		:	Thu, 27, Jun 2019 09:14:38]	PRESSED: Set Si5328 Frequency
+[INFO		:	Thu, 27, Jun 2019 09:14:38]	Starting step sysc
+											==========
+[INFO		:	Thu, 27, Jun 2019 09:14:38]	u'\x1b:R\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:38]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:38]	SYSC Full Command: [('<setmux:0:74:02>', '', '', ''), ('<calcsi5328:0:68:<1>>', '', '', ''), ('<saveval:02:<1>>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+[INFO		:	Thu, 27, Jun 2019 09:14:38]	
+											Running sysc func: <setmux:0:74:02>
+[INFO		:	Thu, 27, Jun 2019 09:14:38]	u'IW0\r74\r02\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:38]	u'~~~\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:38]	
+											Running sysc func: <calcsi5328:0:68:156.25>
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r0054\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r01e1\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r0212\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r0355\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r0412\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r0a00\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r0b40\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r132c\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r143e\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r15fc\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r16df\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r171f\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r183f\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r1980\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r1f00\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r2000\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r2103\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r2200\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r2300\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r2403\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r2802\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r2970\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r2a1f\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r2b00\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r2c4e\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r2d03\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r2e00\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r2f39\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r300f\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r371b\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r8318\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r8400\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r8900\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:44]	u'IW0\r68\r8a0F\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:45]	u'IW0\r68\r8bFF\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:45]	u'IW0\r68\r8e00\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:45]	u'IW0\r68\r8f00\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:45]	u'IW0\r68\r8840\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:45]	u'~~~\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:45]	
+											Running sysc func: <saveval:02:156.25>
+[INFO		:	Thu, 27, Jun 2019 09:14:45]	u'MWS\r02\r4063880000000000\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:45]	u'~~~\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:45]	
+											Running sysc func: <setmux:0:74:00>
+[INFO		:	Thu, 27, Jun 2019 09:14:45]	u'IW0\r74\r00\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:45]	u'~~~\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:46]	u'~~~\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:14:46]	
+											SYSC Interpreted Command: [('<setmux:0:74:02>', '', '', ''), ('<calcsi5328:0:68:<1>>', '', '', ''), ('<saveval:02:<1>>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+											SYSC RAW Command: u'IW0\r74\r02\r\tIW0\r68\r0054\r\tIW0\r68\r01e1\r\tIW0\r68\r0212\r\tIW0\r68\r0355\r\tIW0\r68\r0412\r\tIW0\r68\r0a00\r\tIW0\r68\r0b40\r\tIW0\r68\r132c\r\tIW0\r68\r143e\r\tIW0\r68\r15fc\r\tIW0\r68\r16df\r\tIW0\r68\r171f\r\tIW0\r68\r183f\r\tIW0\r68\r1980\r\tIW0\r68\r1f00\r\tIW0\r68\r2000\r\tIW0\r68\r2103\r\tIW0\r68\r2200\r\tIW0\r68\r2300\r\tIW0\r68\r2403\r\tIW0\r68\r2802\r\tIW0\r68\r2970\r\tIW0\r68\r2a1f\r\tIW0\r68\r2b00\r\tIW0\r68\r2c4e\r\tIW0\r68\r2d03\r\tIW0\r68\r2e00\r\tIW0\r68\r2f39\r\tIW0\r68\r300f\r\tIW0\r68\r371b\r\tIW0\r68\r8318\r\tIW0\r68\r8400\r\tIW0\r68\r8900\r\tIW0\r68\r8a0F\r\tIW0\r68\r8bFF\r\tIW0\r68\r8e00\r\tIW0\r68\r8f00\r\tIW0\r68\r8840\r\tMWS\r02\r4063880000000000\r\tIW0\r74\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r74\r02\r:P\r~~~\r:P\rIW0\r68\r0054\r:P\rIW0\r68\r01e1\r:P\rIW0\r68\r0212\r:P\rIW0\r68\r0355\r:P\rIW0\r68\r0412\r:P\rIW0\r68\r0a00\r:P\rIW0\r68\r0b40\r:P\rIW0\r68\r132c\r:P\rIW0\r68\r143e\r:P\rIW0\r68\r15fc\r:P\rIW0\r68\r16df\r:P\rIW0\r68\r171f\r:P\rIW0\r68\r183f\r:P\rIW0\r68\r1980\r:P\rIW0\r68\r1f00\r:P\rIW0\r68\r2000\r:P\rIW0\r68\r2103\r:P\rIW0\r68\r2200\r:P\rIW0\r68\r2300\r:P\rIW0\r68\r2403\r:P\rIW0\r68\r2802\r:P\rIW0\r68\r2970\r:P\rIW0\r68\r2a1f\r:P\rIW0\r68\r2b00\r:P\rIW0\r68\r2c4e\r:P\rIW0\r68\r2d03\r:P\rIW0\r68\r2e00\r:P\rIW0\r68\r2f39\r:P\rIW0\r68\r300f\r:P\rIW0\r68\r371b\r:P\rIW0\r68\r8318\r:P\rIW0\r68\r8400\r:P\rIW0\r68\r8900\r:P\rIW0\r68\r8a0F\r:P\rIW0\r68\r8bFF\r:P\rIW0\r68\r8e00\r:P\rIW0\r68\r8f00\r:P\rIW0\r68\r8840\r:P\r~~~\r:P\rMWS\r02\r4063880000000000\r:P\r~~~\r:P\rIW0\r74\r00\r:P\r~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Thu, 27, Jun 2019 09:14:46]	PASSED Set Si5328 Frequency at: 2019-06-27 09:14:46.103000
+[TITLE		:	Thu, 27, Jun 2019 09:14:46]	Finished
+[TITLE		:	Thu, 27, Jun 2019 09:16:57]	PRESSED: Set Si5328 Frequency
+[INFO		:	Thu, 27, Jun 2019 09:16:57]	Starting step sysc
+											==========
+[INFO		:	Thu, 27, Jun 2019 09:16:57]	u'\x1b:R\r'
+[INFO		:	Thu, 27, Jun 2019 09:16:57]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:16:57]	SYSC Full Command: [('<setmux:0:74:02>', '', '', ''), ('<calcsi5328:0:68:<1>>', '', '', ''), ('<saveval:02:<1>>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+[INFO		:	Thu, 27, Jun 2019 09:16:57]	
+											Running sysc func: <setmux:0:74:02>
+[INFO		:	Thu, 27, Jun 2019 09:16:57]	u'IW0\r74\r02\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:16:57]	u'~~~\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:16:57]	
+											Running sysc func: <calcsi5328:0:68:100>
+[INFO		:	Thu, 27, Jun 2019 09:17:04]	u'IW0\r68\r0054\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:04]	u'IW0\r68\r01e1\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:04]	u'IW0\r68\r0212\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:04]	u'IW0\r68\r0355\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:04]	u'IW0\r68\r0412\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r0a00\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r0b40\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r132c\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r143e\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r15fc\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r16df\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r171f\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r183f\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r19a0\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r1f00\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r2000\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r2105\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r2200\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r2300\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r2405\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r2804\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r291d\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r2a35\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r2b00\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r2c4e\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r2d03\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r2e00\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r2f59\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r3028\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r3712\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r8318\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r8400\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r8900\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r8a0F\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r8bFF\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r8e00\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r8f00\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'IW0\r68\r8840\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	u'~~~\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:05]	
+											Running sysc func: <saveval:02:100>
+[INFO		:	Thu, 27, Jun 2019 09:17:06]	u'MWS\r02\r4059000000000000\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:06]	u'~~~\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:06]	
+											Running sysc func: <setmux:0:74:00>
+[INFO		:	Thu, 27, Jun 2019 09:17:06]	u'IW0\r74\r00\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:06]	u'~~~\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:06]	u'~~~\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:17:06]	
+											SYSC Interpreted Command: [('<setmux:0:74:02>', '', '', ''), ('<calcsi5328:0:68:<1>>', '', '', ''), ('<saveval:02:<1>>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+											SYSC RAW Command: u'IW0\r74\r02\r\tIW0\r68\r0054\r\tIW0\r68\r01e1\r\tIW0\r68\r0212\r\tIW0\r68\r0355\r\tIW0\r68\r0412\r\tIW0\r68\r0a00\r\tIW0\r68\r0b40\r\tIW0\r68\r132c\r\tIW0\r68\r143e\r\tIW0\r68\r15fc\r\tIW0\r68\r16df\r\tIW0\r68\r171f\r\tIW0\r68\r183f\r\tIW0\r68\r19a0\r\tIW0\r68\r1f00\r\tIW0\r68\r2000\r\tIW0\r68\r2105\r\tIW0\r68\r2200\r\tIW0\r68\r2300\r\tIW0\r68\r2405\r\tIW0\r68\r2804\r\tIW0\r68\r291d\r\tIW0\r68\r2a35\r\tIW0\r68\r2b00\r\tIW0\r68\r2c4e\r\tIW0\r68\r2d03\r\tIW0\r68\r2e00\r\tIW0\r68\r2f59\r\tIW0\r68\r3028\r\tIW0\r68\r3712\r\tIW0\r68\r8318\r\tIW0\r68\r8400\r\tIW0\r68\r8900\r\tIW0\r68\r8a0F\r\tIW0\r68\r8bFF\r\tIW0\r68\r8e00\r\tIW0\r68\r8f00\r\tIW0\r68\r8840\r\tMWS\r02\r4059000000000000\r\tIW0\r74\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r74\r02\r:P\r~~~\r:P\rIW0\r68\r0054\r:P\rIW0\r68\r01e1\r:P\rIW0\r68\r0212\r:P\rIW0\r68\r0355\r:P\rIW0\r68\r0412\r:P\rIW0\r68\r0a00\r:P\rIW0\r68\r0b40\r:P\rIW0\r68\r132c\r:P\rIW0\r68\r143e\r:P\rIW0\r68\r15fc\r:P\rIW0\r68\r16df\r:P\rIW0\r68\r171f\r:P\rIW0\r68\r183f\r:P\rIW0\r68\r19a0\r:P\rIW0\r68\r1f00\r:P\rIW0\r68\r2000\r:P\rIW0\r68\r2105\r:P\rIW0\r68\r2200\r:P\rIW0\r68\r2300\r:P\rIW0\r68\r2405\r:P\rIW0\r68\r2804\r:P\rIW0\r68\r291d\r:P\rIW0\r68\r2a35\r:P\rIW0\r68\r2b00\r:P\rIW0\r68\r2c4e\r:P\rIW0\r68\r2d03\r:P\rIW0\r68\r2e00\r:P\rIW0\r68\r2f59\r:P\rIW0\r68\r3028\r:P\rIW0\r68\r3712\r:P\rIW0\r68\r8318\r:P\rIW0\r68\r8400\r:P\rIW0\r68\r8900\r:P\rIW0\r68\r8a0F\r:P\rIW0\r68\r8bFF\r:P\rIW0\r68\r8e00\r:P\rIW0\r68\r8f00\r:P\rIW0\r68\r8840\r:P\r~~~\r:P\rMWS\r02\r4059000000000000\r:P\r~~~\r:P\rIW0\r74\r00\r:P\r~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Thu, 27, Jun 2019 09:17:06]	PASSED Set Si5328 Frequency at: 2019-06-27 09:17:06.638000
+[TITLE		:	Thu, 27, Jun 2019 09:17:06]	Finished
+[TITLE		:	Thu, 27, Jun 2019 09:18:35]	PRESSED: Set Si5328 Frequency
+[INFO		:	Thu, 27, Jun 2019 09:18:35]	Starting step sysc
+											==========
+[INFO		:	Thu, 27, Jun 2019 09:18:35]	u'\x1b:R\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:35]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:35]	SYSC Full Command: [('<setmux:0:74:02>', '', '', ''), ('<calcsi5328:0:68:<1>>', '', '', ''), ('<saveval:02:<1>>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+[INFO		:	Thu, 27, Jun 2019 09:18:35]	
+											Running sysc func: <setmux:0:74:02>
+[INFO		:	Thu, 27, Jun 2019 09:18:35]	u'IW0\r74\r02\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:35]	u'~~~\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:35]	
+											Running sysc func: <calcsi5328:0:68:156.25>
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r0054\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r01e1\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r0212\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r0355\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r0412\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r0a00\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r0b40\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r132c\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r143e\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r15fc\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r16df\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r171f\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r183f\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r1980\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r1f00\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r2000\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r2103\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r2200\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r2300\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r2403\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r2802\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r2970\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r2a1f\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r2b00\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r2c4e\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r2d03\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r2e00\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r2f39\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r300f\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r371b\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r8318\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r8400\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r8900\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:42]	u'IW0\r68\r8a0F\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:43]	u'IW0\r68\r8bFF\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:43]	u'IW0\r68\r8e00\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:43]	u'IW0\r68\r8f00\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:43]	u'IW0\r68\r8840\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:43]	u'~~~\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:43]	
+											Running sysc func: <saveval:02:156.25>
+[INFO		:	Thu, 27, Jun 2019 09:18:43]	u'MWS\r02\r4063880000000000\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:43]	u'~~~\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:43]	
+											Running sysc func: <setmux:0:74:00>
+[INFO		:	Thu, 27, Jun 2019 09:18:43]	u'IW0\r74\r00\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:43]	u'~~~\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:43]	u'~~~\r:P\r'
+[INFO		:	Thu, 27, Jun 2019 09:18:43]	
+											SYSC Interpreted Command: [('<setmux:0:74:02>', '', '', ''), ('<calcsi5328:0:68:<1>>', '', '', ''), ('<saveval:02:<1>>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+											SYSC RAW Command: u'IW0\r74\r02\r\tIW0\r68\r0054\r\tIW0\r68\r01e1\r\tIW0\r68\r0212\r\tIW0\r68\r0355\r\tIW0\r68\r0412\r\tIW0\r68\r0a00\r\tIW0\r68\r0b40\r\tIW0\r68\r132c\r\tIW0\r68\r143e\r\tIW0\r68\r15fc\r\tIW0\r68\r16df\r\tIW0\r68\r171f\r\tIW0\r68\r183f\r\tIW0\r68\r1980\r\tIW0\r68\r1f00\r\tIW0\r68\r2000\r\tIW0\r68\r2103\r\tIW0\r68\r2200\r\tIW0\r68\r2300\r\tIW0\r68\r2403\r\tIW0\r68\r2802\r\tIW0\r68\r2970\r\tIW0\r68\r2a1f\r\tIW0\r68\r2b00\r\tIW0\r68\r2c4e\r\tIW0\r68\r2d03\r\tIW0\r68\r2e00\r\tIW0\r68\r2f39\r\tIW0\r68\r300f\r\tIW0\r68\r371b\r\tIW0\r68\r8318\r\tIW0\r68\r8400\r\tIW0\r68\r8900\r\tIW0\r68\r8a0F\r\tIW0\r68\r8bFF\r\tIW0\r68\r8e00\r\tIW0\r68\r8f00\r\tIW0\r68\r8840\r\tMWS\r02\r4063880000000000\r\tIW0\r74\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r74\r02\r:P\r~~~\r:P\rIW0\r68\r0054\r:P\rIW0\r68\r01e1\r:P\rIW0\r68\r0212\r:P\rIW0\r68\r0355\r:P\rIW0\r68\r0412\r:P\rIW0\r68\r0a00\r:P\rIW0\r68\r0b40\r:P\rIW0\r68\r132c\r:P\rIW0\r68\r143e\r:P\rIW0\r68\r15fc\r:P\rIW0\r68\r16df\r:P\rIW0\r68\r171f\r:P\rIW0\r68\r183f\r:P\rIW0\r68\r1980\r:P\rIW0\r68\r1f00\r:P\rIW0\r68\r2000\r:P\rIW0\r68\r2103\r:P\rIW0\r68\r2200\r:P\rIW0\r68\r2300\r:P\rIW0\r68\r2403\r:P\rIW0\r68\r2802\r:P\rIW0\r68\r2970\r:P\rIW0\r68\r2a1f\r:P\rIW0\r68\r2b00\r:P\rIW0\r68\r2c4e\r:P\rIW0\r68\r2d03\r:P\rIW0\r68\r2e00\r:P\rIW0\r68\r2f39\r:P\rIW0\r68\r300f\r:P\rIW0\r68\r371b\r:P\rIW0\r68\r8318\r:P\rIW0\r68\r8400\r:P\rIW0\r68\r8900\r:P\rIW0\r68\r8a0F\r:P\rIW0\r68\r8bFF\r:P\rIW0\r68\r8e00\r:P\rIW0\r68\r8f00\r:P\rIW0\r68\r8840\r:P\r~~~\r:P\rMWS\r02\r4063880000000000\r:P\r~~~\r:P\rIW0\r74\r00\r:P\r~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Thu, 27, Jun 2019 09:18:44]	PASSED Set Si5328 Frequency at: 2019-06-27 09:18:44.087000
+[TITLE		:	Thu, 27, Jun 2019 09:18:44]	Finished
+[TITLE		:	Fri, 28, Jun 2019 09:57:29]	BOARD PASSED COMPLETELY

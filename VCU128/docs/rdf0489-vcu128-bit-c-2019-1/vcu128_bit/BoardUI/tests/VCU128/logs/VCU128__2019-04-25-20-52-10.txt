@@ -1,0 +1,7 @@
+[TITLE		:	Thu, 25, Apr 2019 20:52:15]	Board: VCU128
+[TITLE		:	Thu, 25, Apr 2019 20:52:15]	Revision: 1.0
+[TITLE		:	Thu, 25, Apr 2019 20:52:15]	Silicon: prod
+[TITLE		:	Thu, 25, Apr 2019 20:52:15]	Serial Number: 
+[TITLE		:	Thu, 25, Apr 2019 20:52:15]	MAC Address: 01:02:03:04:05:06
+[TITLE		:	Thu, 25, Apr 2019 20:52:15]	Working in directory: VCU128
+[TITLE		:	Thu, 25, Apr 2019 20:54:10]	BOARD PASSED COMPLETELY

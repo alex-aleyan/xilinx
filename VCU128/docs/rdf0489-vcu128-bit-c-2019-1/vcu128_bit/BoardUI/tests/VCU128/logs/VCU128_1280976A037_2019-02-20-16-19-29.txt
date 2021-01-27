@@ -1,0 +1,8 @@
+[TITLE		:	Wed, 20, Feb 2019 16:19:35]	Board: VCU128
+[TITLE		:	Wed, 20, Feb 2019 16:19:35]	Revision: 1.0
+[TITLE		:	Wed, 20, Feb 2019 16:19:35]	Silicon: prod
+[TITLE		:	Wed, 20, Feb 2019 16:19:35]	Serial Number: 1280976A037
+[TITLE		:	Wed, 20, Feb 2019 16:19:35]	MAC Address: 01:02:03:04:05:06
+[TITLE		:	Wed, 20, Feb 2019 16:19:35]	Working in directory: VCU128
+[INFO		:	Wed, 20, Feb 2019 16:19:39]	['COM117', 'COM166', 'COM180', 'COM118', 'COM161', 'COM165', 'COM116']
+[TITLE		:	Wed, 20, Feb 2019 16:19:48]	BOARD PASSED COMPLETELY

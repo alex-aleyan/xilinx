@@ -1,0 +1,1913 @@
+[TITLE		:	Mon, 24, Jun 2019 15:10:53]	Board: VCU128
+[TITLE		:	Mon, 24, Jun 2019 15:10:53]	Revision: 1.0
+[TITLE		:	Mon, 24, Jun 2019 15:10:53]	Silicon: prod
+[TITLE		:	Mon, 24, Jun 2019 15:10:53]	Serial Number: 091847100789
+[TITLE		:	Mon, 24, Jun 2019 15:10:53]	MAC Address: 01:02:03:04:05:06
+[TITLE		:	Mon, 24, Jun 2019 15:10:53]	Working in directory: VCU128
+[TITLE		:	Mon, 24, Jun 2019 15:11:13]	PRESSED: Get Version
+[INFO		:	Mon, 24, Jun 2019 15:11:13]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:11:13]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:11:13]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:11:13]	SYSC Full Command: [('', 'VRN', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:11:13]	u'VRN\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:11:13]	u'Zynq v2.30 I2C Bridge v1.60\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:11:13]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:11:13]	
+											SYSC Interpreted Command: [('', 'VRN', '', '')]
+											SYSC RAW Command: u'VRN\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rVRN\r:P\rZynq v2.30 I2C Bridge v1.60\r~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:11:13]	PASSED Get Version at: 2019-06-24 15:11:13.900000
+[TITLE		:	Mon, 24, Jun 2019 15:11:13]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:20:07]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	SYSC Full Command: [('<setmux:0:76:10>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	
+											Running sysc func: <setmux:0:76:10>
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	u'IW0\r76\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	u'IS0\r50\r94\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	u'4D6F6C657820496E632E202020202020\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	u'IS0\r50\r16\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	u'01\rIS0\r50\r17\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	u'81\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	u'IS0\r50\r1a\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	u'00\rIS0\r50\r1b\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	u'00\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	
+											Running sysc func: <interpQSFPVolt>
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	SYSC command returned: VOLTAGE[0.0 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	
+											Running sysc func: <interpQSFPTemp>
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	SYSC command returned: TEMP[1.50390625°C]
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	SYSC command returned: INTERP[Molex Inc.      ]
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:07]	
+											SYSC Interpreted Command: [('<setmux:0:76:10>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r10\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r10\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:P\r4D6F6C657820496E632E202020202020\r~~~\r:P\rIS0\r50\r16\r01\r:P\r01\rIS0\r50\r17\r01\r:P\r81\r~~~\r:P\rIS0\r50\r1a\r01\r:P\r00\rIS0\r50\r1b\r01\r:P\r00\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\rVOLTAGE[0.0 Volts]~~~\r:P\rTEMP[1.50390625\xb0C]~~~\r:P\rINTERP[Molex Inc.      ]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:20:08]	PASSED Read at: 2019-06-24 15:20:08.085000
+[TITLE		:	Mon, 24, Jun 2019 15:20:08]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:20:32]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:20:32]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	SYSC Full Command: [('<setmux:0:76:10>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	
+											Running sysc func: <setmux:0:76:10>
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	u'IW0\r76\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	u'IS0\r50\r94\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	u'4D6F6C657820496E632E202020202020\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	u'IS0\r50\r16\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	u'01\rIS0\r50\r17\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	u'81\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	u'IS0\r50\r1a\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	u'00\rIS0\r50\r1b\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	u'00\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	
+											Running sysc func: <interpQSFPVolt>
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	SYSC command returned: VOLTAGE[0.0 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	
+											Running sysc func: <interpQSFPTemp>
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	SYSC command returned: TEMP[1.50390625°C]
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	SYSC command returned: INTERP[Molex Inc.      ]
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:33]	
+											SYSC Interpreted Command: [('<setmux:0:76:10>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r10\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r10\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:P\r4D6F6C657820496E632E202020202020\r~~~\r:P\rIS0\r50\r16\r01\r:P\r01\rIS0\r50\r17\r01\r:P\r81\r~~~\r:P\rIS0\r50\r1a\r01\r:P\r00\rIS0\r50\r1b\r01\r:P\r00\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\rVOLTAGE[0.0 Volts]~~~\r:P\rTEMP[1.50390625\xb0C]~~~\r:P\rINTERP[Molex Inc.      ]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:20:33]	PASSED Read at: 2019-06-24 15:20:33.504000
+[TITLE		:	Mon, 24, Jun 2019 15:20:33]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:20:36]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:20:36]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:20:36]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:36]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:36]	SYSC Full Command: [('<setmux:0:76:20>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:20:36]	
+											Running sysc func: <setmux:0:76:20>
+[INFO		:	Mon, 24, Jun 2019 15:20:36]	u'IW0\r76\r20\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:36]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:36]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:20:36]	u'IS0\r50\r94\r10\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:36]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:36]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:20:36]	u'IS0\r50\r16\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:36]	u'IS0\r50\r17\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:36]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:36]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:20:36]	u'IS0\r50\r1a\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:36]	u'IS0\r50\r1b\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:37]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:37]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:20:37]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:37]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:37]	
+											Running sysc func: <interpQSFPVolt>
+[ERROR		:	Mon, 24, Jun 2019 15:20:37]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 682, in interpQSFPVolt
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:20:37]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:37]	
+											Running sysc func: <interpQSFPTemp>
+[ERROR		:	Mon, 24, Jun 2019 15:20:37]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 691, in interpQSFPTemp
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:20:37]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:37]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:20:37]	SYSC command returned: INTERP[]
+[INFO		:	Mon, 24, Jun 2019 15:20:37]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:37]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:37]	
+											SYSC Interpreted Command: [('<setmux:0:76:20>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r20\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r20\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:N\r~~~\r:P\rIS0\r50\r16\r01\r:N\rIS0\r50\r17\r01\r:N\r~~~\r:P\rIS0\r50\r1a\r01\r:N\rIS0\r50\r1b\r01\r:N\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\r~~~\r:P\r~~~\r:P\rINTERP[]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:20:37]	PASSED Read at: 2019-06-24 15:20:37.252000
+[TITLE		:	Mon, 24, Jun 2019 15:20:37]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:20:51]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	SYSC Full Command: [('<setmux:0:76:20>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	
+											Running sysc func: <setmux:0:76:20>
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	u'IW0\r76\r20\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	u'IS0\r50\r94\r10\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	u'IS0\r50\r16\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	u'IS0\r50\r17\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	u'IS0\r50\r1a\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	u'IS0\r50\r1b\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	
+											Running sysc func: <interpQSFPVolt>
+[ERROR		:	Mon, 24, Jun 2019 15:20:51]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 682, in interpQSFPVolt
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	
+											Running sysc func: <interpQSFPTemp>
+[ERROR		:	Mon, 24, Jun 2019 15:20:51]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 691, in interpQSFPTemp
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	SYSC command returned: INTERP[]
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:20:51]	
+											SYSC Interpreted Command: [('<setmux:0:76:20>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r20\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r20\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:N\r~~~\r:P\rIS0\r50\r16\r01\r:N\rIS0\r50\r17\r01\r:N\r~~~\r:P\rIS0\r50\r1a\r01\r:N\rIS0\r50\r1b\r01\r:N\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\r~~~\r:P\r~~~\r:P\rINTERP[]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:20:51]	PASSED Read at: 2019-06-24 15:20:51.709000
+[TITLE		:	Mon, 24, Jun 2019 15:20:51]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:21:24]	PRESSED: Get Version
+[INFO		:	Mon, 24, Jun 2019 15:21:24]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:21:24]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:24]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:24]	SYSC Full Command: [('', 'VRN', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:21:24]	u'VRN\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:24]	u'Zynq v2.30 I2C Bridge v1.60\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:24]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:24]	
+											SYSC Interpreted Command: [('', 'VRN', '', '')]
+											SYSC RAW Command: u'VRN\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rVRN\r:P\rZynq v2.30 I2C Bridge v1.60\r~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:21:24]	PASSED Get Version at: 2019-06-24 15:21:24.420000
+[TITLE		:	Mon, 24, Jun 2019 15:21:24]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:21:29]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:21:29]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:21:29]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:29]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:29]	SYSC Full Command: [('<setmux:0:76:20>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:21:29]	
+											Running sysc func: <setmux:0:76:20>
+[INFO		:	Mon, 24, Jun 2019 15:21:29]	u'IW0\r76\r20\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:29]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:29]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:21:29]	u'IS0\r50\r94\r10\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:29]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:29]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:21:29]	u'IS0\r50\r16\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:30]	u'IS0\r50\r17\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:30]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:30]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:21:30]	u'IS0\r50\r1a\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:30]	u'IS0\r50\r1b\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:30]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:30]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:21:30]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:30]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:30]	
+											Running sysc func: <interpQSFPVolt>
+[ERROR		:	Mon, 24, Jun 2019 15:21:30]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 682, in interpQSFPVolt
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:21:30]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:30]	
+											Running sysc func: <interpQSFPTemp>
+[ERROR		:	Mon, 24, Jun 2019 15:21:30]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 691, in interpQSFPTemp
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:21:30]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:30]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:21:30]	SYSC command returned: INTERP[]
+[INFO		:	Mon, 24, Jun 2019 15:21:30]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:30]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:30]	
+											SYSC Interpreted Command: [('<setmux:0:76:20>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r20\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r20\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:N\r~~~\r:P\rIS0\r50\r16\r01\r:N\rIS0\r50\r17\r01\r:N\r~~~\r:P\rIS0\r50\r1a\r01\r:N\rIS0\r50\r1b\r01\r:N\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\r~~~\r:P\r~~~\r:P\rINTERP[]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:21:30]	PASSED Read at: 2019-06-24 15:21:30.297000
+[TITLE		:	Mon, 24, Jun 2019 15:21:30]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:21:32]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:21:32]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:21:32]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:32]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:32]	SYSC Full Command: [('<setmux:0:76:20>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:21:32]	
+											Running sysc func: <setmux:0:76:20>
+[INFO		:	Mon, 24, Jun 2019 15:21:32]	u'IW0\r76\r20\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:32]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:32]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:21:32]	u'IS0\r50\r94\r10\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:32]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:32]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:21:32]	u'IS0\r50\r16\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:32]	u'IS0\r50\r17\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:32]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:32]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:21:32]	u'IS0\r50\r1a\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:32]	u'IS0\r50\r1b\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:32]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:32]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:21:32]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:32]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:32]	
+											Running sysc func: <interpQSFPVolt>
+[ERROR		:	Mon, 24, Jun 2019 15:21:32]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 682, in interpQSFPVolt
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:21:33]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:33]	
+											Running sysc func: <interpQSFPTemp>
+[ERROR		:	Mon, 24, Jun 2019 15:21:33]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 691, in interpQSFPTemp
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:21:33]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:33]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:21:33]	SYSC command returned: INTERP[]
+[INFO		:	Mon, 24, Jun 2019 15:21:33]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:33]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:33]	
+											SYSC Interpreted Command: [('<setmux:0:76:20>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r20\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r20\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:N\r~~~\r:P\rIS0\r50\r16\r01\r:N\rIS0\r50\r17\r01\r:N\r~~~\r:P\rIS0\r50\r1a\r01\r:N\rIS0\r50\r1b\r01\r:N\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\r~~~\r:P\r~~~\r:P\rINTERP[]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:21:33]	PASSED Read at: 2019-06-24 15:21:33.161000
+[TITLE		:	Mon, 24, Jun 2019 15:21:33]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:21:42]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	SYSC Full Command: [('<setmux:0:76:20>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	
+											Running sysc func: <setmux:0:76:20>
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	u'IW0\r76\r20\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	u'IS0\r50\r94\r10\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	u'IS0\r50\r16\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	u'IS0\r50\r17\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	u'IS0\r50\r1a\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	u'IS0\r50\r1b\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	
+											Running sysc func: <interpQSFPVolt>
+[ERROR		:	Mon, 24, Jun 2019 15:21:42]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 682, in interpQSFPVolt
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	
+											Running sysc func: <interpQSFPTemp>
+[ERROR		:	Mon, 24, Jun 2019 15:21:42]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 691, in interpQSFPTemp
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	SYSC command returned: INTERP[]
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:42]	
+											SYSC Interpreted Command: [('<setmux:0:76:20>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r20\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r20\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:N\r~~~\r:P\rIS0\r50\r16\r01\r:N\rIS0\r50\r17\r01\r:N\r~~~\r:P\rIS0\r50\r1a\r01\r:N\rIS0\r50\r1b\r01\r:N\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\r~~~\r:P\r~~~\r:P\rINTERP[]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:21:42]	PASSED Read at: 2019-06-24 15:21:42.873000
+[TITLE		:	Mon, 24, Jun 2019 15:21:42]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:21:44]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:21:44]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:21:44]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:44]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:44]	SYSC Full Command: [('<setmux:0:76:20>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:21:44]	
+											Running sysc func: <setmux:0:76:20>
+[INFO		:	Mon, 24, Jun 2019 15:21:44]	u'IW0\r76\r20\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:44]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:44]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:21:44]	u'IS0\r50\r94\r10\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:44]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:44]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:21:44]	u'IS0\r50\r16\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:44]	u'IS0\r50\r17\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:44]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:44]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:21:44]	u'IS0\r50\r1a\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:45]	u'IS0\r50\r1b\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:45]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:45]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:21:45]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:45]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:45]	
+											Running sysc func: <interpQSFPVolt>
+[ERROR		:	Mon, 24, Jun 2019 15:21:45]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 682, in interpQSFPVolt
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:21:45]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:45]	
+											Running sysc func: <interpQSFPTemp>
+[ERROR		:	Mon, 24, Jun 2019 15:21:45]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 691, in interpQSFPTemp
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:21:45]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:45]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:21:45]	SYSC command returned: INTERP[]
+[INFO		:	Mon, 24, Jun 2019 15:21:45]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:45]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:45]	
+											SYSC Interpreted Command: [('<setmux:0:76:20>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r20\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r20\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:N\r~~~\r:P\rIS0\r50\r16\r01\r:N\rIS0\r50\r17\r01\r:N\r~~~\r:P\rIS0\r50\r1a\r01\r:N\rIS0\r50\r1b\r01\r:N\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\r~~~\r:P\r~~~\r:P\rINTERP[]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:21:45]	PASSED Read at: 2019-06-24 15:21:45.231000
+[TITLE		:	Mon, 24, Jun 2019 15:21:45]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:21:50]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:21:50]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:21:50]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:50]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:50]	SYSC Full Command: [('<setmux:0:76:40>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:21:50]	
+											Running sysc func: <setmux:0:76:40>
+[INFO		:	Mon, 24, Jun 2019 15:21:50]	u'IW0\r76\r40\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:50]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:50]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:21:50]	u'IS0\r50\r94\r10\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:50]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:50]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:21:50]	u'IS0\r50\r16\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:50]	u'IS0\r50\r17\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:50]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:50]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:21:50]	u'IS0\r50\r1a\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:50]	u'IS0\r50\r1b\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:50]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:50]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:21:50]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:50]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:50]	
+											Running sysc func: <interpQSFPVolt>
+[ERROR		:	Mon, 24, Jun 2019 15:21:50]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 682, in interpQSFPVolt
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:21:50]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:50]	
+											Running sysc func: <interpQSFPTemp>
+[ERROR		:	Mon, 24, Jun 2019 15:21:50]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 691, in interpQSFPTemp
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:21:51]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:51]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:21:51]	SYSC command returned: INTERP[]
+[INFO		:	Mon, 24, Jun 2019 15:21:51]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:51]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:21:51]	
+											SYSC Interpreted Command: [('<setmux:0:76:40>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r40\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r40\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:N\r~~~\r:P\rIS0\r50\r16\r01\r:N\rIS0\r50\r17\r01\r:N\r~~~\r:P\rIS0\r50\r1a\r01\r:N\rIS0\r50\r1b\r01\r:N\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\r~~~\r:P\r~~~\r:P\rINTERP[]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:21:51]	PASSED Read at: 2019-06-24 15:21:51.146000
+[TITLE		:	Mon, 24, Jun 2019 15:21:51]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:22:06]	PRESSED: Get Version
+[INFO		:	Mon, 24, Jun 2019 15:22:06]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:22:07]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:07]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:07]	SYSC Full Command: [('', 'VRN', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:22:07]	u'VRN\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:07]	u'Zynq v2.30 I2C Bridge v1.60\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:07]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:07]	
+											SYSC Interpreted Command: [('', 'VRN', '', '')]
+											SYSC RAW Command: u'VRN\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rVRN\r:P\rZynq v2.30 I2C Bridge v1.60\r~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:22:07]	PASSED Get Version at: 2019-06-24 15:22:07.282000
+[TITLE		:	Mon, 24, Jun 2019 15:22:07]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:22:10]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	SYSC Full Command: [('<setmux:0:76:40>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	
+											Running sysc func: <setmux:0:76:40>
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	u'IW0\r76\r40\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	u'IS0\r50\r94\r10\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	u'IS0\r50\r16\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	u'IS0\r50\r17\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	u'IS0\r50\r1a\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	u'IS0\r50\r1b\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	
+											Running sysc func: <interpQSFPVolt>
+[ERROR		:	Mon, 24, Jun 2019 15:22:10]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 682, in interpQSFPVolt
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	
+											Running sysc func: <interpQSFPTemp>
+[ERROR		:	Mon, 24, Jun 2019 15:22:10]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 691, in interpQSFPTemp
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	SYSC command returned: INTERP[]
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:10]	
+											SYSC Interpreted Command: [('<setmux:0:76:40>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r40\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r40\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:N\r~~~\r:P\rIS0\r50\r16\r01\r:N\rIS0\r50\r17\r01\r:N\r~~~\r:P\rIS0\r50\r1a\r01\r:N\rIS0\r50\r1b\r01\r:N\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\r~~~\r:P\r~~~\r:P\rINTERP[]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:22:10]	PASSED Read at: 2019-06-24 15:22:10.740000
+[TITLE		:	Mon, 24, Jun 2019 15:22:10]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:22:15]	PRESSED: Last Set Si5328 Frequency
+[INFO		:	Mon, 24, Jun 2019 15:22:15]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:22:15]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:16]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:16]	SYSC Full Command: [('<getval:02>', '', '', ''), ('<interpval>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:22:16]	
+											Running sysc func: <getval:02>
+[INFO		:	Mon, 24, Jun 2019 15:22:16]	u'MRS\r02\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:16]	u'4063880000000000\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:16]	
+											Running sysc func: <interpval>
+[INFO		:	Mon, 24, Jun 2019 15:22:16]	SYSC command returned: VALUE[156.25]
+[INFO		:	Mon, 24, Jun 2019 15:22:16]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:16]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:16]	
+											SYSC Interpreted Command: [('<getval:02>', '', '', ''), ('<interpval>', '', '', '')]
+											SYSC RAW Command: u'MRS\r02\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rMRS\r02\r:P\r4063880000000000\r~~~\r:P\rVALUE[156.25]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:22:16]	PASSED Last Set Si5328 Frequency at: 2019-06-24 15:22:16.250000
+[TITLE		:	Mon, 24, Jun 2019 15:22:16]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:22:17]	PRESSED: Boot Si5328 Frequencey
+[INFO		:	Mon, 24, Jun 2019 15:22:17]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:22:18]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:18]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:18]	SYSC Full Command: [('<getval:03>', '', '', ''), ('<interpval>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:22:18]	
+											Running sysc func: <getval:03>
+[INFO		:	Mon, 24, Jun 2019 15:22:18]	u'MRS\r03\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:18]	u'4063880000000000\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:18]	
+											Running sysc func: <interpval>
+[INFO		:	Mon, 24, Jun 2019 15:22:18]	SYSC command returned: VALUE[156.25]
+[INFO		:	Mon, 24, Jun 2019 15:22:18]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:18]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:18]	
+											SYSC Interpreted Command: [('<getval:03>', '', '', ''), ('<interpval>', '', '', '')]
+											SYSC RAW Command: u'MRS\r03\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rMRS\r03\r:P\r4063880000000000\r~~~\r:P\rVALUE[156.25]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:22:18]	PASSED Boot Si5328 Frequencey at: 2019-06-24 15:22:18.264000
+[TITLE		:	Mon, 24, Jun 2019 15:22:18]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:22:19]	PRESSED: Read QSFP1 SI570 Frequency
+[INFO		:	Mon, 24, Jun 2019 15:22:19]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	SYSC Full Command: [('<setmux:0:74:08>', '', '', ''), ('<recallsi570:0:5d:04>', '', '', ''), ('<interpsi570:156.25>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	
+											Running sysc func: <setmux:0:74:08>
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	u'IW0\r74\r08\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	
+											Running sysc func: <recallsi570:0:5d:04>
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	u'IW0\r5d\r8700\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	u'IW0\r5d\r07\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	u'IR0\r5d\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	u'01\rIW0\r5d\r08\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	u'IR0\r5d\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	u'C2\rIW0\r5d\r09\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	u'IR0\r5d\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	u'BC\rIW0\r5d\r0a\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	u'IR0\r5d\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	u'00\rIW0\r5d\r0b\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	u'IR0\r5d\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	u'C7\rIW0\r5d\r0c\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	u'IR0\r5d\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	u'65\rIW0\r5d\r8700\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	u'MRS\r04\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	u'405C9241011C70D2\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	
+											Running sysc func: <interpsi570:156.25>
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	SYSC command returned: FREQUENCY[156.250 MHz]
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	
+											Running sysc func: <setmux:0:74:00>
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	u'IW0\r74\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:20]	
+											SYSC Interpreted Command: [('<setmux:0:74:08>', '', '', ''), ('<recallsi570:0:5d:04>', '', '', ''), ('<interpsi570:156.25>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+											SYSC RAW Command: u'IW0\r74\r08\r\tIW0\r5d\r8700\r\tIW0\r5d\r07\r\tIR0\r5d\r1\r\tIW0\r5d\r08\r\tIR0\r5d\r1\r\tIW0\r5d\r09\r\tIR0\r5d\r1\r\tIW0\r5d\r0a\r\tIR0\r5d\r1\r\tIW0\r5d\r0b\r\tIR0\r5d\r1\r\tIW0\r5d\r0c\r\tIR0\r5d\r1\r\tIW0\r5d\r8700\r\tMRS\r04\r\tIW0\r74\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r74\r08\r:P\r~~~\r:P\rIW0\r5d\r8700\r:P\rIW0\r5d\r07\r:P\rIR0\r5d\r1\r:P\r01\rIW0\r5d\r08\r:P\rIR0\r5d\r1\r:P\rC2\rIW0\r5d\r09\r:P\rIR0\r5d\r1\r:P\rBC\rIW0\r5d\r0a\r:P\rIR0\r5d\r1\r:P\r00\rIW0\r5d\r0b\r:P\rIR0\r5d\r1\r:P\rC7\rIW0\r5d\r0c\r:P\rIR0\r5d\r1\r:P\r65\rIW0\r5d\r8700\r:P\rMRS\r04\r:P\r405C9241011C70D2\r~~~\r:P\rFREQUENCY[156.250 MHz]~~~\r:P\rIW0\r74\r00\r:P\r~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:22:20]	PASSED Read QSFP1 SI570 Frequency at: 2019-06-24 15:22:20.505000
+[TITLE		:	Mon, 24, Jun 2019 15:22:20]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:22:21]	PRESSED: Read QSFP2 SI570 Frequency
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	SYSC Full Command: [('<setmux:0:74:10>', '', '', ''), ('<recallsi570:0:5d:05>', '', '', ''), ('<interpsi570:156.25>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	
+											Running sysc func: <setmux:0:74:10>
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	u'IW0\r74\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	
+											Running sysc func: <recallsi570:0:5d:05>
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	u'IW0\r5d\r8700\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	u'IW0\r5d\r07\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	u'IR0\r5d\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	u'01\rIW0\r5d\r08\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	u'IR0\r5d\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	u'C2\rIW0\r5d\r09\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	u'IR0\r5d\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	u'BC\rIW0\r5d\r0a\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	u'IR0\r5d\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	u'01\rIW0\r5d\r0b\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	u'IR0\r5d\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	u'79\rIW0\r5d\r0c\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	u'IR0\r5d\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	u'16\rIW0\r5d\r8700\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	u'MRS\r05\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	u'405C9239C070C7EA\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	
+											Running sysc func: <interpsi570:156.25>
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	SYSC command returned: FREQUENCY[156.250 MHz]
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	
+											Running sysc func: <setmux:0:74:00>
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	u'IW0\r74\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:21]	
+											SYSC Interpreted Command: [('<setmux:0:74:10>', '', '', ''), ('<recallsi570:0:5d:05>', '', '', ''), ('<interpsi570:156.25>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+											SYSC RAW Command: u'IW0\r74\r10\r\tIW0\r5d\r8700\r\tIW0\r5d\r07\r\tIR0\r5d\r1\r\tIW0\r5d\r08\r\tIR0\r5d\r1\r\tIW0\r5d\r09\r\tIR0\r5d\r1\r\tIW0\r5d\r0a\r\tIR0\r5d\r1\r\tIW0\r5d\r0b\r\tIR0\r5d\r1\r\tIW0\r5d\r0c\r\tIR0\r5d\r1\r\tIW0\r5d\r8700\r\tMRS\r05\r\tIW0\r74\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r74\r10\r:P\r~~~\r:P\rIW0\r5d\r8700\r:P\rIW0\r5d\r07\r:P\rIR0\r5d\r1\r:P\r01\rIW0\r5d\r08\r:P\rIR0\r5d\r1\r:P\rC2\rIW0\r5d\r09\r:P\rIR0\r5d\r1\r:P\rBC\rIW0\r5d\r0a\r:P\rIR0\r5d\r1\r:P\r01\rIW0\r5d\r0b\r:P\rIR0\r5d\r1\r:P\r79\rIW0\r5d\r0c\r:P\rIR0\r5d\r1\r:P\r16\rIW0\r5d\r8700\r:P\rMRS\r05\r:P\r405C9239C070C7EA\r~~~\r:P\rFREQUENCY[156.250 MHz]~~~\r:P\rIW0\r74\r00\r:P\r~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:22:22]	PASSED Read QSFP2 SI570 Frequency at: 2019-06-24 15:22:22.038000
+[TITLE		:	Mon, 24, Jun 2019 15:22:22]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:22:22]	PRESSED: Read QSFP3 SI570 Frequency
+[INFO		:	Mon, 24, Jun 2019 15:22:22]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:22:22]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:22]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:22]	SYSC Full Command: [('<setmux:0:74:20>', '', '', ''), ('<recallsi570:0:5d:06>', '', '', ''), ('<interpsi570:156.25>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:22:22]	
+											Running sysc func: <setmux:0:74:20>
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'IW0\r74\r20\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	
+											Running sysc func: <recallsi570:0:5d:06>
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'IW0\r5d\r8700\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'IW0\r5d\r07\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'IR0\r5d\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'01\rIW0\r5d\r08\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'IR0\r5d\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'C2\rIW0\r5d\r09\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'IR0\r5d\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'BC\rIW0\r5d\r0a\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'IR0\r5d\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'01\rIW0\r5d\r0b\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'IR0\r5d\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'36\rIW0\r5d\r0c\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'IR0\r5d\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'89\rIW0\r5d\r8700\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'MRS\r06\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'405C923C77D160C0\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	
+											Running sysc func: <interpsi570:156.25>
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	SYSC command returned: FREQUENCY[156.250 MHz]
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	
+											Running sysc func: <setmux:0:74:00>
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'IW0\r74\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	
+											SYSC Interpreted Command: [('<setmux:0:74:20>', '', '', ''), ('<recallsi570:0:5d:06>', '', '', ''), ('<interpsi570:156.25>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+											SYSC RAW Command: u'IW0\r74\r20\r\tIW0\r5d\r8700\r\tIW0\r5d\r07\r\tIR0\r5d\r1\r\tIW0\r5d\r08\r\tIR0\r5d\r1\r\tIW0\r5d\r09\r\tIR0\r5d\r1\r\tIW0\r5d\r0a\r\tIR0\r5d\r1\r\tIW0\r5d\r0b\r\tIR0\r5d\r1\r\tIW0\r5d\r0c\r\tIR0\r5d\r1\r\tIW0\r5d\r8700\r\tMRS\r06\r\tIW0\r74\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r74\r20\r:P\r~~~\r:P\rIW0\r5d\r8700\r:P\rIW0\r5d\r07\r:P\rIR0\r5d\r1\r:P\r01\rIW0\r5d\r08\r:P\rIR0\r5d\r1\r:P\rC2\rIW0\r5d\r09\r:P\rIR0\r5d\r1\r:P\rBC\rIW0\r5d\r0a\r:P\rIR0\r5d\r1\r:P\r01\rIW0\r5d\r0b\r:P\rIR0\r5d\r1\r:P\r36\rIW0\r5d\r0c\r:P\rIR0\r5d\r1\r:P\r89\rIW0\r5d\r8700\r:P\rMRS\r06\r:P\r405C923C77D160C0\r~~~\r:P\rFREQUENCY[156.250 MHz]~~~\r:P\rIW0\r74\r00\r:P\r~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:22:23]	PASSED Read QSFP3 SI570 Frequency at: 2019-06-24 15:22:23.453000
+[TITLE		:	Mon, 24, Jun 2019 15:22:23]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:22:23]	PRESSED: Read QSFP4 SI570 Frequency
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	SYSC Full Command: [('<setmux:0:74:40>', '', '', ''), ('<recallsi570:0:5d:07>', '', '', ''), ('<interpsi570:156.25>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	
+											Running sysc func: <setmux:0:74:40>
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'IW0\r74\r40\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	
+											Running sysc func: <recallsi570:0:5d:07>
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'IW0\r5d\r8700\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'IW0\r5d\r07\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'IR0\r5d\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'01\rIW0\r5d\r08\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'IR0\r5d\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'C2\rIW0\r5d\r09\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'IR0\r5d\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:23]	u'BC\rIW0\r5d\r0a\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:24]	u'IR0\r5d\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:24]	u'01\rIW0\r5d\r0b\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:24]	u'IR0\r5d\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:24]	u'93\rIW0\r5d\r0c\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:24]	u'IR0\r5d\r1\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:24]	u'E5\rIW0\r5d\r8700\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:24]	u'MRS\r07\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:24]	u'405C9238A852A79F\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:24]	
+											Running sysc func: <interpsi570:156.25>
+[INFO		:	Mon, 24, Jun 2019 15:22:24]	SYSC command returned: FREQUENCY[156.250 MHz]
+[INFO		:	Mon, 24, Jun 2019 15:22:24]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:24]	
+											Running sysc func: <setmux:0:74:00>
+[INFO		:	Mon, 24, Jun 2019 15:22:24]	u'IW0\r74\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:24]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:24]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:24]	
+											SYSC Interpreted Command: [('<setmux:0:74:40>', '', '', ''), ('<recallsi570:0:5d:07>', '', '', ''), ('<interpsi570:156.25>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+											SYSC RAW Command: u'IW0\r74\r40\r\tIW0\r5d\r8700\r\tIW0\r5d\r07\r\tIR0\r5d\r1\r\tIW0\r5d\r08\r\tIR0\r5d\r1\r\tIW0\r5d\r09\r\tIR0\r5d\r1\r\tIW0\r5d\r0a\r\tIR0\r5d\r1\r\tIW0\r5d\r0b\r\tIR0\r5d\r1\r\tIW0\r5d\r0c\r\tIR0\r5d\r1\r\tIW0\r5d\r8700\r\tMRS\r07\r\tIW0\r74\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r74\r40\r:P\r~~~\r:P\rIW0\r5d\r8700\r:P\rIW0\r5d\r07\r:P\rIR0\r5d\r1\r:P\r01\rIW0\r5d\r08\r:P\rIR0\r5d\r1\r:P\rC2\rIW0\r5d\r09\r:P\rIR0\r5d\r1\r:P\rBC\rIW0\r5d\r0a\r:P\rIR0\r5d\r1\r:P\r01\rIW0\r5d\r0b\r:P\rIR0\r5d\r1\r:P\r93\rIW0\r5d\r0c\r:P\rIR0\r5d\r1\r:P\rE5\rIW0\r5d\r8700\r:P\rMRS\r07\r:P\r405C9238A852A79F\r~~~\r:P\rFREQUENCY[156.250 MHz]~~~\r:P\rIW0\r74\r00\r:P\r~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:22:24]	PASSED Read QSFP4 SI570 Frequency at: 2019-06-24 15:22:24.333000
+[TITLE		:	Mon, 24, Jun 2019 15:22:24]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:22:28]	PRESSED: Get VCCINT Voltage
+[INFO		:	Mon, 24, Jun 2019 15:22:28]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:22:28]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:28]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:28]	SYSC Full Command: [('<setmux:0:75:06>', '', '', ''), ('<getISL68127voltage:0:65:0>', '', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcISL68127voltage>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:22:28]	
+											Running sysc func: <setmux:0:75:06>
+[INFO		:	Mon, 24, Jun 2019 15:22:28]	u'IW0\r75\r06\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:28]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:28]	
+											Running sysc func: <getISL68127voltage:0:65:0>
+[INFO		:	Mon, 24, Jun 2019 15:22:28]	u'IW0\r65\r000\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:28]	u'IS0\r65\r8B\r2\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:28]	u'5203\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:28]	
+											Running sysc func: <setmux:0:75:00>
+[INFO		:	Mon, 24, Jun 2019 15:22:28]	u'IW0\r75\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:28]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:28]	
+											Running sysc func: <calcISL68127voltage>
+[INFO		:	Mon, 24, Jun 2019 15:22:28]	SYSC command returned: VOLTAGE[0.85 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:22:28]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:28]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:28]	
+											SYSC Interpreted Command: [('<setmux:0:75:06>', '', '', ''), ('<getISL68127voltage:0:65:0>', '', '', ''), ('<setmux:0:75:00>', '', '', ''), ('<calcISL68127voltage>', '', '', '')]
+											SYSC RAW Command: u'IW0\r75\r06\r\tIW0\r65\r000\r\tIS0\r65\r8B\r2\r\tIW0\r75\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r75\r06\r:P\r~~~\r:P\rIW0\r65\r000\r:P\rIS0\r65\r8B\r2\r:P\r5203\r~~~\r:P\rIW0\r75\r00\r:P\r~~~\r:P\rVOLTAGE[0.85 Volts]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:22:28]	PASSED Get VCCINT Voltage at: 2019-06-24 15:22:28.857000
+[TITLE		:	Mon, 24, Jun 2019 15:22:28]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:22:35]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:22:35]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:22:35]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:35]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:35]	SYSC Full Command: [('<setmux:0:76:10>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:22:35]	
+											Running sysc func: <setmux:0:76:10>
+[INFO		:	Mon, 24, Jun 2019 15:22:35]	u'IW0\r76\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:35]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:35]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:22:35]	u'IS0\r50\r94\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:35]	u'4D6F6C657820496E632E202020202020\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:35]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:22:35]	u'IS0\r50\r16\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:35]	u'01\rIS0\r50\r17\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:35]	u'81\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:35]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:22:35]	u'IS0\r50\r1a\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:35]	u'00\rIS0\r50\r1b\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:35]	u'00\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:35]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:22:35]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:35]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:35]	
+											Running sysc func: <interpQSFPVolt>
+[INFO		:	Mon, 24, Jun 2019 15:22:35]	SYSC command returned: VOLTAGE[0.0 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:22:35]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:35]	
+											Running sysc func: <interpQSFPTemp>
+[INFO		:	Mon, 24, Jun 2019 15:22:35]	SYSC command returned: TEMP[1.50390625°C]
+[INFO		:	Mon, 24, Jun 2019 15:22:35]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:35]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:22:35]	SYSC command returned: INTERP[Molex Inc.      ]
+[INFO		:	Mon, 24, Jun 2019 15:22:36]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:36]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:36]	
+											SYSC Interpreted Command: [('<setmux:0:76:10>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r10\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r10\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:P\r4D6F6C657820496E632E202020202020\r~~~\r:P\rIS0\r50\r16\r01\r:P\r01\rIS0\r50\r17\r01\r:P\r81\r~~~\r:P\rIS0\r50\r1a\r01\r:P\r00\rIS0\r50\r1b\r01\r:P\r00\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\rVOLTAGE[0.0 Volts]~~~\r:P\rTEMP[1.50390625\xb0C]~~~\r:P\rINTERP[Molex Inc.      ]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:22:36]	PASSED Read at: 2019-06-24 15:22:36.150000
+[TITLE		:	Mon, 24, Jun 2019 15:22:36]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:22:37]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:22:37]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:22:38]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:38]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:38]	SYSC Full Command: [('<setmux:0:76:20>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:22:38]	
+											Running sysc func: <setmux:0:76:20>
+[INFO		:	Mon, 24, Jun 2019 15:22:38]	u'IW0\r76\r20\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:38]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:38]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:22:38]	u'IS0\r50\r94\r10\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:38]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:38]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:22:38]	u'IS0\r50\r16\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:38]	u'IS0\r50\r17\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:38]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:38]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:22:38]	u'IS0\r50\r1a\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:38]	u'IS0\r50\r1b\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:38]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:38]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:22:38]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:38]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:38]	
+											Running sysc func: <interpQSFPVolt>
+[ERROR		:	Mon, 24, Jun 2019 15:22:38]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 682, in interpQSFPVolt
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:22:38]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:38]	
+											Running sysc func: <interpQSFPTemp>
+[ERROR		:	Mon, 24, Jun 2019 15:22:38]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 691, in interpQSFPTemp
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:22:38]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:38]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:22:38]	SYSC command returned: INTERP[]
+[INFO		:	Mon, 24, Jun 2019 15:22:38]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:38]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:38]	
+											SYSC Interpreted Command: [('<setmux:0:76:20>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r20\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r20\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:N\r~~~\r:P\rIS0\r50\r16\r01\r:N\rIS0\r50\r17\r01\r:N\r~~~\r:P\rIS0\r50\r1a\r01\r:N\rIS0\r50\r1b\r01\r:N\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\r~~~\r:P\r~~~\r:P\rINTERP[]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:22:38]	PASSED Read at: 2019-06-24 15:22:38.507000
+[TITLE		:	Mon, 24, Jun 2019 15:22:38]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:22:54]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	SYSC Full Command: [('<setmux:0:76:20>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	
+											Running sysc func: <setmux:0:76:20>
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	u'IW0\r76\r20\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	u'IS0\r50\r94\r10\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	u'IS0\r50\r16\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	u'IS0\r50\r17\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	u'IS0\r50\r1a\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	u'IS0\r50\r1b\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	
+											Running sysc func: <interpQSFPVolt>
+[ERROR		:	Mon, 24, Jun 2019 15:22:54]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 682, in interpQSFPVolt
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	
+											Running sysc func: <interpQSFPTemp>
+[ERROR		:	Mon, 24, Jun 2019 15:22:54]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 691, in interpQSFPTemp
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	SYSC command returned: INTERP[]
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:54]	
+											SYSC Interpreted Command: [('<setmux:0:76:20>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r20\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r20\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:N\r~~~\r:P\rIS0\r50\r16\r01\r:N\rIS0\r50\r17\r01\r:N\r~~~\r:P\rIS0\r50\r1a\r01\r:N\rIS0\r50\r1b\r01\r:N\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\r~~~\r:P\r~~~\r:P\rINTERP[]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:22:55]	PASSED Read at: 2019-06-24 15:22:54.999000
+[TITLE		:	Mon, 24, Jun 2019 15:22:55]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:22:57]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	SYSC Full Command: [('<setmux:0:76:40>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	
+											Running sysc func: <setmux:0:76:40>
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	u'IW0\r76\r40\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	u'IS0\r50\r94\r10\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	u'IS0\r50\r16\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	u'IS0\r50\r17\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	u'IS0\r50\r1a\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	u'IS0\r50\r1b\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	
+											Running sysc func: <interpQSFPVolt>
+[ERROR		:	Mon, 24, Jun 2019 15:22:57]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 682, in interpQSFPVolt
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	
+											Running sysc func: <interpQSFPTemp>
+[ERROR		:	Mon, 24, Jun 2019 15:22:57]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 691, in interpQSFPTemp
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	SYSC command returned: INTERP[]
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:57]	
+											SYSC Interpreted Command: [('<setmux:0:76:40>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r40\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r40\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:N\r~~~\r:P\rIS0\r50\r16\r01\r:N\rIS0\r50\r17\r01\r:N\r~~~\r:P\rIS0\r50\r1a\r01\r:N\rIS0\r50\r1b\r01\r:N\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\r~~~\r:P\r~~~\r:P\rINTERP[]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:22:57]	PASSED Read at: 2019-06-24 15:22:57.689000
+[TITLE		:	Mon, 24, Jun 2019 15:22:57]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:22:59]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	SYSC Full Command: [('<setmux:0:76:80>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	
+											Running sysc func: <setmux:0:76:80>
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	u'IW0\r76\r80\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	u'IS0\r50\r94\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	u'4D6F6C657820496E632E202020202020\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	u'IS0\r50\r16\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	u'01\rIS0\r50\r17\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	u'81\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	u'IS0\r50\r1a\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	u'00\rIS0\r50\r1b\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	u'00\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	
+											Running sysc func: <interpQSFPVolt>
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	SYSC command returned: VOLTAGE[0.0 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	
+											Running sysc func: <interpQSFPTemp>
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	SYSC command returned: TEMP[1.50390625°C]
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	SYSC command returned: INTERP[Molex Inc.      ]
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:22:59]	
+											SYSC Interpreted Command: [('<setmux:0:76:80>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r80\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r80\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:P\r4D6F6C657820496E632E202020202020\r~~~\r:P\rIS0\r50\r16\r01\r:P\r01\rIS0\r50\r17\r01\r:P\r81\r~~~\r:P\rIS0\r50\r1a\r01\r:P\r00\rIS0\r50\r1b\r01\r:P\r00\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\rVOLTAGE[0.0 Volts]~~~\r:P\rTEMP[1.50390625\xb0C]~~~\r:P\rINTERP[Molex Inc.      ]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:22:59]	PASSED Read at: 2019-06-24 15:22:59.707000
+[TITLE		:	Mon, 24, Jun 2019 15:22:59]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:23:03]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:23:03]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:23:03]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:03]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:03]	SYSC Full Command: [('<setmux:0:76:10>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:23:03]	
+											Running sysc func: <setmux:0:76:10>
+[INFO		:	Mon, 24, Jun 2019 15:23:03]	u'IW0\r76\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:03]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:03]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:23:03]	u'IS0\r50\r94\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:03]	u'4D6F6C657820496E632E202020202020\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:03]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:23:03]	u'IS0\r50\r16\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:03]	u'01\rIS0\r50\r17\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:03]	u'81\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:03]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:23:03]	u'IS0\r50\r1a\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:03]	u'00\rIS0\r50\r1b\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:03]	u'00\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:03]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:23:04]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:04]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:04]	
+											Running sysc func: <interpQSFPVolt>
+[INFO		:	Mon, 24, Jun 2019 15:23:04]	SYSC command returned: VOLTAGE[0.0 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:23:04]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:04]	
+											Running sysc func: <interpQSFPTemp>
+[INFO		:	Mon, 24, Jun 2019 15:23:04]	SYSC command returned: TEMP[1.50390625°C]
+[INFO		:	Mon, 24, Jun 2019 15:23:04]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:04]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:23:04]	SYSC command returned: INTERP[Molex Inc.      ]
+[INFO		:	Mon, 24, Jun 2019 15:23:04]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:04]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:04]	
+											SYSC Interpreted Command: [('<setmux:0:76:10>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r10\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r10\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:P\r4D6F6C657820496E632E202020202020\r~~~\r:P\rIS0\r50\r16\r01\r:P\r01\rIS0\r50\r17\r01\r:P\r81\r~~~\r:P\rIS0\r50\r1a\r01\r:P\r00\rIS0\r50\r1b\r01\r:P\r00\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\rVOLTAGE[0.0 Volts]~~~\r:P\rTEMP[1.50390625\xb0C]~~~\r:P\rINTERP[Molex Inc.      ]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:23:04]	PASSED Read at: 2019-06-24 15:23:04.224000
+[TITLE		:	Mon, 24, Jun 2019 15:23:04]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:23:06]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	SYSC Full Command: [('<setmux:0:76:20>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	
+											Running sysc func: <setmux:0:76:20>
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	u'IW0\r76\r20\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	u'IS0\r50\r94\r10\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	u'IS0\r50\r16\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	u'IS0\r50\r17\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	u'IS0\r50\r1a\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	u'IS0\r50\r1b\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	
+											Running sysc func: <interpQSFPVolt>
+[ERROR		:	Mon, 24, Jun 2019 15:23:06]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 682, in interpQSFPVolt
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	
+											Running sysc func: <interpQSFPTemp>
+[ERROR		:	Mon, 24, Jun 2019 15:23:06]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 691, in interpQSFPTemp
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	SYSC command returned: INTERP[]
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:06]	
+											SYSC Interpreted Command: [('<setmux:0:76:20>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r20\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r20\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:N\r~~~\r:P\rIS0\r50\r16\r01\r:N\rIS0\r50\r17\r01\r:N\r~~~\r:P\rIS0\r50\r1a\r01\r:N\rIS0\r50\r1b\r01\r:N\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\r~~~\r:P\r~~~\r:P\rINTERP[]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:23:07]	PASSED Read at: 2019-06-24 15:23:07.050000
+[TITLE		:	Mon, 24, Jun 2019 15:23:07]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:23:35]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:23:35]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:23:35]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:35]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:35]	SYSC Full Command: [('<setmux:0:76:20>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:23:35]	
+											Running sysc func: <setmux:0:76:20>
+[INFO		:	Mon, 24, Jun 2019 15:23:35]	u'IW0\r76\r20\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:35]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:35]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:23:35]	u'IS0\r50\r94\r10\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:35]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:35]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:23:35]	u'IS0\r50\r16\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:35]	u'IS0\r50\r17\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:35]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:35]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:23:35]	u'IS0\r50\r1a\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:35]	u'IS0\r50\r1b\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:35]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:35]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:23:35]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:35]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:35]	
+											Running sysc func: <interpQSFPVolt>
+[ERROR		:	Mon, 24, Jun 2019 15:23:35]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 682, in interpQSFPVolt
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:23:35]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:35]	
+											Running sysc func: <interpQSFPTemp>
+[ERROR		:	Mon, 24, Jun 2019 15:23:35]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 691, in interpQSFPTemp
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:23:36]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:36]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:23:36]	SYSC command returned: INTERP[]
+[INFO		:	Mon, 24, Jun 2019 15:23:36]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:36]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:36]	
+											SYSC Interpreted Command: [('<setmux:0:76:20>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r20\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r20\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:N\r~~~\r:P\rIS0\r50\r16\r01\r:N\rIS0\r50\r17\r01\r:N\r~~~\r:P\rIS0\r50\r1a\r01\r:N\rIS0\r50\r1b\r01\r:N\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\r~~~\r:P\r~~~\r:P\rINTERP[]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:23:36]	PASSED Read at: 2019-06-24 15:23:36.150000
+[TITLE		:	Mon, 24, Jun 2019 15:23:36]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:23:38]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:23:38]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:23:38]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:38]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:38]	SYSC Full Command: [('<setmux:0:76:10>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:23:38]	
+											Running sysc func: <setmux:0:76:10>
+[INFO		:	Mon, 24, Jun 2019 15:23:38]	u'IW0\r76\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:38]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:38]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:23:38]	u'IS0\r50\r94\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:38]	u'4D6F6C657820496E632E202020202020\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:38]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:23:38]	u'IS0\r50\r16\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:38]	u'01\rIS0\r50\r17\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:38]	u'81\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:38]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:23:38]	u'IS0\r50\r1a\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:39]	u'00\rIS0\r50\r1b\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:39]	u'00\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:39]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:23:39]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:39]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:39]	
+											Running sysc func: <interpQSFPVolt>
+[INFO		:	Mon, 24, Jun 2019 15:23:39]	SYSC command returned: VOLTAGE[0.0 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:23:39]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:39]	
+											Running sysc func: <interpQSFPTemp>
+[INFO		:	Mon, 24, Jun 2019 15:23:39]	SYSC command returned: TEMP[1.50390625°C]
+[INFO		:	Mon, 24, Jun 2019 15:23:39]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:39]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:23:39]	SYSC command returned: INTERP[Molex Inc.      ]
+[INFO		:	Mon, 24, Jun 2019 15:23:39]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:39]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:39]	
+											SYSC Interpreted Command: [('<setmux:0:76:10>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r10\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r10\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:P\r4D6F6C657820496E632E202020202020\r~~~\r:P\rIS0\r50\r16\r01\r:P\r01\rIS0\r50\r17\r01\r:P\r81\r~~~\r:P\rIS0\r50\r1a\r01\r:P\r00\rIS0\r50\r1b\r01\r:P\r00\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\rVOLTAGE[0.0 Volts]~~~\r:P\rTEMP[1.50390625\xb0C]~~~\r:P\rINTERP[Molex Inc.      ]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:23:39]	PASSED Read at: 2019-06-24 15:23:39.254000
+[TITLE		:	Mon, 24, Jun 2019 15:23:39]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:23:40]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:23:40]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:23:41]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:41]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:41]	SYSC Full Command: [('<setmux:0:76:40>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:23:41]	
+											Running sysc func: <setmux:0:76:40>
+[INFO		:	Mon, 24, Jun 2019 15:23:41]	u'IW0\r76\r40\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:41]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:41]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:23:41]	u'IS0\r50\r94\r10\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:41]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:41]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:23:41]	u'IS0\r50\r16\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:41]	u'IS0\r50\r17\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:41]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:41]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:23:41]	u'IS0\r50\r1a\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:41]	u'IS0\r50\r1b\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:41]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:41]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:23:41]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:41]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:41]	
+											Running sysc func: <interpQSFPVolt>
+[ERROR		:	Mon, 24, Jun 2019 15:23:41]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 682, in interpQSFPVolt
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:23:41]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:41]	
+											Running sysc func: <interpQSFPTemp>
+[ERROR		:	Mon, 24, Jun 2019 15:23:41]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 691, in interpQSFPTemp
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:23:41]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:41]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:23:41]	SYSC command returned: INTERP[]
+[INFO		:	Mon, 24, Jun 2019 15:23:41]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:41]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:41]	
+											SYSC Interpreted Command: [('<setmux:0:76:40>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r40\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r40\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:N\r~~~\r:P\rIS0\r50\r16\r01\r:N\rIS0\r50\r17\r01\r:N\r~~~\r:P\rIS0\r50\r1a\r01\r:N\rIS0\r50\r1b\r01\r:N\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\r~~~\r:P\r~~~\r:P\rINTERP[]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:23:41]	PASSED Read at: 2019-06-24 15:23:41.455000
+[TITLE		:	Mon, 24, Jun 2019 15:23:41]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:23:42]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:23:42]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:23:42]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:42]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:42]	SYSC Full Command: [('<setmux:0:76:80>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:23:42]	
+											Running sysc func: <setmux:0:76:80>
+[INFO		:	Mon, 24, Jun 2019 15:23:42]	u'IW0\r76\r80\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:42]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:42]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:23:42]	u'IS0\r50\r94\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:42]	u'4D6F6C657820496E632E202020202020\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:42]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:23:42]	u'IS0\r50\r16\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:43]	u'01\rIS0\r50\r17\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:43]	u'81\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:43]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:23:43]	u'IS0\r50\r1a\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:43]	u'00\rIS0\r50\r1b\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:43]	u'00\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:43]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:23:43]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:43]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:43]	
+											Running sysc func: <interpQSFPVolt>
+[INFO		:	Mon, 24, Jun 2019 15:23:43]	SYSC command returned: VOLTAGE[0.0 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:23:43]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:43]	
+											Running sysc func: <interpQSFPTemp>
+[INFO		:	Mon, 24, Jun 2019 15:23:43]	SYSC command returned: TEMP[1.50390625°C]
+[INFO		:	Mon, 24, Jun 2019 15:23:43]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:43]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:23:43]	SYSC command returned: INTERP[Molex Inc.      ]
+[INFO		:	Mon, 24, Jun 2019 15:23:43]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:43]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:43]	
+											SYSC Interpreted Command: [('<setmux:0:76:80>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r80\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r80\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:P\r4D6F6C657820496E632E202020202020\r~~~\r:P\rIS0\r50\r16\r01\r:P\r01\rIS0\r50\r17\r01\r:P\r81\r~~~\r:P\rIS0\r50\r1a\r01\r:P\r00\rIS0\r50\r1b\r01\r:P\r00\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\rVOLTAGE[0.0 Volts]~~~\r:P\rTEMP[1.50390625\xb0C]~~~\r:P\rINTERP[Molex Inc.      ]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:23:43]	PASSED Read at: 2019-06-24 15:23:43.303000
+[TITLE		:	Mon, 24, Jun 2019 15:23:43]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:23:50]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	SYSC Full Command: [('<setmux:0:76:80>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	
+											Running sysc func: <setmux:0:76:80>
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	u'IW0\r76\r80\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	u'IS0\r50\r94\r10\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	u'IS0\r50\r16\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	u'IS0\r50\r17\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	u'IS0\r50\r1a\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	u'IS0\r50\r1b\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	
+											Running sysc func: <interpQSFPVolt>
+[ERROR		:	Mon, 24, Jun 2019 15:23:50]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 682, in interpQSFPVolt
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	
+											Running sysc func: <interpQSFPTemp>
+[ERROR		:	Mon, 24, Jun 2019 15:23:50]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 691, in interpQSFPTemp
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	SYSC command returned: INTERP[]
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:50]	
+											SYSC Interpreted Command: [('<setmux:0:76:80>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r80\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r80\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:N\r~~~\r:P\rIS0\r50\r16\r01\r:N\rIS0\r50\r17\r01\r:N\r~~~\r:P\rIS0\r50\r1a\r01\r:N\rIS0\r50\r1b\r01\r:N\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\r~~~\r:P\r~~~\r:P\rINTERP[]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:23:51]	PASSED Read at: 2019-06-24 15:23:51.098000
+[TITLE		:	Mon, 24, Jun 2019 15:23:51]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:23:58]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:23:58]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:23:58]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:58]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:58]	SYSC Full Command: [('<setmux:0:76:80>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:23:58]	
+											Running sysc func: <setmux:0:76:80>
+[INFO		:	Mon, 24, Jun 2019 15:23:58]	u'IW0\r76\r80\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:58]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:58]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:23:58]	u'IS0\r50\r94\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:58]	u'4D6F6C657820496E632E202020202020\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:58]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:23:58]	u'IS0\r50\r16\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:58]	u'01\rIS0\r50\r17\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:59]	u'81\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:59]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:23:59]	u'IS0\r50\r1a\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:59]	u'00\rIS0\r50\r1b\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:59]	u'00\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:59]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:23:59]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:59]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:59]	
+											Running sysc func: <interpQSFPVolt>
+[INFO		:	Mon, 24, Jun 2019 15:23:59]	SYSC command returned: VOLTAGE[0.0 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:23:59]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:59]	
+											Running sysc func: <interpQSFPTemp>
+[INFO		:	Mon, 24, Jun 2019 15:23:59]	SYSC command returned: TEMP[1.50390625°C]
+[INFO		:	Mon, 24, Jun 2019 15:23:59]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:59]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:23:59]	SYSC command returned: INTERP[Molex Inc.      ]
+[INFO		:	Mon, 24, Jun 2019 15:23:59]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:59]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:23:59]	
+											SYSC Interpreted Command: [('<setmux:0:76:80>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r80\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r80\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:P\r4D6F6C657820496E632E202020202020\r~~~\r:P\rIS0\r50\r16\r01\r:P\r01\rIS0\r50\r17\r01\r:P\r81\r~~~\r:P\rIS0\r50\r1a\r01\r:P\r00\rIS0\r50\r1b\r01\r:P\r00\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\rVOLTAGE[0.0 Volts]~~~\r:P\rTEMP[1.50390625\xb0C]~~~\r:P\rINTERP[Molex Inc.      ]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:23:59]	PASSED Read at: 2019-06-24 15:23:59.339000
+[TITLE		:	Mon, 24, Jun 2019 15:23:59]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:24:01]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:24:01]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:24:01]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:01]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:01]	SYSC Full Command: [('<setmux:0:76:10>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:24:01]	
+											Running sysc func: <setmux:0:76:10>
+[INFO		:	Mon, 24, Jun 2019 15:24:01]	u'IW0\r76\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:01]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:01]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:24:01]	u'IS0\r50\r94\r10\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:01]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:01]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:24:01]	u'IS0\r50\r16\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:02]	u'IS0\r50\r17\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:02]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:02]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:24:02]	u'IS0\r50\r1a\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:02]	u'IS0\r50\r1b\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:02]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:02]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:24:02]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:02]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:02]	
+											Running sysc func: <interpQSFPVolt>
+[ERROR		:	Mon, 24, Jun 2019 15:24:02]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 682, in interpQSFPVolt
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:24:02]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:02]	
+											Running sysc func: <interpQSFPTemp>
+[ERROR		:	Mon, 24, Jun 2019 15:24:02]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 691, in interpQSFPTemp
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:24:02]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:02]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:24:02]	SYSC command returned: INTERP[]
+[INFO		:	Mon, 24, Jun 2019 15:24:02]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:02]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:02]	
+											SYSC Interpreted Command: [('<setmux:0:76:10>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r10\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r10\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:N\r~~~\r:P\rIS0\r50\r16\r01\r:N\rIS0\r50\r17\r01\r:N\r~~~\r:P\rIS0\r50\r1a\r01\r:N\rIS0\r50\r1b\r01\r:N\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\r~~~\r:P\r~~~\r:P\rINTERP[]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:24:02]	PASSED Read at: 2019-06-24 15:24:02.281000
+[TITLE		:	Mon, 24, Jun 2019 15:24:02]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:24:03]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	SYSC Full Command: [('<setmux:0:76:10>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	
+											Running sysc func: <setmux:0:76:10>
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	u'IW0\r76\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	u'IS0\r50\r94\r10\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	u'IS0\r50\r16\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	u'IS0\r50\r17\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	u'IS0\r50\r1a\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	u'IS0\r50\r1b\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	
+											Running sysc func: <interpQSFPVolt>
+[ERROR		:	Mon, 24, Jun 2019 15:24:03]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 682, in interpQSFPVolt
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	
+											Running sysc func: <interpQSFPTemp>
+[ERROR		:	Mon, 24, Jun 2019 15:24:03]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 691, in interpQSFPTemp
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	SYSC command returned: INTERP[]
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:24:03]	
+											SYSC Interpreted Command: [('<setmux:0:76:10>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r10\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r10\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:N\r~~~\r:P\rIS0\r50\r16\r01\r:N\rIS0\r50\r17\r01\r:N\r~~~\r:P\rIS0\r50\r1a\r01\r:N\rIS0\r50\r1b\r01\r:N\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\r~~~\r:P\r~~~\r:P\rINTERP[]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:24:03]	PASSED Read at: 2019-06-24 15:24:03.653000
+[TITLE		:	Mon, 24, Jun 2019 15:24:03]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:25:57]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:25:57]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:25:57]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:25:57]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:25:57]	SYSC Full Command: [('<setmux:0:76:10>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:25:57]	
+											Running sysc func: <setmux:0:76:10>
+[INFO		:	Mon, 24, Jun 2019 15:25:57]	u'IW0\r76\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:25:57]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:25:57]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:25:57]	u'IS0\r50\r94\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:25:57]	u'4D6F6C657820496E632E202020202020\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:25:57]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:25:57]	u'IS0\r50\r16\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:25:57]	u'01\rIS0\r50\r17\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:25:58]	u'81\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:25:58]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:25:58]	u'IS0\r50\r1a\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:25:58]	u'00\rIS0\r50\r1b\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:25:58]	u'00\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:25:58]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:25:58]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:25:58]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:25:58]	
+											Running sysc func: <interpQSFPVolt>
+[INFO		:	Mon, 24, Jun 2019 15:25:58]	SYSC command returned: VOLTAGE[0.0 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:25:58]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:25:58]	
+											Running sysc func: <interpQSFPTemp>
+[INFO		:	Mon, 24, Jun 2019 15:25:58]	SYSC command returned: TEMP[1.50390625°C]
+[INFO		:	Mon, 24, Jun 2019 15:25:58]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:25:58]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:25:58]	SYSC command returned: INTERP[Molex Inc.      ]
+[INFO		:	Mon, 24, Jun 2019 15:25:58]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:25:58]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:25:58]	
+											SYSC Interpreted Command: [('<setmux:0:76:10>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r10\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r10\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:P\r4D6F6C657820496E632E202020202020\r~~~\r:P\rIS0\r50\r16\r01\r:P\r01\rIS0\r50\r17\r01\r:P\r81\r~~~\r:P\rIS0\r50\r1a\r01\r:P\r00\rIS0\r50\r1b\r01\r:P\r00\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\rVOLTAGE[0.0 Volts]~~~\r:P\rTEMP[1.50390625\xb0C]~~~\r:P\rINTERP[Molex Inc.      ]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:25:58]	PASSED Read at: 2019-06-24 15:25:58.303000
+[TITLE		:	Mon, 24, Jun 2019 15:25:58]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:25:59]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:25:59]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:26:00]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:00]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:00]	SYSC Full Command: [('<setmux:0:76:20>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:26:00]	
+											Running sysc func: <setmux:0:76:20>
+[INFO		:	Mon, 24, Jun 2019 15:26:00]	u'IW0\r76\r20\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:00]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:00]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:26:00]	u'IS0\r50\r94\r10\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:00]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:00]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:26:00]	u'IS0\r50\r16\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:00]	u'IS0\r50\r17\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:00]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:00]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:26:00]	u'IS0\r50\r1a\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:00]	u'IS0\r50\r1b\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:00]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:00]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:26:00]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:00]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:00]	
+											Running sysc func: <interpQSFPVolt>
+[ERROR		:	Mon, 24, Jun 2019 15:26:00]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 682, in interpQSFPVolt
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:26:00]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:00]	
+											Running sysc func: <interpQSFPTemp>
+[ERROR		:	Mon, 24, Jun 2019 15:26:00]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 691, in interpQSFPTemp
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:26:00]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:00]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:26:00]	SYSC command returned: INTERP[]
+[INFO		:	Mon, 24, Jun 2019 15:26:00]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:00]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:00]	
+											SYSC Interpreted Command: [('<setmux:0:76:20>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r20\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r20\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:N\r~~~\r:P\rIS0\r50\r16\r01\r:N\rIS0\r50\r17\r01\r:N\r~~~\r:P\rIS0\r50\r1a\r01\r:N\rIS0\r50\r1b\r01\r:N\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\r~~~\r:P\r~~~\r:P\rINTERP[]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:26:00]	PASSED Read at: 2019-06-24 15:26:00.473000
+[TITLE		:	Mon, 24, Jun 2019 15:26:00]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:26:01]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:26:01]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:26:02]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:02]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:02]	SYSC Full Command: [('<setmux:0:76:40>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:26:02]	
+											Running sysc func: <setmux:0:76:40>
+[INFO		:	Mon, 24, Jun 2019 15:26:02]	u'IW0\r76\r40\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:02]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:02]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:26:02]	u'IS0\r50\r94\r10\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:02]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:02]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:26:02]	u'IS0\r50\r16\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:02]	u'IS0\r50\r17\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:02]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:02]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:26:02]	u'IS0\r50\r1a\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:02]	u'IS0\r50\r1b\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:02]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:02]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:26:02]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:02]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:02]	
+											Running sysc func: <interpQSFPVolt>
+[ERROR		:	Mon, 24, Jun 2019 15:26:02]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 682, in interpQSFPVolt
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:26:02]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:02]	
+											Running sysc func: <interpQSFPTemp>
+[ERROR		:	Mon, 24, Jun 2019 15:26:02]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 691, in interpQSFPTemp
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:26:02]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:02]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:26:02]	SYSC command returned: INTERP[]
+[INFO		:	Mon, 24, Jun 2019 15:26:02]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:02]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:02]	
+											SYSC Interpreted Command: [('<setmux:0:76:40>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r40\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r40\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:N\r~~~\r:P\rIS0\r50\r16\r01\r:N\rIS0\r50\r17\r01\r:N\r~~~\r:P\rIS0\r50\r1a\r01\r:N\rIS0\r50\r1b\r01\r:N\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\r~~~\r:P\r~~~\r:P\rINTERP[]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:26:02]	PASSED Read at: 2019-06-24 15:26:02.522000
+[TITLE		:	Mon, 24, Jun 2019 15:26:02]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:26:03]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	SYSC Full Command: [('<setmux:0:76:80>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	
+											Running sysc func: <setmux:0:76:80>
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	u'IW0\r76\r80\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	u'IS0\r50\r94\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	u'4D6F6C657820496E632E202020202020\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	u'IS0\r50\r16\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	u'01\rIS0\r50\r17\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	u'81\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	u'IS0\r50\r1a\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	u'00\rIS0\r50\r1b\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	u'00\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	
+											Running sysc func: <interpQSFPVolt>
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	SYSC command returned: VOLTAGE[0.0 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	
+											Running sysc func: <interpQSFPTemp>
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	SYSC command returned: TEMP[1.50390625°C]
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	SYSC command returned: INTERP[Molex Inc.      ]
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:26:03]	
+											SYSC Interpreted Command: [('<setmux:0:76:80>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r80\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r80\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:P\r4D6F6C657820496E632E202020202020\r~~~\r:P\rIS0\r50\r16\r01\r:P\r01\rIS0\r50\r17\r01\r:P\r81\r~~~\r:P\rIS0\r50\r1a\r01\r:P\r00\rIS0\r50\r1b\r01\r:P\r00\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\rVOLTAGE[0.0 Volts]~~~\r:P\rTEMP[1.50390625\xb0C]~~~\r:P\rINTERP[Molex Inc.      ]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:26:04]	PASSED Read at: 2019-06-24 15:26:04.101000
+[TITLE		:	Mon, 24, Jun 2019 15:26:04]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:27:51]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	SYSC Full Command: [('<setmux:0:76:20>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	
+											Running sysc func: <setmux:0:76:20>
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	u'IW0\r76\r20\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	u'IS0\r50\r94\r10\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	u'IS0\r50\r16\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	u'IS0\r50\r17\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	u'IS0\r50\r1a\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	u'IS0\r50\r1b\r01\r:N\r'
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	
+											Running sysc func: <interpQSFPVolt>
+[ERROR		:	Mon, 24, Jun 2019 15:27:51]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 682, in interpQSFPVolt
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	
+											Running sysc func: <interpQSFPTemp>
+[ERROR		:	Mon, 24, Jun 2019 15:27:51]	Error while running sysc function
+											Traceback (most recent call last):
+											  File "testthread.py", line 609, in sysc
+											  File "config.py", line 691, in interpQSFPTemp
+											IndexError: list index out of range
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	SYSC command returned: INTERP[]
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:27:51]	
+											SYSC Interpreted Command: [('<setmux:0:76:20>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r20\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r20\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:N\r~~~\r:P\rIS0\r50\r16\r01\r:N\rIS0\r50\r17\r01\r:N\r~~~\r:P\rIS0\r50\r1a\r01\r:N\rIS0\r50\r1b\r01\r:N\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\r~~~\r:P\r~~~\r:P\rINTERP[]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:27:51]	PASSED Read at: 2019-06-24 15:27:51.762000
+[TITLE		:	Mon, 24, Jun 2019 15:27:51]	Finished
+[TITLE		:	Mon, 24, Jun 2019 15:28:39]	PRESSED: Read
+[INFO		:	Mon, 24, Jun 2019 15:28:39]	Starting step sysc
+											==========
+[INFO		:	Mon, 24, Jun 2019 15:28:39]	u'\x1b:R\r'
+[INFO		:	Mon, 24, Jun 2019 15:28:39]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:28:39]	SYSC Full Command: [('<setmux:0:76:10>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+[INFO		:	Mon, 24, Jun 2019 15:28:39]	
+											Running sysc func: <setmux:0:76:10>
+[INFO		:	Mon, 24, Jun 2019 15:28:39]	u'IW0\r76\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:28:39]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:28:39]	
+											Running sysc func: <readQSFPManu:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:28:39]	u'IS0\r50\r94\r10\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:28:39]	u'4D6F6C657820496E632E202020202020\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:28:39]	
+											Running sysc func: <readQSFPTemp:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:28:39]	u'IS0\r50\r16\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:28:39]	u'01\rIS0\r50\r17\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:28:39]	u'81\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:28:39]	
+											Running sysc func: <readQSFPVolt:0:50>
+[INFO		:	Mon, 24, Jun 2019 15:28:39]	u'IS0\r50\r1a\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:28:39]	u'00\rIS0\r50\r1b\r01\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:28:39]	u'00\r~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:28:40]	
+											Running sysc func: <setmux:0:76:00>
+[INFO		:	Mon, 24, Jun 2019 15:28:40]	u'IW0\r76\r00\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:28:40]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:28:40]	
+											Running sysc func: <interpQSFPVolt>
+[INFO		:	Mon, 24, Jun 2019 15:28:40]	SYSC command returned: VOLTAGE[0.0 Volts]
+[INFO		:	Mon, 24, Jun 2019 15:28:40]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:28:40]	
+											Running sysc func: <interpQSFPTemp>
+[INFO		:	Mon, 24, Jun 2019 15:28:40]	SYSC command returned: TEMP[1.50390625°C]
+[INFO		:	Mon, 24, Jun 2019 15:28:40]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:28:40]	
+											Running sysc func: <interpQSFPManu>
+[INFO		:	Mon, 24, Jun 2019 15:28:40]	SYSC command returned: INTERP[Molex Inc.      ]
+[INFO		:	Mon, 24, Jun 2019 15:28:40]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:28:40]	u'~~~\r:P\r'
+[INFO		:	Mon, 24, Jun 2019 15:28:40]	
+											SYSC Interpreted Command: [('<setmux:0:76:10>', '', '', ''), ('<readQSFPManu:0:50>', '', '', ''), ('<readQSFPTemp:0:50>', '', '', ''), ('<readQSFPVolt:0:50>', '', '', ''), ('<setmux:0:76:00>', '', '', ''), ('<interpQSFPVolt>', '', '', ''), ('<interpQSFPTemp>', '', '', ''), ('<interpQSFPManu>', '', '', '')]
+											SYSC RAW Command: u'IW0\r76\r10\r\tIS0\r50\r94\r10\r\tIS0\r50\r16\r01\r\tIS0\r50\r17\r01\r\tIS0\r50\r1a\r01\r\tIS0\r50\r1b\r01\r\tIW0\r76\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r76\r10\r:P\r~~~\r:P\rIS0\r50\r94\r10\r:P\r4D6F6C657820496E632E202020202020\r~~~\r:P\rIS0\r50\r16\r01\r:P\r01\rIS0\r50\r17\r01\r:P\r81\r~~~\r:P\rIS0\r50\r1a\r01\r:P\r00\rIS0\r50\r1b\r01\r:P\r00\r~~~\r:P\rIW0\r76\r00\r:P\r~~~\r:P\rVOLTAGE[0.0 Volts]~~~\r:P\rTEMP[1.50390625\xb0C]~~~\r:P\rINTERP[Molex Inc.      ]~~~\r:P\r~~~\r:P\r'
+[TITLE		:	Mon, 24, Jun 2019 15:28:40]	PASSED Read at: 2019-06-24 15:28:40.208000
+[TITLE		:	Mon, 24, Jun 2019 15:28:40]	Finished
+[TITLE		:	Fri, 28, Jun 2019 09:57:27]	BOARD PASSED COMPLETELY

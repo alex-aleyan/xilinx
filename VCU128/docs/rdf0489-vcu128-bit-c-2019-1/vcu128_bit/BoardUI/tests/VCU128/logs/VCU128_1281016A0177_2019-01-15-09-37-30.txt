@@ -1,0 +1,598 @@
+[TITLE		:	Tue, 15, Jan 2019 09:37:42]	Board: VCU128
+[TITLE		:	Tue, 15, Jan 2019 09:37:42]	Revision: 1.0
+[TITLE		:	Tue, 15, Jan 2019 09:37:42]	Silicon: prod
+[TITLE		:	Tue, 15, Jan 2019 09:37:42]	Serial Number: 1281016A0177
+[TITLE		:	Tue, 15, Jan 2019 09:37:42]	MAC Address: 01:02:03:04:05:06
+[TITLE		:	Tue, 15, Jan 2019 09:37:42]	Working in directory: VCU128
+[TITLE		:	Tue, 15, Jan 2019 09:37:44]	PRESSED: IPI APP Test
+[TITLE		:	Tue, 15, Jan 2019 09:37:44]	Starting IPI APP Test at: 2019-01-15 09:37:44.362000
+[INFO		:	Tue, 15, Jan 2019 09:37:44]	Starting step sysc
+											==========
+[ERROR		:	Tue, 15, Jan 2019 09:37:46]	Error in waitingforoccurance: ~~~
+																						:P
+											Traceback (most recent call last):
+											  File "testthread.py", line 292, in waitforoccurance
+											  File "Queue.py", line 176, in get
+											Empty
+[ERROR		:	Tue, 15, Jan 2019 09:37:46]	Read: ''
+											Traceback (most recent call last):
+											  File "testthread.py", line 292, in waitforoccurance
+											  File "Queue.py", line 176, in get
+											Empty
+[ERROR		:	Tue, 15, Jan 2019 09:37:46]	Timeout reached while waiting for occurance
+[ERROR		:	Tue, 15, Jan 2019 09:37:46]	The serial port does not seem to be responding...
+											Is the board on?
+[TITLE		:	Tue, 15, Jan 2019 09:37:46]	FAILED IPI APP Test at: 2019-01-15 09:37:46.470000
+[TITLE		:	Tue, 15, Jan 2019 09:37:46]	Finished
+[TITLE		:	Tue, 15, Jan 2019 09:38:01]	PRESSED: IPI APP Test
+[TITLE		:	Tue, 15, Jan 2019 09:38:01]	Starting IPI APP Test at: 2019-01-15 09:38:01.802000
+[INFO		:	Tue, 15, Jan 2019 09:38:01]	Starting step sysc
+											==========
+[INFO		:	Tue, 15, Jan 2019 09:38:01]	u'\x1b:R\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:01]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:01]	SYSC Full Command: [('<setmux:0:74:02>', '', '', ''), ('<calcsi5328:0:68:156.25>', '', '', ''), ('<saveval:04:156.25>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+[INFO		:	Tue, 15, Jan 2019 09:38:01]	
+											Running sysc func: <setmux:0:74:02>
+[INFO		:	Tue, 15, Jan 2019 09:38:01]	u'IW0\r74\r02\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:01]	u'~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:01]	
+											Running sysc func: <calcsi5328:0:68:156.25>
+[INFO		:	Tue, 15, Jan 2019 09:38:04]	u'IW0\r68\r0054\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:04]	u'IW0\r68\r01e1\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:04]	u'IW0\r68\r0212\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:04]	u'IW0\r68\r0355\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:04]	u'IW0\r68\r0412\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:04]	u'IW0\r68\r0a00\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:04]	u'IW0\r68\r0b40\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:04]	u'IW0\r68\r132c\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:04]	u'IW0\r68\r143e\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:04]	u'IW0\r68\r15fc\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:04]	u'IW0\r68\r16df\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:04]	u'IW0\r68\r171f\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:04]	u'IW0\r68\r183f\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:04]	u'IW0\r68\r1980\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:04]	u'IW0\r68\r1f00\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:04]	u'IW0\r68\r2000\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:04]	u'IW0\r68\r2103\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:05]	u'IW0\r68\r2200\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:05]	u'IW0\r68\r2300\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:05]	u'IW0\r68\r2403\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:05]	u'IW0\r68\r2802\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:05]	u'IW0\r68\r2970\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:05]	u'IW0\r68\r2a1f\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:05]	u'IW0\r68\r2b00\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:05]	u'IW0\r68\r2c4e\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:05]	u'IW0\r68\r2d03\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:05]	u'IW0\r68\r2e00\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:05]	u'IW0\r68\r2f39\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:05]	u'IW0\r68\r300f\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:05]	u'IW0\r68\r371b\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:05]	u'IW0\r68\r8318\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:05]	u'IW0\r68\r8400\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:05]	u'IW0\r68\r8900\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:05]	u'IW0\r68\r8a0F\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:05]	u'IW0\r68\r8bFF\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:05]	u'IW0\r68\r8e00\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:05]	u'IW0\r68\r8f00\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:05]	u'IW0\r68\r8840\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:05]	u'~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:05]	
+											Running sysc func: <saveval:04:156.25>
+[INFO		:	Tue, 15, Jan 2019 09:38:06]	u'MWS\r04\r4063880000000000\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:06]	u'~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:06]	
+											Running sysc func: <setmux:0:74:00>
+[INFO		:	Tue, 15, Jan 2019 09:38:06]	u'IW0\r74\r00\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:06]	u'~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:06]	u'~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:06]	
+											SYSC Interpreted Command: [('<setmux:0:74:02>', '', '', ''), ('<calcsi5328:0:68:156.25>', '', '', ''), ('<saveval:04:156.25>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+											SYSC RAW Command: u'IW0\r74\r02\r\tIW0\r68\r0054\r\tIW0\r68\r01e1\r\tIW0\r68\r0212\r\tIW0\r68\r0355\r\tIW0\r68\r0412\r\tIW0\r68\r0a00\r\tIW0\r68\r0b40\r\tIW0\r68\r132c\r\tIW0\r68\r143e\r\tIW0\r68\r15fc\r\tIW0\r68\r16df\r\tIW0\r68\r171f\r\tIW0\r68\r183f\r\tIW0\r68\r1980\r\tIW0\r68\r1f00\r\tIW0\r68\r2000\r\tIW0\r68\r2103\r\tIW0\r68\r2200\r\tIW0\r68\r2300\r\tIW0\r68\r2403\r\tIW0\r68\r2802\r\tIW0\r68\r2970\r\tIW0\r68\r2a1f\r\tIW0\r68\r2b00\r\tIW0\r68\r2c4e\r\tIW0\r68\r2d03\r\tIW0\r68\r2e00\r\tIW0\r68\r2f39\r\tIW0\r68\r300f\r\tIW0\r68\r371b\r\tIW0\r68\r8318\r\tIW0\r68\r8400\r\tIW0\r68\r8900\r\tIW0\r68\r8a0F\r\tIW0\r68\r8bFF\r\tIW0\r68\r8e00\r\tIW0\r68\r8f00\r\tIW0\r68\r8840\r\tMWS\r04\r4063880000000000\r\tIW0\r74\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r74\r02\r:P\r~~~\r:P\rIW0\r68\r0054\r:P\rIW0\r68\r01e1\r:P\rIW0\r68\r0212\r:P\rIW0\r68\r0355\r:P\rIW0\r68\r0412\r:P\rIW0\r68\r0a00\r:P\rIW0\r68\r0b40\r:P\rIW0\r68\r132c\r:P\rIW0\r68\r143e\r:P\rIW0\r68\r15fc\r:P\rIW0\r68\r16df\r:P\rIW0\r68\r171f\r:P\rIW0\r68\r183f\r:P\rIW0\r68\r1980\r:P\rIW0\r68\r1f00\r:P\rIW0\r68\r2000\r:P\rIW0\r68\r2103\r:P\rIW0\r68\r2200\r:P\rIW0\r68\r2300\r:P\rIW0\r68\r2403\r:P\rIW0\r68\r2802\r:P\rIW0\r68\r2970\r:P\rIW0\r68\r2a1f\r:P\rIW0\r68\r2b00\r:P\rIW0\r68\r2c4e\r:P\rIW0\r68\r2d03\r:P\rIW0\r68\r2e00\r:P\rIW0\r68\r2f39\r:P\rIW0\r68\r300f\r:P\rIW0\r68\r371b\r:P\rIW0\r68\r8318\r:P\rIW0\r68\r8400\r:P\rIW0\r68\r8900\r:P\rIW0\r68\r8a0F\r:P\rIW0\r68\r8bFF\r:P\rIW0\r68\r8e00\r:P\rIW0\r68\r8f00\r:P\rIW0\r68\r8840\r:P\r~~~\r:P\rMWS\r04\r4063880000000000\r:P\r~~~\r:P\rIW0\r74\r00\r:P\r~~~\r:P\r~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 09:38:06]	Starting step tcl
+											==========
+[INFO		:	Tue, 15, Jan 2019 09:38:06]	To run this command manually open a shell in "C:\vcu128_bit\BoardUI\tests\VCU128"
+[INFO		:	Tue, 15, Jan 2019 09:38:06]	then run "C:\Xilinx\Vivado\2018.3\bin\vivado.bat" -mode batch -source "clocks\ipi_app_download.tcl" -nojournal -nolog -tclargs COM110 VCU128 1.0 1281016A0177 010203040506 prod 2.6 "False" "<setmux:0:74:04>" "<setmux:0:74:00>" "0" "(?i)1281016A0177B" "(?i)1281016A0177C"
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source {clocks\ipi_app_download.tcl}
+# puts "There are $argc arguments to this script"
+There are 13 arguments to this script
+# puts "The name of this script is $argv0"
+The name of this script is clocks\ipi_app_download.tcl
+# if {$argc > 0} {
+#     set i 0
+#     foreach arg $argv {
+#         puts "Argument $i is $arg"
+#         incr i
+#     }
+# }
+Argument 0 is COM110
+Argument 1 is VCU128
+Argument 2 is 1.0
+Argument 3 is 1281016A0177
+Argument 4 is 010203040506
+Argument 5 is prod
+Argument 6 is 2.6
+Argument 7 is False
+Argument 8 is <setmux:0:74:04>
+Argument 9 is <setmux:0:74:00>
+Argument 10 is 0
+Argument 11 is (?i)1281016A0177B
+Argument 12 is (?i)1281016A0177C
+# puts "There should be at least 7 arguments at all times (0-6):"
+There should be at least 7 arguments at all times (0-6):
+# puts "Argument 0 is [lindex $argv 0]"
+Argument 0 is COM110
+# puts "Argument 1 is [lindex $argv 1]"
+Argument 1 is VCU128
+# puts "Argument 2 is [lindex $argv 2]"
+Argument 2 is 1.0
+# puts "Argument 3 is [lindex $argv 3]"
+Argument 3 is 1281016A0177
+# puts "Argument 4 is [lindex $argv 4]"
+Argument 4 is 010203040506
+# puts "Argument 5 is [lindex $argv 5]"
+Argument 5 is prod
+# puts "Argument 6 is [lindex $argv 6]"
+Argument 6 is 2.6
+# puts "You have these environment variables set:"
+You have these environment variables set:
+# foreach index [array names env] {
+#     puts "$index: $env($index)"
+# }
+RDI_PREPEND_PATH: C:/Xilinx/SDK/2018.3/bin;C:/Xilinx/Vivado/2018.3/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2018.3/ids_lite/ISE/lib/nt64
+HOME: C:\Users\jamesm
+PROCESSOR_IDENTIFIER: Intel64 Family 6 Model 94 Stepping 3, GenuineIntel
+RDI_ISE_PLATFORM: nt64
+RDI_BINROOT: C:/Xilinx/Vivado/2018.3/bin
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+RDI_LIBDIR: C:/Xilinx/Vivado/2018.3/lib/win64.o
+RDI_PROG: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/vivado.exe
+LOGONSERVER: \\XCO-DCXLNX2
+ProgramW6432: C:\Program Files
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+_RDI_BINROOT: C:\Xilinx\Vivado\2018.3\bin
+ProgramFiles: C:\Program Files
+RDI_JAVA_VERSION: 9.0.4
+_dir: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+TEMP: C:\Users\jamesm\AppData\Local\Temp
+XVREDIST: C:/Xilinx/Vivado/2018.3\tps\win64\xvcredist.exe
+XILINXD_LICENSE_FILE: \\ppdeng\gdrive\xbuilds\licenses;C:\.Xilinx\Xilinx.lic
+RDI_OPT_EXT: .o
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+windows_tracing_logfile: C:\BVTBin\Tests\installpackage\csilogfile.log
+RDI_PLATFORM: win64
+HOMEDRIVE: C:
+RDI_ARGS:  -mode batch -source "clocks\ipi_app_download.tcl" -nojournal -nolog -tclargs COM110 VCU128 1.0 1281016A0177 010203040506 prod 2.6 "False" "<setmux:0:74:04>" "<setmux:0:74:00>" "0" "(?i)1281016A0177B" "(?i)1281016A0177C"
+USERDNSDOMAIN: XLNX.XILINX.COM
+RT_TCL_PATH: C:/Xilinx/Vivado/2018.3/scripts/rt/base_tcl/tcl
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+SESSIONNAME: Console
+PATHEXT: .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+PROCESSOR_REVISION: 5e03
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+PUBLIC: C:\Users\Public
+RT_INTERUPT: C:/Users/jamesm/.oasys/realTime-interrupt.tcl
+USERPROFILE: C:\Users\jamesm
+USERNAME: jamesm
+COMPUTERNAME: XCOJAMESM42
+INT_VARIABLE_NAME: XILINX_PATH
+TMP: C:\Users\jamesm\AppData\Local\Temp
+OS: Windows_NT
+PROMPT: $P$G
+RDI_INSTALLVER: 2018.3
+HRT_TCL_PATH: C:/Xilinx/Vivado/2018.3/scripts/rt/fpga_tcl
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+PRODVERSION_EXE: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/prodversion.exe
+windir: C:\windows
+VIVADO_PATH: C:\Xilinx\Vivado\2017.4
+RDI_OS_ARCH: 64
+windows_tracing_flags: 3
+RDI_MINGW_LIB: C:/Xilinx/Vivado/2018.3\tps\mingw\6.2.0\win64.o\nt\bin;C:/Xilinx/Vivado/2018.3\tps\mingw\6.2.0\win64.o\nt\libexec\gcc\x86_64-w64-mingw32\6.2.0
+RDI_TPS_ROOT: C:/Xilinx/Vivado/2018.3/tps/win64
+asl.log: Destination=file
+XIL_CHECK_TCL_DEBUG: False
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+ComSpec: C:\windows\system32\cmd.exe
+ProgramData: C:\ProgramData
+RDI_INSTALLVERSION: 2018.3
+RDI_JAVAROOT: C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+RDI_BATCH_MODE: True
+CHARPOP: 1
+RDI_BASEROOT: C:/Xilinx/Vivado
+_valid: False
+USERDOMAIN: XLNX
+CommonProgramW6432: C:\Program Files\Common Files
+LDMS_LOCAL_DIR: C:\Program Files (x86)\LANDesk\LDClient\Data
+RDI_ARGS_FUNCTION: RDI_EXEC_DEFAULT
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+SystemRoot: C:\windows
+RDI_INSTALLROOT: C:/Xilinx
+ProgramFiles(x86): C:\Program Files (x86)
+ISL_IOSTREAMS_RSA: C:/Xilinx/Vivado/2018.3/tps/isl
+CommonProgramFiles: C:\Program Files\Common Files
+SYNTH_COMMON: C:/Xilinx/Vivado/2018.3/scripts/rt/data
+LOCALAPPDATA: C:\Users\jamesm\AppData\Local
+PSModulePath: C:\windows\system32\WindowsPowerShell\v1.0\Modules\
+TCL_LIBRARY: C:/Xilinx/Vivado/2018.3/tps/tcl/tcl8.5
+RDI_PROGNAME: vivado.exe
+NUMBER_OF_PROCESSORS: 8
+valid: True
+_RDI_CWD: C:\vcu128_bit\BoardUI\tests\VCU128
+TK_LIBRARY: C:\Users\jamesm\AppData\Local\Temp\_MEI37~1\tk
+CommonProgramFiles(x86): C:\Program Files (x86)\Common Files
+RDI_APPROOT: C:/Xilinx/Vivado/2018.3
+FP_NO_HOST_CHECK: NO
+ALLUSERSPROFILE: C:\ProgramData
+PROCESSOR_LEVEL: 6
+_plat: nt64
+DEFLOGDIR: C:\ProgramData\McAfee\Endpoint Security\Logs
+RT_LIBPATH: C:/Xilinx/Vivado/2018.3/scripts/rt/data
+PROCESSOR_ARCHITECTURE: AMD64
+APPDATA: C:\Users\jamesm\AppData\Roaming
+RDI_CHECK_PROG: True
+RDI_VERBOSE: False
+LDMS_PREFERRED_SERVER: xco-pvapldp01
+Path: C:/Xilinx/Vivado/2018.3/bin;C:/Xilinx/Vivado/2018.3/lib/win64.o;C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/server;C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin;C:/Xilinx/SDK/2018.3/bin;C:/Xilinx/Vivado/2018.3/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2018.3/ids_lite/ISE/lib/nt64;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\IDM Computer Solutions\UltraEdit\;C:/Xilinx/Vivado/2018.3\tps\mingw\6.2.0\win64.o\nt\bin;C:/Xilinx/Vivado/2018.3\tps\mingw\6.2.0\win64.o\nt\libexec\gcc\x86_64-w64-mingw32\6.2.0
+HOMEPATH: \Users\jamesm
+RDI_BUILD: yes
+SystemDrive: C:
+# set serial [lindex $argv 3]
+# if { [string is integer -strict [lindex $argv 7]] } { 
+#     if { [lindex $argv 7] < 1 } {
+#         set TEST_DELAY 1
+#     } else {
+#         set TEST_DELAY [lindex $argv 7]
+#     }
+# } else {
+#     set TEST_DELAY 2
+# }
+# set_param xicom.use_bitstream_version_check false
+# set_param "labtools.core_refresh_on" 0
+# open_hw
+WARNING: [Board 49-69] Validation failed for board file C:/Xilinx/Vivado/2018.3/data/boards/board_files/vcu128/1.0/board.xml:
+ Polarity Parameter not provided for dummy_port_in
+
+# catch {disconnect_hw_server localhost:3121}
+# set i 0
+# while {[catch {connect_hw_server -url localhost:3121}]} {
+#     puts "Trying to connect to hw_server again...."
+#     after 500
+#     incr i
+#     if {$i > 10} {
+#         break
+#     }
+# }
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+# set i 0
+# while {[catch {open_hw_target [get_hw_targets -regexp (?i).*/xilinx_tcf/.*/$serial.*]}]} {
+#     puts "Trying to get_hw_targets again..."
+#     after 500
+#     incr i
+#     if {$i > 10} {
+#         break
+#     }
+# }
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1281016A0177A
+# current_hw_device [lindex [get_hw_devices -regexp xcvu37p_0] 0]
+# refresh_hw_device -update_hw_probes false [lindex [get_hw_devices -regexp xcvu37p_0] 0]
+INFO: [Labtools 27-1435] Device xcvu37p (JTAG device index = 0) is not programmed (DONE status = 0).
+# set_property PROGRAM.FILE [pwd]/clocks/ipi_app.bit [lindex [get_hw_devices -regexp xcvu37p_0] 0]
+# program_hw_devices [lindex [get_hw_devices -regexp xcvu37p_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1266.363 ; gain = 1.219
+# refresh_hw_device [lindex [get_hw_devices -regexp xcvu37p_0] 0]
+INFO: [Labtools 27-1434] Device xcvu37p (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+# set donepin [get_property {REGISTER.CONFIG_STATUS.BIT14_DONE_PIN} [lindex [get_hw_devices -regexp xcvu37p_0] 0]]
+# puts "DONE STATUS: $donepin"
+DONE STATUS: 1
+# close_hw_target [current_hw_target [get_hw_targets -regexp (?i).*/xilinx_tcf/.*/$serial.*]]
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Xilinx/1281016A0177A
+# disconnect_hw_server localhost:3121
+# close_hw
+# exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 15 09:38:31 2019...
+[INFO		:	Tue, 15, Jan 2019 09:38:32]	Found pass condition:
+											(.*)INFO: \[Labtools 27\-3164\] End of startup status: HIGH
+[INFO		:	Tue, 15, Jan 2019 09:38:32]	Found pass condition:
+											(.*)INFO: \[Common 17\-206\]\s+Exiting\s+[Vv]ivado
+[INFO		:	Tue, 15, Jan 2019 09:38:32]	Starting step uart
+											==========
+1
+
+********************************************************
+********************************************************
+**                ZCU106 - UART 00 Test               **
+********************************************************
+********************************************************
+Testing UART
+115200,8,N,1
+Hello world!
+UART 00 Test Passed
+
+Press any key to return to main menu
+Choose Feature to Test:
+1: UART Test
+2: LED Test
+3: IIC Test
+A: BRAM Internal Memory Test
+C: Clocking Test
+0: Exit
+[INFO		:	Tue, 15, Jan 2019 09:38:32]	
+											Returned from UART: u'1\r\n\r\n********************************************************\r\n********************************************************\r\n**                ZCU106 - UART 00 Test               **\r\n********************************************************\r\n********************************************************\r\nTesting UART\r\n115200,8,N,1\r\nHello world!\r\nUART 00 Test Passed\r\n\r\nPress any key to return to main menu\r\nChoose Feature to Test:\r\n1: UART Test\r\n2: LED Test\r\n3: IIC Test\r\nA: BRAM Internal Memory Test\r\nC: Clocking Test\r\n0: Exit\r\n'
+[INFO		:	Tue, 15, Jan 2019 09:38:33]	Starting step uart
+											==========
+2
+
+********************************************************
+********************************************************
+**               VCU128 - GPIO LED Test               **
+********************************************************
+********************************************************
+Watch the LEDs
+Press any key to return to main menu
+Choose Feature to Test:
+1: UART Test
+2: LED Test
+3: IIC Test
+A: BRAM Internal Memory Test
+C: Clocking Test
+0: Exit
+[INFO		:	Tue, 15, Jan 2019 09:38:37]	
+											Returned from UART: u'2\r\n\r\n********************************************************\r\n********************************************************\r\n**               VCU128 - GPIO LED Test               **\r\n********************************************************\r\n********************************************************\r\nWatch the LEDs\r\nPress any key to return to main menu\r\nChoose Feature to Test:\r\n1: UART Test\r\n2: LED Test\r\n3: IIC Test\r\nA: BRAM Internal Memory Test\r\nC: Clocking Test\r\n0: Exit\r\n'
+[INFO		:	Tue, 15, Jan 2019 09:38:37]	Starting step uart
+											==========
+3
+
+*************************************************************
+** VCU128 EEPROM IIC EEPROM Test
+*************************************************************
+Calling iic_read
+
+Reading EEPROM data from EEPROM
+
+ReadBuffer[00] = 0xFF
+ReadBuffer[01] = 0xFF
+ReadBuffer[02] = 0xFF
+ReadBuffer[03] = 0xFF
+ReadBuffer[04] = 0xFF
+ReadBuffer[05] = 0xFF
+ReadBuffer[06] = 0xFF
+ReadBuffer[07] = 0xFF
+ReadBuffer[08] = 0xFF
+ReadBuffer[09] = 0xFF
+ReadBuffer[10] = 0xFF
+ReadBuffer[11] = 0xFF
+ReadBuffer[12] = 0xFF
+ReadBuffer[13] = 0xFF
+ReadBuffer[14] = 0xFF
+ReadBuffer[15] = 0xFF
+
+
+VCU128 EEPROM IIC EEPROM Test PASSED
+
+*************************************************************
+** VCU128 Si5328 IIC EEPROM Test
+*************************************************************
+Calling iic_read
+
+Reading EEPROM data from Si5328
+
+ReadBuffer[00] = 0x01
+ReadBuffer[01] = 0xC2
+ReadBuffer[02] = 0x00
+ReadBuffer[03] = 0x00
+ReadBuffer[04] = 0x0F
+ReadBuffer[05] = 0xFF
+ReadBuffer[06] = 0x00
+ReadBuffer[07] = 0x00
+ReadBuffer[08] = 0x00
+ReadBuffer[09] = 0x00
+ReadBuffer[10] = 0x00
+ReadBuffer[11] = 0x00
+ReadBuffer[12] = 0x00
+ReadBuffer[13] = 0x00
+ReadBuffer[14] = 0x00
+ReadBuffer[15] = 0x00
+
+
+VCU128 Si5328 IIC EEPROM Test PASSED
+
+*************************************************************
+** VCU128 QSPI1 Si570 IIC EEPROM Test
+*************************************************************
+Calling iic_read
+
+Reading EEPROM data from QSPI1 Si570
+
+ReadBuffer[00] = 0x01
+ReadBuffer[01] = 0xC2
+ReadBuffer[02] = 0xBC
+ReadBuffer[03] = 0x00
+ReadBuffer[04] = 0x6C
+ReadBuffer[05] = 0xBE
+ReadBuffer[06] = 0x07
+ReadBuffer[07] = 0xC2
+ReadBuffer[08] = 0xC0
+ReadBuffer[09] = 0x00
+ReadBuffer[10] = 0x00
+ReadBuffer[11] = 0x00
+ReadBuffer[12] = 0x00
+ReadBuffer[13] = 0xC2
+ReadBuffer[14] = 0xC0
+ReadBuffer[15] = 0x00
+
+
+VCU128 QSPI1 Si570 IIC EEPROM Test PASSED
+
+*************************************************************
+** VCU128 QSPI2 Si570 IIC EEPROM Test
+*************************************************************
+Calling iic_read
+
+Reading EEPROM data from QSPI2 Si570
+
+ReadBuffer[00] = 0x01
+ReadBuffer[01] = 0xC2
+ReadBuffer[02] = 0xBC
+ReadBuffer[03] = 0x00
+ReadBuffer[04] = 0x1B
+ReadBuffer[05] = 0x33
+ReadBuffer[06] = 0x07
+ReadBuffer[07] = 0xC2
+ReadBuffer[08] = 0xC0
+ReadBuffer[09] = 0x00
+ReadBuffer[10] = 0x00
+ReadBuffer[11] = 0x00
+ReadBuffer[12] = 0x00
+ReadBuffer[13] = 0xC2
+ReadBuffer[14] = 0xC0
+ReadBuffer[15] = 0x00
+
+
+VCU128 QSPI2 Si570 IIC EEPROM Test PASSED
+
+*************************************************************
+** VCU128 QSPI2 Si570 IIC EEPROM Test
+*************************************************************
+Calling iic_read
+
+Reading EEPROM data from QSPI2 Si570
+
+ReadBuffer[00] = 0x01
+ReadBuffer[01] = 0xC2
+ReadBuffer[02] = 0xBC
+ReadBuffer[03] = 0x00
+ReadBuffer[04] = 0x12
+ReadBuffer[05] = 0x31
+ReadBuffer[06] = 0x07
+ReadBuffer[07] = 0xC2
+ReadBuffer[08] = 0xC0
+ReadBuffer[09] = 0x00
+ReadBuffer[10] = 0x00
+ReadBuffer[11] = 0x00
+ReadBuffer[12] = 0x00
+ReadBuffer[13] = 0xC2
+ReadBuffer[14] = 0xC0
+ReadBuffer[15] = 0x00
+
+
+VCU128 QSPI2 Si570 IIC EEPROM Test PASSED
+
+*************************************************************
+** VCU128 QSPI2 Si570 IIC EEPROM Test
+*************************************************************
+Calling iic_read
+
+Reading EEPROM data from QSPI2 Si570
+
+ReadBuffer[00] = 0x01
+ReadBuffer[01] = 0xC2
+ReadBuffer[02] = 0xBC
+ReadBuffer[03] = 0x01
+ReadBuffer[04] = 0x0B
+ReadBuffer[05] = 0x57
+ReadBuffer[06] = 0x07
+ReadBuffer[07] = 0xC2
+ReadBuffer[08] = 0xC0
+ReadBuffer[09] = 0x00
+ReadBuffer[10] = 0x00
+ReadBuffer[11] = 0x00
+ReadBuffer[12] = 0x00
+ReadBuffer[13] = 0xC2
+ReadBuffer[14] = 0xC0
+ReadBuffer[15] = 0x00
+
+
+VCU128 QSPI2 Si570 IIC EEPROM Test PASSED
+All Tests Complete: IIC PASSED
+Press any key to return to main menu
+Choose Feature to Test:
+1: UART Test
+2: LED Test
+3: IIC Test
+A: BRAM Internal Memory Test
+C: Clocking Test
+0: Exit
+[INFO		:	Tue, 15, Jan 2019 09:38:38]	
+											Returned from UART: u'3\r\n\r\n*************************************************************\r\n** VCU128 EEPROM IIC EEPROM Test\r\n*************************************************************\r\nCalling iic_read\r\n\r\nReading EEPROM data from EEPROM\n\r\nReadBuffer[00] = 0xFF\r\nReadBuffer[01] = 0xFF\r\nReadBuffer[02] = 0xFF\r\nReadBuffer[03] = 0xFF\r\nReadBuffer[04] = 0xFF\r\nReadBuffer[05] = 0xFF\r\nReadBuffer[06] = 0xFF\r\nReadBuffer[07] = 0xFF\r\nReadBuffer[08] = 0xFF\r\nReadBuffer[09] = 0xFF\r\nReadBuffer[10] = 0xFF\r\nReadBuffer[11] = 0xFF\r\nReadBuffer[12] = 0xFF\r\nReadBuffer[13] = 0xFF\r\nReadBuffer[14] = 0xFF\r\nReadBuffer[15] = 0xFF\r\n\r\n\r\nVCU128 EEPROM IIC EEPROM Test PASSED\r\n\r\n*************************************************************\r\n** VCU128 Si5328 IIC EEPROM Test\r\n*************************************************************\r\nCalling iic_read\r\n\r\nReading EEPROM data from Si5328\n\r\nReadBuffer[00] = 0x01\r\nReadBuffer[01] = 0xC2\r\nReadBuffer[02] = 0x00\r\nReadBuffer[03] = 0x00\r\nReadBuffer[04] = 0x0F\r\nReadBuffer[05] = 0xFF\r\nReadBuffer[06] = 0x00\r\nReadBuffer[07] = 0x00\r\nReadBuffer[08] = 0x00\r\nReadBuffer[09] = 0x00\r\nReadBuffer[10] = 0x00\r\nReadBuffer[11] = 0x00\r\nReadBuffer[12] = 0x00\r\nReadBuffer[13] = 0x00\r\nReadBuffer[14] = 0x00\r\nReadBuffer[15] = 0x00\r\n\r\n\r\nVCU128 Si5328 IIC EEPROM Test PASSED\r\n\r\n*************************************************************\r\n** VCU128 QSPI1 Si570 IIC EEPROM Test\r\n*************************************************************\r\nCalling iic_read\r\n\r\nReading EEPROM data from QSPI1 Si570\n\r\nReadBuffer[00] = 0x01\r\nReadBuffer[01] = 0xC2\r\nReadBuffer[02] = 0xBC\r\nReadBuffer[03] = 0x00\r\nReadBuffer[04] = 0x6C\r\nReadBuffer[05] = 0xBE\r\nReadBuffer[06] = 0x07\r\nReadBuffer[07] = 0xC2\r\nReadBuffer[08] = 0xC0\r\nReadBuffer[09] = 0x00\r\nReadBuffer[10] = 0x00\r\nReadBuffer[11] = 0x00\r\nReadBuffer[12] = 0x00\r\nReadBuffer[13] = 0xC2\r\nReadBuffer[14] = 0xC0\r\nReadBuffer[15] = 0x00\r\n\r\n\r\nVCU128 QSPI1 Si570 IIC EEPROM Test PASSED\r\n\r\n*************************************************************\r\n** VCU128 QSPI2 Si570 IIC EEPROM Test\r\n*************************************************************\r\nCalling iic_read\r\n\r\nReading EEPROM data from QSPI2 Si570\n\r\nReadBuffer[00] = 0x01\r\nReadBuffer[01] = 0xC2\r\nReadBuffer[02] = 0xBC\r\nReadBuffer[03] = 0x00\r\nReadBuffer[04] = 0x1B\r\nReadBuffer[05] = 0x33\r\nReadBuffer[06] = 0x07\r\nReadBuffer[07] = 0xC2\r\nReadBuffer[08] = 0xC0\r\nReadBuffer[09] = 0x00\r\nReadBuffer[10] = 0x00\r\nReadBuffer[11] = 0x00\r\nReadBuffer[12] = 0x00\r\nReadBuffer[13] = 0xC2\r\nReadBuffer[14] = 0xC0\r\nReadBuffer[15] = 0x00\r\n\r\n\r\nVCU128 QSPI2 Si570 IIC EEPROM Test PASSED\r\n\r\n*************************************************************\r\n** VCU128 QSPI2 Si570 IIC EEPROM Test\r\n*************************************************************\r\nCalling iic_read\r\n\r\nReading EEPROM data from QSPI2 Si570\n\r\nReadBuffer[00] = 0x01\r\nReadBuffer[01] = 0xC2\r\nReadBuffer[02] = 0xBC\r\nReadBuffer[03] = 0x00\r\nReadBuffer[04] = 0x12\r\nReadBuffer[05] = 0x31\r\nReadBuffer[06] = 0x07\r\nReadBuffer[07] = 0xC2\r\nReadBuffer[08] = 0xC0\r\nReadBuffer[09] = 0x00\r\nReadBuffer[10] = 0x00\r\nReadBuffer[11] = 0x00\r\nReadBuffer[12] = 0x00\r\nReadBuffer[13] = 0xC2\r\nReadBuffer[14] = 0xC0\r\nReadBuffer[15] = 0x00\r\n\r\n\r\nVCU128 QSPI2 Si570 IIC EEPROM Test PASSED\r\n\r\n*************************************************************\r\n** VCU128 QSPI2 Si570 IIC EEPROM Test\r\n*************************************************************\r\nCalling iic_read\r\n\r\nReading EEPROM data from QSPI2 Si570\n\r\nReadBuffer[00] = 0x01\r\nReadBuffer[01] = 0xC2\r\nReadBuffer[02] = 0xBC\r\nReadBuffer[03] = 0x01\r\nReadBuffer[04] = 0x0B\r\nReadBuffer[05] = 0x57\r\nReadBuffer[06] = 0x07\r\nReadBuffer[07] = 0xC2\r\nReadBuffer[08] = 0xC0\r\nReadBuffer[09] = 0x00\r\nReadBuffer[10] = 0x00\r\nReadBuffer[11] = 0x00\r\nReadBuffer[12] = 0x00\r\nReadBuffer[13] = 0xC2\r\nReadBuffer[14] = 0xC0\r\nReadBuffer[15] = 0x00\r\n\r\n\r\nVCU128 QSPI2 Si570 IIC EEPROM Test PASSED\r\nAll Tests Complete: IIC PASSED\r\nPress any key to return to main menu\r\nChoose Feature to Test:\r\n1: UART Test\r\n2: LED Test\r\n3: IIC Test\r\nA: BRAM Internal Memory Test\r\nC: Clocking Test\r\n0: Exit\r\n'
+[INFO		:	Tue, 15, Jan 2019 09:38:38]	Starting step uart
+											==========
+A
+
+********************************************************
+********************************************************
+**               VCU118 - AXI BRAM TEST               **
+********************************************************
+********************************************************
+
+
+AXI BRAM Memory Test
+Testing address range 0xC0030000-0xC00FFFFF.
+Iteration 1 of 1
+Pass A) ICache:  On, DCache:  On
+	TEST0: Write all memory to 0x00000000 and check
+		Writing...
+		Reading...
+	Test Complete Status = SUCCESS
+	TEST1: Write all memory to 0xFFFFFFFF and check
+		Writing...
+		Reading...
+	Test Complete Status = SUCCESS 
+
+	TEST2: Testing for stuck together bank/row/col bits
+		Clearing memory to zeros...
+		Writing and Reading...
+	Test Complete Status = SUCCESS 
+
+	TEST4: Testing for Inverse Data at Address
+		Writing...
+		Reading...
+	Test Complete Status = SUCCESS 
+
+		Number of errors in this pass = 0
+
+Pass B) ICache: Off, DCache: Off
+	TEST0: Write all memory to 0x00000000 and check
+		Writing...
+		Reading...
+	Test Complete Status = SUCCESS
+	TEST1: Write all memory to 0xFFFFFFFF and check
+		Writing...
+		Reading...
+	Test Complete Status = SUCCESS 
+
+	TEST2: Testing for stuck together bank/row/col bits
+		Clearing memory to zeros...
+		Writing and Reading...
+	Test Complete Status = SUCCESS 
+
+	TEST4: Testing for Inverse Data at Address
+		Writing...
+		Reading...
+	Test Complete Status = SUCCESS 
+
+		Number of errors in this pass = 0
+
+AXI BRAM test iteration #1 has PASSED!
+Total number of errors for all iterations = 0
+### Program finished successfully ###
+Press any key to return to main menu
+Choose Feature to Test:
+1: UART Test
+2: LED Test
+3: IIC Test
+A: BRAM Internal Memory Test
+C: Clocking Test
+0: Exit
+[INFO		:	Tue, 15, Jan 2019 09:38:45]	
+											Returned from UART: u'A\r\n\r\n********************************************************\r\n********************************************************\r\n**               VCU118 - AXI BRAM TEST               **\r\n********************************************************\r\n********************************************************\r\n\r\n\nAXI BRAM Memory Test\r\nTesting address range 0xC0030000-0xC00FFFFF.\r\nIteration 1 of 1\r\nPass A) ICache:  On, DCache:  On\r\n\tTEST0: Write all memory to 0x00000000 and check\r\n\t\tWriting...\r\n\t\tReading...\r\n\tTest Complete Status = SUCCESS\r\n\tTEST1: Write all memory to 0xFFFFFFFF and check\r\n\t\tWriting...\r\n\t\tReading...\r\n\tTest Complete Status = SUCCESS \r\n\r\n\tTEST2: Testing for stuck together bank/row/col bits\r\n\t\tClearing memory to zeros...\r\n\t\tWriting and Reading...\r\n\tTest Complete Status = SUCCESS \r\n\r\n\tTEST4: Testing for Inverse Data at Address\r\n\t\tWriting...\r\n\t\tReading...\r\n\tTest Complete Status = SUCCESS \r\n\r\n\t\tNumber of errors in this pass = 0\r\n\r\nPass B) ICache: Off, DCache: Off\r\n\tTEST0: Write all memory to 0x00000000 and check\r\n\t\tWriting...\r\n\t\tReading...\r\n\tTest Complete Status = SUCCESS\r\n\tTEST1: Write all memory to 0xFFFFFFFF and check\r\n\t\tWriting...\r\n\t\tReading...\r\n\tTest Complete Status = SUCCESS \r\n\r\n\tTEST2: Testing for stuck together bank/row/col bits\r\n\t\tClearing memory to zeros...\r\n\t\tWriting and Reading...\r\n\tTest Complete Status = SUCCESS \r\n\r\n\tTEST4: Testing for Inverse Data at Address\r\n\t\tWriting...\r\n\t\tReading...\r\n\tTest Complete Status = SUCCESS \r\n\r\n\t\tNumber of errors in this pass = 0\r\n\r\nAXI BRAM test iteration #1 has PASSED!\r\nTotal number of errors for all iterations = 0\r\n### Program finished successfully ###\r\nPress any key to return to main menu\r\nChoose Feature to Test:\r\n1: UART Test\r\n2: LED Test\r\n3: IIC Test\r\nA: BRAM Internal Memory Test\r\nC: Clocking Test\r\n0: Exit\r\n'
+[TITLE		:	Tue, 15, Jan 2019 09:38:45]	PASSED IPI APP Test at: 2019-01-15 09:38:45.627000
+[TITLE		:	Tue, 15, Jan 2019 09:38:45]	Finished
+[TITLE		:	Tue, 15, Jan 2019 09:50:58]	BOARD FAILED AT SOME POINT (could simply be a setup issue)

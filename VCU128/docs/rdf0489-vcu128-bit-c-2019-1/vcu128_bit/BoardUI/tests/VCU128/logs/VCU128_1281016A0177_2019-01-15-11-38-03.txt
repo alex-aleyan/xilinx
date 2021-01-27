@@ -1,0 +1,143 @@
+[TITLE		:	Tue, 15, Jan 2019 11:38:14]	Board: VCU128
+[TITLE		:	Tue, 15, Jan 2019 11:38:14]	Revision: 1.0
+[TITLE		:	Tue, 15, Jan 2019 11:38:14]	Silicon: prod
+[TITLE		:	Tue, 15, Jan 2019 11:38:14]	Serial Number: 1281016A0177
+[TITLE		:	Tue, 15, Jan 2019 11:38:14]	MAC Address: 01:02:03:04:05:06
+[TITLE		:	Tue, 15, Jan 2019 11:38:14]	Working in directory: VCU128
+[TITLE		:	Tue, 15, Jan 2019 11:38:19]	PRESSED: EEPROM Program
+[TITLE		:	Tue, 15, Jan 2019 11:38:19]	Starting EEPROM Program at: 2019-01-15 11:38:19.145000
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	Starting step sysc
+											==========
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'\x1b:R\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	SYSC Full Command: [('<setmux:0:74:01>', '', '', ''), ('<writeeeprom256:0:54:00:FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF:400>', '', '', ''), ('<writeeepromascii256:0:54:00:564355313238>', '', '', ''), ('<writeeeprom256:0:54:11:FFFFFF>', '', '', ''), ('<writeeepromascii256:0:54:11:{rev}>', '', '', ''), ('<writeeeprom256:0:54:14:FFFFFFFFFFFFFFFFFFFFFFFF>', '', '', ''), ('<writeeepromascii256:0:54:14:{ser}>', '', '', ''), ('<writeeeprom256:0:54:20:FFFFFF>', '', '', ''), ('<writeeepromascii256:0:54:20:1.3>', '', '', ''), ('<writeeeprom256:0:54:23:FFFFFFFF>', '', '', ''), ('<writeeeprom256:0:54:23:{mac}>', '', '', ''), ('<writeeeprom256:0:54:3B:FF>', '', '', ''), ('<writeeepromascii:0:54:3B:A>', '', '', ''), ('<writeeeprom256:0:54:3C:FF>', '', '', ''), ('<writeeeprom256:0:54:3C:07>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	
+											Running sysc func: <setmux:0:74:01>
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'IW0\r74\r01\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	
+											Running sysc func: <writeeeprom256:0:54:00:FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF:400>
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'IW0\r54\r00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	
+											Running sysc func: <writeeepromascii256:0:54:00:564355313238>
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'IW0\r54\r00353634333535333133323338\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	
+											Running sysc func: <writeeeprom256:0:54:11:FFFFFF>
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'IW0\r54\r11FFFFFF\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	
+											Running sysc func: <writeeepromascii256:0:54:11:1.0>
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'IW0\r54\r11312e30\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	
+											Running sysc func: <writeeeprom256:0:54:14:FFFFFFFFFFFFFFFFFFFFFFFF>
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'IW0\r54\r14FFFFFFFFFFFFFFFFFFFFFFFF\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	
+											Running sysc func: <writeeepromascii256:0:54:14:1281016A0177>
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'IW0\r54\r14313238313031364130313737\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	
+											Running sysc func: <writeeeprom256:0:54:20:FFFFFF>
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'IW0\r54\r20FFFFFF\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	
+											Running sysc func: <writeeepromascii256:0:54:20:1.3>
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'IW0\r54\r20312e33\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	
+											Running sysc func: <writeeeprom256:0:54:23:FFFFFFFF>
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'IW0\r54\r23FFFFFFFF\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	
+											Running sysc func: <writeeeprom256:0:54:23:010203040506>
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'IW0\r54\r23010203040506\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	
+											Running sysc func: <writeeeprom256:0:54:3B:FF>
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'IW0\r54\r3bFF\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	
+											Running sysc func: <writeeepromascii:0:54:3B:A>
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'IW0\r54\r3b41\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	
+											Running sysc func: <writeeeprom256:0:54:3C:FF>
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'IW0\r54\r3cFF\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	
+											Running sysc func: <writeeeprom256:0:54:3C:07>
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'IW0\r54\r3c07\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	
+											Running sysc func: <setmux:0:74:00>
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'IW0\r74\r00\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	u'~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	
+											SYSC Interpreted Command: [('<setmux:0:74:01>', '', '', ''), ('<writeeeprom256:0:54:00:FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF:400>', '', '', ''), ('<writeeepromascii256:0:54:00:564355313238>', '', '', ''), ('<writeeeprom256:0:54:11:FFFFFF>', '', '', ''), ('<writeeepromascii256:0:54:11:{rev}>', '', '', ''), ('<writeeeprom256:0:54:14:FFFFFFFFFFFFFFFFFFFFFFFF>', '', '', ''), ('<writeeepromascii256:0:54:14:{ser}>', '', '', ''), ('<writeeeprom256:0:54:20:FFFFFF>', '', '', ''), ('<writeeepromascii256:0:54:20:1.3>', '', '', ''), ('<writeeeprom256:0:54:23:FFFFFFFF>', '', '', ''), ('<writeeeprom256:0:54:23:{mac}>', '', '', ''), ('<writeeeprom256:0:54:3B:FF>', '', '', ''), ('<writeeepromascii:0:54:3B:A>', '', '', ''), ('<writeeeprom256:0:54:3C:FF>', '', '', ''), ('<writeeeprom256:0:54:3C:07>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+											SYSC RAW Command: u'IW0\r74\r01\r\tIW0\r54\r00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF\r\tIW0\r54\r00353634333535333133323338\r\tIW0\r54\r11FFFFFF\r\tIW0\r54\r11312e30\r\tIW0\r54\r14FFFFFFFFFFFFFFFFFFFFFFFF\r\tIW0\r54\r14313238313031364130313737\r\tIW0\r54\r20FFFFFF\r\tIW0\r54\r20312e33\r\tIW0\r54\r23FFFFFFFF\r\tIW0\r54\r23010203040506\r\tIW0\r54\r3bFF\r\tIW0\r54\r3b41\r\tIW0\r54\r3cFF\r\tIW0\r54\r3c07\r\tIW0\r74\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r74\r01\r:P\r~~~\r:P\rIW0\r54\r00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF\r:P\r~~~\r:P\rIW0\r54\r00353634333535333133323338\r:P\r~~~\r:P\rIW0\r54\r11FFFFFF\r:P\r~~~\r:P\rIW0\r54\r11312e30\r:P\r~~~\r:P\rIW0\r54\r14FFFFFFFFFFFFFFFFFFFFFFFF\r:P\r~~~\r:P\rIW0\r54\r14313238313031364130313737\r:P\r~~~\r:P\rIW0\r54\r20FFFFFF\r:P\r~~~\r:P\rIW0\r54\r20312e33\r:P\r~~~\r:P\rIW0\r54\r23FFFFFFFF\r:P\r~~~\r:P\rIW0\r54\r23010203040506\r:P\r~~~\r:P\rIW0\r54\r3bFF\r:P\r~~~\r:P\rIW0\r54\r3b41\r:P\r~~~\r:P\rIW0\r54\r3cFF\r:P\r~~~\r:P\rIW0\r54\r3c07\r:P\r~~~\r:P\rIW0\r74\r00\r:P\r~~~\r:P\r~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:19]	Starting step sysc
+											==========
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	u'\x1b:R\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	u'\r:R\r\x1b\r:R\r~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	SYSC Full Command: [('<setmux:0:74:01>', '', '', ''), ('<readeeprom:0:54:00:10>', '', '', ''), ('<interpeeprom>', '', '', ''), ('<readeeprom:0:54:11:03>', '', '', ''), ('<interpeeprom>', '', '', ''), ('<readeeprom:0:54:14:10>', '', '', ''), ('<interpeeprom>', '', '', ''), ('<readeeprom:0:54:23:06>', '', '', ''), ('<literaleeprom:F>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	
+											Running sysc func: <setmux:0:74:01>
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	u'IW0\r74\r01\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	u'~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	
+											Running sysc func: <readeeprom:0:54:00:10>
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	u'IW0\r54\r00\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	u'IR0\r54\r10\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	u'353634333535333133323338FFFFFFFF\r~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	
+											Running sysc func: <interpeeprom>
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	SYSC command returned: INTERP[564355313238☐☐☐☐]LITERAL[353634333535333133323338FFFFFFFF]
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	u'~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	
+											Running sysc func: <readeeprom:0:54:11:03>
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	u'IW0\r54\r11\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	u'IR0\r54\r03\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	u'312E30\r~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	
+											Running sysc func: <interpeeprom>
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	SYSC command returned: INTERP[1.0]LITERAL[312E30]
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	u'~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	
+											Running sysc func: <readeeprom:0:54:14:10>
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	u'IW0\r54\r14\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	u'IR0\r54\r10\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	u'313238313031364130313737312E3301\r~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	
+											Running sysc func: <interpeeprom>
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	SYSC command returned: INTERP[1281016A01771.3☐]LITERAL[313238313031364130313737312E3301]
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	u'~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	
+											Running sysc func: <readeeprom:0:54:23:06>
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	u'IW0\r54\r23\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	u'IR0\r54\r06\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	u'010203040506\r~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	
+											Running sysc func: <literaleeprom:F>
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	SYSC command returned: LITERAL[010203040506]INTERP[☐☐☐☐☐☐]
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	u'~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	
+											Running sysc func: <setmux:0:74:00>
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	u'IW0\r74\r00\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	u'~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	u'~~~\r:P\r'
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	
+											SYSC Interpreted Command: [('<setmux:0:74:01>', '', '', ''), ('<readeeprom:0:54:00:10>', '', '', ''), ('<interpeeprom>', '', '', ''), ('<readeeprom:0:54:11:03>', '', '', ''), ('<interpeeprom>', '', '', ''), ('<readeeprom:0:54:14:10>', '', '', ''), ('<interpeeprom>', '', '', ''), ('<readeeprom:0:54:23:06>', '', '', ''), ('<literaleeprom:F>', '', '', ''), ('<setmux:0:74:00>', '', '', '')]
+											SYSC RAW Command: u'IW0\r74\r01\r\tIW0\r54\r00\r\tIR0\r54\r10\r\tIW0\r54\r11\r\tIR0\r54\r03\r\tIW0\r54\r14\r\tIR0\r54\r10\r\tIW0\r54\r23\r\tIR0\r54\r06\r\tIW0\r74\r00\r\t'
+											SYSC Returned: u'\x1b:R\r\r:R\r\x1b\r:R\r~~~\r:P\rIW0\r74\r01\r:P\r~~~\r:P\rIW0\r54\r00\r:P\rIR0\r54\r10\r:P\r353634333535333133323338FFFFFFFF\r~~~\r:P\rINTERP[564355313238\u2610\u2610\u2610\u2610]LITERAL[353634333535333133323338FFFFFFFF]~~~\r:P\rIW0\r54\r11\r:P\rIR0\r54\r03\r:P\r312E30\r~~~\r:P\rINTERP[1.0]LITERAL[312E30]~~~\r:P\rIW0\r54\r14\r:P\rIR0\r54\r10\r:P\r313238313031364130313737312E3301\r~~~\r:P\rINTERP[1281016A01771.3\u2610]LITERAL[313238313031364130313737312E3301]~~~\r:P\rIW0\r54\r23\r:P\rIR0\r54\r06\r:P\r010203040506\r~~~\r:P\rLITERAL[010203040506]INTERP[\u2610\u2610\u2610\u2610\u2610\u2610]~~~\r:P\rIW0\r74\r00\r:P\r~~~\r:P\r~~~\r:P\r'
+[ERROR		:	Tue, 15, Jan 2019 11:38:20]	Could not find pass condition:
+											INTERP\[VCU128
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	SERIAL: 1281016A0177
+[INFO		:	Tue, 15, Jan 2019 11:38:20]	REVISION: 1.0
+[TITLE		:	Tue, 15, Jan 2019 11:38:20]	FAILED EEPROM Program at: 2019-01-15 11:38:20.541000
+[TITLE		:	Tue, 15, Jan 2019 11:38:20]	Finished
+[TITLE		:	Tue, 15, Jan 2019 11:38:53]	BOARD FAILED AT SOME POINT (could simply be a setup issue)
