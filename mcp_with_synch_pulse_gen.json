@@ -1,0 +1,11 @@
+{signal: [
+  {name: 'fast_clock', wave: 'p........|......'},
+  //{name: 'q1', wave: 'x.345x|=.x', data: ['head', 'body', 'tail', 'data']},
+  
+  {name: 'sig_from_slow_clk', wave: '01.0.....|1.0...'},
+  {name: 'q1', wave: '0.1.0....|.1.0...'},
+  {name: 'q2', wave: '0..1.0...|..1.0..'},
+  {name: 'q3', wave: '0...1.0..|...1.0.'},
+  {name: 'edge_detect', wave: '0...1010.|...1010'},
+  {},
+]}
